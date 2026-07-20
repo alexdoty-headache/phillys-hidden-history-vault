@@ -21,18 +21,39 @@
     </nav>
   </header>
 
-  <div class="stub-note">
-    <b>Needs your Bokun embed —</b> Bokun provides an embeddable widget or iframe snippet from your Bokun dashboard
-    (Channel Manager &rarr; Widgets, or the "Add to website" option on a specific product/activity).
-    Drop that snippet where the placeholder below is, and this page is done. If you'd rather I wire it up,
-    paste the embed code (or the widget/product ID) here and I'll drop it in directly.
-  </div>
-
   <h1>Book Your Tour</h1>
 
-  <div style="border:2px dashed var(--line); padding:40px; text-align:center; color:var(--ink-soft); font-family:'Courier New',monospace;">
-    [ Bokun booking widget goes here ]
-  </div>
+  <p>Reserve your spot on "General Lee Attacks Philadelphia" — 2.5 hours, small group, starting at City Hall.</p>
+
+  <script type="text/javascript" src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=f725b868-b6a3-43fb-bca4-a843fa4e2209" async></script>
+  <style>
+    #bokun_86edc664_c81f_4ee0_afed_bf0786143c95 {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #408C3D;
+      border-radius: 5px;
+      box-shadow: none;
+      font-weight: 600;
+      font-size: 16px;
+      text-decoration: none;
+      text-align: center;
+      color: #FFFFFF;
+      border: none;
+      cursor: pointer;
+      transition: background .2s ease;
+    }
+    #bokun_86edc664_c81f_4ee0_afed_bf0786143c95:hover{ background: #285726; }
+    #bokun_86edc664_c81f_4ee0_afed_bf0786143c95:active{ background: #30682e; }
+  </style>
+  <button
+    class="bokunButton"
+    disabled
+    id="bokun_86edc664_c81f_4ee0_afed_bf0786143c95"
+    data-src="https://widgets.bokun.io/online-sales/f725b868-b6a3-43fb-bca4-a843fa4e2209/experience/1131083?partialView=1"
+    data-testid="widget-book-button"
+  >
+    Book now
+  </button>
 
   <footer class="site-footer">
     <span>&copy; Philly's Hidden History Vault</span>
