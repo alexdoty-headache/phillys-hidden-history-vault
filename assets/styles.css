@@ -1,19 +1,19 @@
 :root{
-  --paper: #ede4cf;
-  --paper-dark: #e2d6ba;
-  --ink: #262019;
-  --ink-soft: #4a4038;
-  --navy: #1f2c3a;
-  --oxblood: #8f3324;
-  --verdigris: #4f6d5f;
-  --line: rgba(38,32,25,0.18);
+  --paper: #F5F5DC;
+  --paper-dark: #EDE9C7;
+  --ink: #004D40;
+  --ink-soft: #3d5751;
+  --navy: #004D40;
+  --oxblood: #B8860B;
+  --verdigris: #4f8a72;
+  --line: rgba(0,77,64,0.18);
 }
 *{box-sizing:border-box;}
 body{
   margin:0;
   background:var(--paper);
   color:var(--ink);
-  font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+  font-family: 'Source Sans 3', -apple-system, sans-serif;
   line-height:1.6;
 }
 .wrap{max-width:1040px;margin:0 auto;padding:0 24px 80px;}
@@ -30,6 +30,7 @@ body{
   margin-bottom:30px;
 }
 .site-logo{
+  font-family:'Playfair Display', Georgia, serif;
   font-weight:700;
   font-size:19px;
   color:var(--navy);
@@ -60,6 +61,7 @@ body{
 }
 .stub-note b{color:var(--oxblood);}
 
+h1,h2,h3{font-family:'Playfair Display', Georgia, serif;}
 h1{color:var(--navy);}
 a{color:var(--verdigris);}
 
