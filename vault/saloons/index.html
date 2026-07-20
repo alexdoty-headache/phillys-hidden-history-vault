@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Philly's Hidden History — Research Vault (Prototype)</title>
+<style>
+  :root{
+    --paper: #ede4cf;
+    --paper-dark: #e2d6ba;
+    --ink: #262019;
+    --ink-soft: #4a4038;
+    --navy: #1f2c3a;
+    --oxblood: #8f3324;
+    --verdigris: #4f6d5f;
+    --brass: #97772f;
+    --line: rgba(38,32,25,0.18);
+    --stamp-green: #3c6b47;
+    --stamp-amber: #a8741f;
+    --stamp-blue: #2c5170;
+    --stamp-red: #8f3324;
+    --stamp-purple: #5c4a7a;
+    --stamp-gray: #5c574d;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:
+      repeating-linear-gradient(transparent, transparent 27px, var(--line) 28px),
+      var(--paper);
+    color:var(--ink);
+    font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+    line-height:1.5;
+  }
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px 80px;}
+
+  /* MASTHEAD */
+  header.masthead{
+    border-bottom:3px double var(--ink);
+    padding:36px 0 20px;
+    margin-bottom:8px;
+  }
+  .eyebrow{
+    font-family: 'Courier New', ui-monospace, monospace;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    font-size:11px;
+    color:var(--oxblood);
+    margin:0 0 10px;
+  }
+  h1.title{
+    font-size:clamp(32px,5vw,54px);
+    margin:0;
+    letter-spacing:1px;
+    font-weight:700;
+    color:var(--navy);
+  }
+  .subtitle{
+    font-style:italic;
+    color:var(--ink-soft);
+    margin:8px 0 22px;
+    font-size:16px;
+    max-width:620px;
+  }
+  .proto-note{
+    background:rgba(143,51,36,0.07);
+    border:1px solid rgba(143,51,36,0.35);
+    padding:12px 16px;
+    font-size:13px;
+    color:var(--ink-soft);
+    font-family: 'Courier New', ui-monospace, monospace;
+    margin-bottom:26px;
+  }
+  .proto-note b{color:var(--oxblood);}
+
+  /* SEARCH */
+  .search-row{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    align-items:center;
+    margin-bottom:14px;
+  }
+  #search{
+    flex:1;
+    min-width:220px;
+    padding:12px 14px;
+    font-size:16px;
+    font-family: Georgia, serif;
+    border:2px solid var(--ink);
+    background:var(--paper-dark);
+    color:var(--ink);
+  }
+  #search::placeholder{color:var(--ink-soft); font-style:italic;}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px;}
+  .chip{
+    font-family:'Courier New', ui-monospace, monospace;
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    padding:7px 13px;
+    border:1px solid var(--ink);
+    background:transparent;
+    cursor:pointer;
+    color:var(--ink-soft);
+  }
+  .chip.active{background:var(--navy);color:var(--paper);border-color:var(--navy);}
+  .result-count{
+    font-family:'Courier New', ui-monospace, monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    margin-bottom:14px;
+  }
+
+  /* HERO / FEATURED CARD */
+  .hero{display:flex;gap:24px;margin-bottom:34px;align-items:flex-start;flex-wrap:wrap;}
+  .hero-text{flex:1;min-width:240px;}
+  .hero-text h2{font-size:22px;color:var(--navy);margin:0 0 10px;}
+  .hero-text p{color:var(--ink-soft);font-size:15px;}
+
+  /* CARD GRID */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;}
+  .card{
+    position:relative;
+    background:var(--paper-dark);
+    border:1px solid var(--ink);
+    border-left:5px solid var(--oxblood);
+    padding:16px 16px 14px;
+    cursor:pointer;
+    transition:transform .12s ease, box-shadow .12s ease;
+  }
+  .card:hover{transform:translateY(-2px);box-shadow:4px 6px 0 rgba(38,32,25,0.15);}
+  .card .cat{
+    font-family:'Courier New', ui-monospace, monospace;
+    font-size:10px;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    color:var(--verdigris);
+    margin-bottom:6px;
+  }
+  .card h3{
+    margin:0 0 8px;
+    font-size:17px;
+    color:var(--navy);
+    line-height:1.3;
+  }
+  .card .meta{
+    font-family:'Courier New', ui-monospace, monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    margin-bottom:8px;
+  }
+  .card .source{
+    font-size:12px;
+    font-style:italic;
+    color:var(--ink-soft);
+    border-top:1px dashed var(--line);
+    padding-top:8px;
+    margin-top:4px;
+  }
+  .stamp{
+    display:block;
+    font-family:'Courier New', ui-monospace, monospace;
+    font-size:10px;
+    letter-spacing:0.5px;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    opacity:0.65;
+    margin-top:5px;
+  }
+  .img-link{
+    display:inline-block;
+    font-family:'Courier New', ui-monospace, monospace;
+    font-size:11px;
+    letter-spacing:0.3px;
+    color:var(--verdigris);
+    text-decoration:none;
+    border-bottom:1px solid var(--verdigris);
+    margin-top:6px;
+  }
+  .img-link:hover{color:var(--navy);border-color:var(--navy);}
+  .img-link:before{content:"🖼 ";}
+
+  /* MODAL */
+  .overlay{
+    display:none;
+    position:fixed;inset:0;
+    background:rgba(20,16,12,0.55);
+    z-index:50;
+    align-items:flex-start;
+    justify-content:center;
+    padding:40px 16px;
+    overflow-y:auto;
+  }
+  .overlay.show{display:flex;}
+  .modal{
+    background:var(--paper);
+    border:2px solid var(--ink);
+    max-width:640px;
+    width:100%;
+    padding:28px 30px 26px;
+    position:relative;
+  }
+  .modal .close{
+    position:absolute;top:14px;right:16px;
+    cursor:pointer;
+    font-family:'Courier New',monospace;
+    font-size:13px;
+    letter-spacing:1px;
+    color:var(--ink-soft);
+    background:none;border:1px solid var(--ink-soft);
+    padding:4px 9px;
+  }
+  .modal .cat{font-family:'Courier New',monospace;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--verdigris);}
+  .modal h2{color:var(--navy);margin:6px 0 4px;font-size:24px;}
+  .modal .meta{font-family:'Courier New',monospace;font-size:13px;color:var(--ink-soft);margin-bottom:14px;}
+  .modal .note{font-size:15px;margin-bottom:16px;}
+  .modal .source-block{
+    background:var(--paper-dark);
+    border-left:3px solid var(--verdigris);
+    padding:10px 14px;
+    font-size:13px;
+    font-style:italic;
+    margin-bottom:16px;
+  }
+  .related-title{font-family:'Courier New',monospace;font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--ink-soft);margin-bottom:8px;}
+  .related-pills{display:flex;flex-wrap:wrap;gap:8px;}
+  .pill{
+    font-family:'Courier New',monospace;
+    font-size:12px;
+    padding:6px 11px;
+    border:1px solid var(--navy);
+    color:var(--navy);
+    cursor:pointer;
+    background:rgba(31,44,58,0.06);
+  }
+  .pill:hover{background:var(--navy);color:var(--paper);}
+
+  footer{
+    margin-top:50px;
+    padding-top:18px;
+    border-top:1px solid var(--line);
+    font-family:'Courier New',monospace;
+    font-size:11px;
+    color:var(--ink-soft);
+    letter-spacing:0.3px;
+  }
+
+  /* TOP NAV */
+  .top-nav{display:flex;gap:0;margin-bottom:22px;border:1px solid var(--ink);width:fit-content;}
+  .nav-btn{
+    font-family:'Courier New', ui-monospace, monospace;
+    font-size:13px;
+    letter-spacing:0.5px;
+    text-transform:uppercase;
+    padding:10px 20px;
+    border:none;
+    background:transparent;
+    color:var(--ink-soft);
+    cursor:pointer;
+    border-right:1px solid var(--ink);
+  }
+  .nav-btn:last-child{border-right:none;}
+  .nav-btn.active{background:var(--navy);color:var(--paper);}
+  .bucket-intro{
+    font-style:italic;
+    color:var(--ink-soft);
+    font-size:14px;
+    max-width:640px;
+    margin:0 0 18px;
+  }
+  .bucket-intro em{color:var(--verdigris);font-style:italic;}
+
+  /* DAILY LEDGER */
+  .ledger-day{
+    border:2px solid var(--ink);
+    background:var(--paper);
+    padding:24px 26px 20px;
+  }
+  .ledger-day-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:14px;
+    border-bottom:2px double var(--ink);
+    padding-bottom:14px;
+    margin-bottom:16px;
+  }
+  .ledger-day-header h2{margin:0;font-size:24px;color:var(--navy);}
+  .day-nav{display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+  .day-nav button{
+    font-family:'Courier New', ui-monospace, monospace;
+    font-size:12px;
+    border:1px solid var(--ink);
+    background:transparent;
+    padding:7px 12px;
+    cursor:pointer;
+    color:var(--ink);
+  }
+  .day-nav button:hover{background:var(--navy);color:var(--paper);}
+  .day-nav input[type=date], .day-nav select{
+    font-family:'Courier New', ui-monospace, monospace;
+    font-size:12px;
+    border:1px solid var(--ink);
+    padding:6px 8px;
+    background:var(--paper-dark);
+    color:var(--ink);
+  }
+  .on-this-day-note{
+    font-size:12px;
+    font-style:italic;
+    color:var(--ink-soft);
+    margin:0 0 12px;
+  }
+  .entry-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:12px;
+    padding:12px 4px;
+    border-bottom:1px dashed var(--line);
+    cursor:pointer;
+  }
+  .entry-row:hover{background:rgba(31,44,58,0.05);}
+  .entry-left h4{margin:0 0 3px;font-size:15px;color:var(--navy);font-weight:normal;}
+  .entry-left .meta{font-family:'Courier New',monospace;font-size:12px;color:var(--ink-soft);}
+  .saloon-tag{
+    font-family:'Courier New', ui-monospace, monospace;
+    font-size:10.5px;
+    text-transform:uppercase;
+    letter-spacing:0.5px;
+    color:var(--ink-soft);
+    white-space:nowrap;
+    opacity:0.75;
+  }
+  .empty-day{
+    padding:34px 10px 18px;
+    text-align:center;
+    color:var(--ink-soft);
+    font-style:italic;
+    font-size:15px;
+  }
+  .quick-dates{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:16px;
+  }
+  .quick-date-btn{
+    font-family:'Courier New', ui-monospace, monospace;
+    font-size:11px;
+    padding:6px 11px;
+    border:1px solid var(--ink-soft);
+    background:transparent;
+    cursor:pointer;
+    color:var(--ink-soft);
+  }
+  .quick-date-btn:hover{border-color:var(--navy);color:var(--navy);}
+
+  /* IMAGE FRAMES (placeholder — no hosted scans yet) */
+  .img-frame{
+    border:2px double var(--ink);
+    background:
+      repeating-linear-gradient(45deg, rgba(151,119,47,0.06) 0 2px, transparent 2px 7px),
+      var(--paper-dark);
+    padding:16px 14px;
+    text-align:center;
+    margin-bottom:10px;
+  }
+  .img-frame-caption{
+    display:block;
+    font-style:italic;
+    font-size:13px;
+    color:var(--ink);
+    line-height:1.4;
+  }
+  .img-frame-note{
+    display:block;
+    font-family:'Courier New', ui-monospace, monospace;
+    font-size:9.5px;
+    text-transform:uppercase;
+    letter-spacing:0.5px;
+    color:var(--ink-soft);
+    opacity:0.7;
+    margin-top:7px;
+  }
+  .img-frame.mini{padding:10px 10px;flex:0 0 150px;}
+  .img-frame.mini .img-frame-caption{font-size:11px;}
+
+  /* HERO BLOCK (top of each bucket page) */
+  .hero-frame{
+    border:2px solid var(--ink);
+    background:var(--paper-dark);
+    padding:20px 22px;
+    margin-bottom:20px;
+    cursor:pointer;
+    display:flex;
+    gap:20px;
+    align-items:center;
+    flex-wrap:wrap;
+    transition:box-shadow .12s ease;
+  }
+  .hero-frame:hover{box-shadow:4px 6px 0 rgba(38,32,25,0.15);}
+  .hero-frame .img-frame{flex:0 0 200px;margin-bottom:0;}
+  .hero-copy{flex:1;min-width:220px;}
+  .hero-copy .eyebrow-mini{
+    font-family:'Courier New', ui-monospace, monospace;
+    font-size:10px;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    color:var(--verdigris);
+    margin:0 0 6px;
+  }
+  .hero-copy h3{margin:0 0 6px;color:var(--navy);font-size:18px;}
+  .hero-copy p{margin:0;color:var(--ink-soft);font-size:13.5px;}
+
+  /* Image entries mixed into the Timeline day view */
+  .entry-row.has-image{align-items:center;}
+  .entry-left{flex:1;min-width:0;}
+
+  /* UNITS ACCORDION (grouped by state, then branch) */
+  .state-group{border:1px solid var(--ink);margin-bottom:10px;}
+  .state-header{
+    width:100%;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:12px 16px;
+    background:var(--paper-dark);
+    border:none;
+    cursor:pointer;
+    font-family: Georgia, serif;
+    font-size:16px;
+    color:var(--navy);
+    text-align:left;
+  }
+  .state-header:hover{background:rgba(31,44,58,0.08);}
+  .state-name{flex:1;}
+  .state-count{
+    font-family:'Courier New', ui-monospace, monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+  }
+  .state-caret{
+    font-family:'Courier New', ui-monospace, monospace;
+    font-size:16px;
+    color:var(--ink-soft);
+    width:14px;
+    text-align:center;
+  }
+  .state-panel{padding:8px 16px 14px;border-top:1px solid var(--line);}
+  .branch-group{margin-top:12px;}
+  .branch-group:first-child{margin-top:4px;}
+  .branch-label{
+    font-family:'Courier New', ui-monospace, monospace;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:var(--verdigris);
+    margin:0 0 6px;
+  }
+  .unit-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+    padding:8px 4px;
+    border-bottom:1px dashed var(--line);
+    cursor:pointer;
+  }
+  .unit-row:hover{background:rgba(31,44,58,0.05);}
+  .unit-row-title{font-size:14px;color:var(--navy);flex:1;min-width:0;}
+  .unit-row-meta{
+    font-family:'Courier New', ui-monospace, monospace;
+    font-size:11.5px;
+    color:var(--ink-soft);
+    white-space:nowrap;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow"><a href="../../index.html" style="color:inherit;text-decoration:none;">Philly's Hidden History Vault</a> &rsaquo; <a href="../index.html" style="color:inherit;">The Vault</a> &rsaquo; Saloons — early prototype</p>
+    <h1 class="title">The Refreshment Saloon Record</h1>
+    <p class="subtitle">Follow a soldier, a unit, or a volunteer through the Cooper Shop and Union Volunteer Refreshment Saloon record — 1861 to 1865.</p>
+  </header>
+
+  <div class="proto-note">
+    <b>Prototype notice —</b> this is a working sketch of the exploration experience, built from a small hand-picked sample (25 records) of already-verified findings pulled from the vault's research files. It is not connected to the live Airtable base and does not represent the full ~1,478-row ledger or ~878-unit dataset. Its purpose is to test the browsing/search/cross-link experience before deciding how to build the real thing.
+  </div>
+
+  <nav class="top-nav">
+    <button class="nav-btn active" data-page="timeline">Timeline</button>
+    <button class="nav-btn" data-page="units">Units</button>
+    <button class="nav-btn" data-page="volunteers">Volunteers</button>
+    <button class="nav-btn" data-page="anecdotes">Anecdotes</button>
+    <button class="nav-btn" data-page="images">Images</button>
+  </nav>
+
+  <div id="pageTimeline" class="page">
+    <p class="bucket-intro">Browse the record day by day. <em>A full drag-through timeline of 1861–65 is planned — this day-by-day view is a placeholder for it.</em></p>
+    <div id="heroTimeline"></div>
+    <div class="ledger-day">
+      <div class="ledger-day-header">
+        <h2 id="dayHeading"></h2>
+        <div class="day-nav">
+          <button id="prevDay">&larr; Prev Day</button>
+          <select id="monthSelect"></select>
+          <select id="daySelect"></select>
+          <button id="nextDay">Next Day &rarr;</button>
+        </div>
+      </div>
+      <div id="dayEntries"></div>
+    </div>
+  </div>
+
+  <div id="pageUnits" class="page" style="display:none;">
+    <p class="bucket-intro">Every regiment, battery, and detachment that passed through — grouped by state. Search overrides the grouping and opens whatever matches.</p>
+    <div id="heroUnits"></div>
+    <div class="search-row"><input id="searchUnits" type="text" placeholder="Search units…"></div>
+    <div id="unitsAccordion"></div>
+  </div>
+
+  <div id="pageVolunteers" class="page" style="display:none;">
+    <p class="bucket-intro">The founders, committee members, and field operatives who ran the saloons.</p>
+    <div id="heroVolunteers"></div>
+    <div class="search-row"><input id="searchVolunteers" type="text" placeholder="Search volunteers…"></div>
+    <p class="result-count" id="countVolunteers"></p>
+    <div class="grid" id="gridVolunteers"></div>
+  </div>
+
+  <div id="pageAnecdotes" class="page" style="display:none;">
+    <p class="bucket-intro">Verified stories and quotes drawn from letters, newspapers, and regimental histories.</p>
+    <div id="heroAnecdotes"></div>
+    <div class="search-row"><input id="searchAnecdotes" type="text" placeholder="Search anecdotes…"></div>
+    <p class="result-count" id="countAnecdotes"></p>
+    <div class="grid" id="gridAnecdotes"></div>
+  </div>
+
+  <div id="pageImages" class="page" style="display:none;">
+    <p class="bucket-intro">Photographs, engravings, and one painting of the actual buildings — none of these have hosted scans yet, so each one is shown here as a captioned placeholder until real images are uploaded.</p>
+    <div id="heroImages"></div>
+    <div class="search-row"><input id="searchImages" type="text" placeholder="Search images…"></div>
+    <p class="result-count" id="countImages"></p>
+    <div class="grid" id="gridImages"></div>
+  </div>
+
+  <footer>
+    Sample records drawn from HSP Fales Collection ledger transcriptions, the compiled 1861–1865 newspaper transcription log, Moore's 1866 committee history, and the vault's anecdote catalog.
+    <br><br>
+    <a href="../index.html" style="color:var(--verdigris);">&larr; All research areas</a> &middot;
+    <a href="../../book.html" style="color:var(--verdigris);">Book a walking tour</a>
+  </footer>
+</div>
+
+<div class="overlay" id="overlay">
+  <div class="modal" id="modal"></div>
+</div>
+
+<script>
+const records = [
+  {
+    id:'unit-69ny', type:'Unit',
+    title:'69th New York Volunteers ("Fighting 69th")',
+    meta:'Col. Michael Corcoran, commanding',
+    status:'verified', statusLabel:'Verified',
+    saloon:'Cooper',
+    state:'New York', branch:'Infantry', regNum:69,
+    note:'Colonel Michael Corcoran was held as a Confederate prisoner of war from July 1861 to August 1862. Following his release, his reception and entertainment at the Cooper Shop Volunteer Refreshment Saloon was remembered by the Committee as one of its most marked wartime moments.',
+    source:'Philadelphia Inquirer, Nov. 8, 1865 — Cooper Shop Committee closing address',
+    image:'https://drive.google.com/file/d/1BbXjJh69uWjWmT0enQfLze7Qmfr30Eqg/view',
+    links:['anec-corcoran']
+  },
+  {
+    id:'unit-84ny', type:'Unit',
+    title:'84th New York Infantry ("Brooklyn Rifles")',
+    meta:'Col. T. A. Dodge · Dec 2, 1861 · 750 men',
+    status:'verified', statusLabel:'Verified',
+    saloon:'Union',
+    state:'New York', branch:'Infantry', regNum:84,
+    note:'The 84th New York, known as the "Brooklyn Rifles," was commanded by Col. T. A. Dodge. 750 men were fed at the Union saloon on December 2, 1861.',
+    source:'HSP Fales Collection, Union ledger',
+    links:['ledger-84ny']
+  },
+  {
+    id:'ledger-84ny', type:'Ledger Entry',
+    title:'Union Ledger — Dec 2, 1861',
+    meta:'750 men fed · 84th NY',
+    status:'verified', statusLabel:'Verified',
+    saloon:'Union',
+    date:'1861-12-02',
+    note:'A single-line ledger entry recording that 750 men of the 84th New York were served on this date.',
+    source:'HSP Fales Collection, Union ledger',
+    links:['unit-84ny']
+  },
+  {
+    id:'ledger-contrabands', type:'Ledger Entry',
+    title:'"18 Contrabands & Officers" — Dec 20, 1861',
+    meta:'18 people served',
+    status:'gap', statusLabel:'Gap identified',
+    saloon:'Union',
+    date:'1861-12-20',
+    note:'A ledger entry recording that the saloon served 18 enslaved or formerly enslaved people traveling with officers — the only entry of its kind found so far in this stretch of the record.',
+    source:'HSP Fales Collection, Union ledger',
+    links:[]
+  },
+  {
+    id:'unit-101ny', type:'Unit',
+    title:'101st New York Infantry',
+    meta:'Col. Jardella · Mar 8, 1862 · 1,038 men',
+    status:'verified', statusLabel:'Verified',
+    saloon:'Union',
+    state:'New York', branch:'Infantry', regNum:101,
+    date:'1862-03-08',
+    note:'1,038 men of the 101st New York were fed under Col. Jardella\'s command.',
+    source:'HSP Fales Collection, Union ledger',
+    links:['unit-95ny']
+  },
+  {
+    id:'unit-95ny', type:'Unit',
+    title:'95th New York Infantry',
+    meta:'Col. Biddle · Mar 9, 1862 · 915 men',
+    status:'verified', statusLabel:'Verified',
+    saloon:'Union',
+    state:'New York', branch:'Infantry', regNum:95,
+    date:'1862-03-09',
+    note:'915 men of the 95th New York passed through the day after the 101st New York, under Col. Biddle.',
+    source:'HSP Fales Collection, Union ledger',
+    links:['unit-101ny']
+  },
+  {
+    id:'unit-auburn-battery', type:'Unit',
+    title:'1st Independent Battery, NY Light Artillery (Auburn, NY)',
+    meta:'Captain name unresolved: "Kennedy" vs. "Henneday"',
+    status:'deadend', statusLabel:'Dead end (documented)',
+    saloon:'Union',
+    state:'New York', branch:'Artillery', regNum:1,
+    note:'A light artillery battery from Auburn, New York passed through Philadelphia in late 1861. Sources disagree on their captain\'s name — one of the small mysteries still open in the ledger.',
+    source:'HSP Fales Collection, Union ledger',
+    links:[]
+  },
+  {
+    id:'unit-116pa', type:'Unit',
+    title:'116th Pennsylvania Infantry',
+    meta:'Outbound · Sep 2, 1862 · 600 men',
+    status:'verified', statusLabel:'Verified',
+    saloon:'Cooper',
+    state:'Pennsylvania', branch:'Infantry', regNum:116,
+    date:'1862-09-02',
+    note:'The 116th Pennsylvania was fed outbound in September 1862, one of many Pennsylvania regiments that passed through their own state\'s saloon on the way to the front.',
+    source:'Cooper Shop Ledger, Sept. 2, 1862 (cross-referenced against a regimental history)',
+    links:[]
+  },
+  {
+    id:'unit-121pa', type:'Unit',
+    title:'121st Pennsylvania Infantry',
+    meta:'Homeward · Jun 4, 1865 · 211 men',
+    status:'verified', statusLabel:'Verified',
+    saloon:'Cooper',
+    state:'Pennsylvania', branch:'Infantry', regNum:121,
+    date:'1865-06-04',
+    note:'The 121st Pennsylvania passed through on its way home in June 1865, near the very end of the saloons\' wartime service.',
+    source:'Cooper Shop Ledger, June 4, 1865 (cross-referenced against a regimental history)',
+    links:[]
+  },
+  {
+    id:'ledger-93ny', type:'Ledger Entry',
+    title:'93rd New York Infantry — midnight arrival',
+    meta:'Mar 7, 1862 · fifth regiment fed that night',
+    status:'verified', statusLabel:'Verified',
+    saloon:'Cooper',
+    date:'1862-03-07',
+    note:'The 93rd New York arrived at midnight and was fed as the fifth regiment that saloon served that night alone — a glimpse of just how busy a single evening could get.',
+    source:'Charles W. Roberts, Personal Recollections of the 93rd New York (1895)',
+    links:['ledger-103ny']
+  },
+  {
+    id:'ledger-103ny', type:'Ledger Entry',
+    title:'103rd New York "Seward Infantry" — telegraphed ahead for coffee',
+    meta:'Mar 7, 1862 · 1,000 men · Col. Baron Egloffstein',
+    status:'verified', statusLabel:'Verified',
+    saloon:'Union',
+    date:'1862-03-07',
+    note:'Before arriving at 1 a.m., the 103rd New York telegraphed ahead with a specific request: hot coffee. The ledger keeper noted it as a memorable touch of advance planning.',
+    source:'HSP Fales Collection, Union ledger',
+    links:['ledger-93ny']
+  },
+  {
+    id:'ledger-100ny', type:'Ledger Entry',
+    title:'100th New York — a gift back to the saloon',
+    meta:'Mar 10, 1862 · 860 men · Col. James M. Brown',
+    status:'verified', statusLabel:'Verified',
+    saloon:'Union',
+    date:'1862-03-10',
+    note:'On departure, the 100th New York donated 1,500 loaves of bread and 3 barrels of meat back to the saloon that had just fed them.',
+    source:'HSP Fales Collection, Union ledger',
+    links:[]
+  },
+  {
+    id:'ledger-9nj', type:'Ledger Entry',
+    title:'9th New Jersey — outbound',
+    meta:'Dec 4, 1861 · 1,150 men',
+    status:'verified', statusLabel:'Verified',
+    saloon:'Cooper',
+    date:'1861-12-04',
+    note:'The 9th New Jersey landed at Camden at dusk and marched directly to the Cooper Shop for a meal before continuing on. The regiment would return twice more before the war\'s end.',
+    source:'J. Madison Drake, History of the Ninth New Jersey (1889)',
+    links:[]
+  },
+  {
+    id:'ledger-6nh', type:'Ledger Entry',
+    title:'6th New Hampshire',
+    meta:'Dec 27, 1861 · 1,080 men',
+    status:'verified', statusLabel:'Verified',
+    saloon:'Cooper',
+    date:'1861-12-27',
+    note:'1,080 men of the 6th New Hampshire were fed at the Cooper Shop, later recalled by a veteran of the regiment who named Cooper himself as "the patriotic originator of that retreat."',
+    source:'Jackman, History of the Sixth New Hampshire (1891)',
+    links:[]
+  },
+  {
+    id:'person-cooper', type:'Person',
+    title:'William M. Cooper',
+    meta:'Founder & President, Cooper Shop Refreshment Saloon',
+    status:'unchecked', statusLabel:'Under active verification',
+    saloon:'Cooper',
+    note:'Named as founder in multiple contemporary sources and confirmed independently by his son\'s 1884 letter. A handful of later accounts give his name as "Erasmus W. Cooper" or "William H. Cooper" instead — possibly a different person, such as the building\'s owner.',
+    source:'ADR-001 — Cooper Shop Founder Name',
+    links:['person-clara-cooper','person-atkinson']
+  },
+  {
+    id:'person-ross', type:'Person',
+    title:'Anna M. Ross',
+    meta:'Lady Principal, Cooper Shop Volunteer Hospital · d. c. Dec 23, 1863',
+    status:'verified', statusLabel:'Verified',
+    saloon:'Cooper',
+    note:'Lady Principal of the Cooper Shop Hospital from its opening. Signed fundraising correspondence as "Anna M. Ross, Lady Principal." Died at approximately age 50 and was buried at Monument Cemetery; succeeded by Mrs. Abigail Horner.',
+    source:'Moore, The Rebellion Record (1866), Chapter IV',
+    image:'https://drive.google.com/file/d/1BbXjJh69uWjWmT0enQfLze7Qmfr30Eqg/view',
+    links:['person-horner']
+  },
+  {
+    id:'person-horner', type:'Person',
+    title:'Mrs. Abigail Horner',
+    meta:'Lady Principal, Cooper Shop Hospital (succeeded Ross)',
+    status:'verified', statusLabel:'Verified',
+    saloon:'Cooper',
+    note:'Served nearly four years as Lady Principal of the Cooper Shop Hospital following Anna M. Ross\'s death. Filed a final report on September 9, 1865.',
+    source:'Moore, The Rebellion Record (1866), Chapter IV',
+    image:'https://drive.google.com/file/d/1BbXjJh69uWjWmT0enQfLze7Qmfr30Eqg/view',
+    links:['person-ross']
+  },
+  {
+    id:'person-corson', type:'Person',
+    title:'Robert R. Corson',
+    meta:'Union saloon field operative, self-styled "Chief Pumper"',
+    status:'verified', statusLabel:'Verified',
+    saloon:'Union',
+    note:'Corson operated a coal office at 133 Walnut St. with partner Chas. Bacon, and signed his UVRS field reports "Chief Pumper" or "C.P." — a self-deprecating title that reveals the saloon\'s informal internal culture.',
+    source:'HSP Fales Collection, IMG_4661–4677 correspondence',
+    links:['anec-hallowell']
+  },
+  {
+    id:'anec-hallowell', type:'Anecdote',
+    title:'"The great apology for war"',
+    meta:'N. P. Hallowell to R. R. Corson · Dec 3, 1861',
+    status:'verified', statusLabel:'Verified',
+    saloon:'Union',
+    note:'Writing six weeks after Ball\'s Bluff, Hallowell called the UVRS\'s humanitarian work "the great apology for war," reflecting that war "intensifies the brutal passions of men" but also "developes to an unwonted degree all that is noble and Good in our nature." He mentions his sister Anna Hallowell as an active UVRS volunteer.',
+    source:'HSP Fales Collection letter, IMG_4661–4677 range',
+    links:['person-corson']
+  },
+  {
+    id:'anec-corcoran', type:'Anecdote',
+    title:'Colonel Corcoran\'s homecoming reception',
+    meta:'Cooper Shop Saloon · 1862',
+    status:'verified', statusLabel:'Verified',
+    saloon:'Cooper',
+    note:'On his release from Confederate imprisonment, Col. Michael Corcoran of the 69th NY was received and entertained at the Cooper Shop — an event the Committee later singled out in its own closing address as one of its most memorable moments of service.',
+    source:'Philadelphia Inquirer, Nov. 8, 1865',
+    image:'https://drive.google.com/file/d/1BbXjJh69uWjWmT0enQfLze7Qmfr30Eqg/view',
+    links:['unit-69ny']
+  },
+  {
+    id:'person-atkinson', type:'Person',
+    title:'Mrs. Maria Atkinson, Mrs. Ellen G. Deaney, Mrs. Catharine Gaw',
+    meta:'Last three surviving members, Ladies\' Committee of Fifteen (as of 1906)',
+    status:'verified', statusLabel:'Verified',
+    saloon:'Cooper',
+    note:'Honored by the Anna M. Ross G.A.R. Post at Mechanics\' Cemetery on Memorial Day 1906 with gold medals. Mrs. Atkinson was identified in the article as William M. Cooper\'s daughter, then age 65.',
+    source:'Philadelphia Inquirer, May 30, 1906',
+    links:['person-cooper','person-clara-cooper']
+  },
+  {
+    id:'person-clara-cooper', type:'Person',
+    title:'Miss Clara T. Cooper',
+    meta:'Daughter of William M. Cooper · d. before Jan 6, 1863',
+    status:'verified', statusLabel:'Verified',
+    saloon:'Cooper',
+    note:'Described in committee resolutions as "one of the original, though the youngest member" of the Ladies\' Committee — and, on account of her long service relative to her age, also called "one of the oldest members." The resolution on her death was signed by her father as Committee President.',
+    source:'Moore, The Rebellion Record (1866), Chapter III',
+    image:'https://drive.google.com/file/d/1BbXjJh69uWjWmT0enQfLze7Qmfr30Eqg/view',
+    links:['person-cooper']
+  },
+  {
+    id:'open-founding-date', type:'Open Question',
+    title:'Union saloon founding date: May 27 or June 1, 1861?',
+    meta:'ADR item — unresolved',
+    status:'open', statusLabel:'Open question',
+    saloon:'Union',
+    note:'A commemorative 1901 token inscribes May 27, 1861 as the founding date. Rebellion Record Vol. 4 independently yields the same May 27 date plus a December 1861 committee roster, while other sources point to June 1. Current working theory: two saloons opened on consecutive days, not one date recorded two ways — but this is not yet confirmed by a single contemporaneous document naming both dates together.',
+    source:'Cross-referenced: 1901 token; Rebellion Record Vol. 4',
+    links:['person-cooper']
+  },
+  {
+    id:'img-cooper-exterior-1862', type:'Image',
+    title:'Exterior of the Cooper Shop, 1862',
+    meta:'Frank Leslie\'s Illustrated Newspaper · Sept. 27, 1862',
+    status:'verified', statusLabel:'Verified',
+    saloon:'Cooper',
+    date:'1862-09-27',
+    caption:'"EXTERIOR OF THE COOPER SHOP REFRESHMENT SALOON, FOR THE ENTERTAINMENT OF THE UNION VOLUNTEERS ON THEIR WAY TO WASHINGTON."',
+    note:'The earliest confirmed dated engraving of the Cooper Shop building, published the same week as a companion interior view of the Union saloon. "WM. M. COOPER" is legible on the facade, with a flag reading "WILLIAM M. COOPER" flying above stacked rifles and a crowd of soldiers.',
+    source:'Frank Leslie\'s Illustrated Newspaper, Sept. 27, 1862',
+    links:['img-union-interior-1862','person-cooper']
+  },
+  {
+    id:'img-union-interior-1862', type:'Image',
+    title:'Interior of the Union Saloon, 1862',
+    meta:'Frank Leslie\'s Illustrated Newspaper · Sept. 27, 1862 · sketch by F. H. Schell',
+    status:'verified', statusLabel:'Verified',
+    saloon:'Union',
+    date:'1862-09-27',
+    caption:'"INTERIOR OF THE UNION REFRESHMENT SALOON, CORNER OF WASHINGTON AND SWANSON STREETS, PHILADELPHIA."',
+    note:'Published the same week as the Cooper Shop exterior view, under the joint headline "National Refreshment Saloons in Philadelphia" — a rare look inside the dining hall itself, sketched on site by staff artist F. H. Schell.',
+    source:'Frank Leslie\'s Illustrated Newspaper, Sept. 27, 1862',
+    links:['img-cooper-exterior-1862']
+  },
+  {
+    id:'img-cooper-eldredge', type:'Image',
+    title:'"The Cooper Shop"',
+    meta:'Enclosed with a veteran\'s letter, 1893',
+    status:'verified', statusLabel:'Verified',
+    saloon:'Cooper',
+    caption:'"THE COOPER SHOP."',
+    note:'The clearest known exterior view of the building: a canvas banner reading "Cooper Shop Volunteer Refreshment Saloon Free," Cooper\'s own cooperage business legible on the adjacent structure, masts and a steamboat smokestack from the Washington Avenue wharf behind it, and a crowd filling the street.',
+    source:'Enclosure to a 3rd New Hampshire veteran\'s letter, 1893',
+    links:['person-cooper']
+  },
+  {
+    id:'img-cooper-1864-combined', type:'Image',
+    title:'The Cooper Shop and Hospital in 1864',
+    meta:'Engraving, 1864',
+    status:'verified', statusLabel:'Verified',
+    saloon:'Cooper',
+    caption:'"THE COOPER-SHOP VOLUNTEER REFRESHMENT SALOON AND HOSPITAL IN 1864."',
+    note:'Shows the Soldiers Hospital and the Cooper Shop side by side. The facade also reads "Baptist Bethel" above Cooper\'s name — an unresolved question about whether the saloon occupied a former church building.',
+    source:'Engraving, 1864 (LOC scrapbook, MMC-2446)',
+    links:['person-cooper']
+  },
+  {
+    id:'img-union-exterior-photo', type:'Image',
+    title:'Period photograph of the Union saloon',
+    meta:'Photographer unknown',
+    status:'verified', statusLabel:'Verified',
+    saloon:'Union',
+    note:'One of the clearest surviving period photographs of an intact Union saloon building, with the roofline sign fully legible and railroad tracks running through the foreground — physical proof of how close the saloon sat to the rail line it served.',
+    source:'LOC scrapbook, MMC-2446',
+    links:[]
+  },
+  {
+    id:'img-union-hospital-colored', type:'Image',
+    title:'The Union saloon and hospital, hand-colored',
+    meta:'Hand-tinted photograph',
+    status:'verified', statusLabel:'Verified',
+    saloon:'Union',
+    note:'A rare hand-colored image showing the full Union saloon and hospital complex — a carved and gilded eagle on the roof peak, a cannon on display out front, and a crowd of soldiers gathered below.',
+    source:'LOC scrapbook, MMC-2446',
+    links:[]
+  },
+  {
+    id:'img-union-moran-painting', type:'Image',
+    title:'Edward Moran\'s winter view, 1865',
+    meta:'Signed and dated "Ed. Moran. 1865."',
+    status:'verified', statusLabel:'Verified',
+    saloon:'Union',
+    caption:'"WELCOME TO THE BRAVE VOLUNTEERS!"',
+    note:'A painting by Edward Moran shows the saloon in snow, with the patriotic mottoes painted on its walls — "Your country calls," "Brave, your deeds for liberty will never die!" — text that survives nowhere else, since it doesn\'t appear in any photograph.',
+    source:'Edward Moran, oil painting, 1865',
+    links:['anec-hallowell']
+  },
+  {
+    id:'img-union-birdseye-roster', type:'Image',
+    title:'Bird\'s-eye view with the full roster',
+    meta:'Bradley & Co., 66 North Fourth Street',
+    status:'verified', statusLabel:'Verified',
+    saloon:'Union',
+    caption:'"VIEW OF THE UNION VOLUNTEER REFRESHMENT SALOON, PHILADELPHIA, WHERE OVER 300,000 UNION SOLDIERS HAVE BEEN FED."',
+    note:'Pairs an engraved bird\'s-eye view with the fullest known list of officers and committee members — including both Robert R. Corson and "E. W. Cooper," a figure distinct from the Cooper Shop\'s William M. Cooper.',
+    source:'Bradley & Co., Philadelphia',
+    links:['person-corson','person-cooper']
+  }
+];
+
+const overlay = document.getElementById('overlay');
+const modal = document.getElementById('modal');
+
+const stampClass = {
+  verified:'verified', unchecked:'unchecked', unverified:'unverified',
+  open:'open', deadend:'deadend', gap:'gap'
+};
+
+function cardHTML(r){
+  const frame = r.type==='Image'
+    ? `<div class="img-frame"><span class="img-frame-caption">${r.caption||r.title}</span><span class="img-frame-note">No digital scan on file yet</span></div>`
+    : '';
+  return `
+    <div class="card" data-id="${r.id}">
+      ${frame}
+      <div class="cat">${r.type}${r.saloon ? ' · '+r.saloon : ''}</div>
+      <h3>${r.title}</h3>
+      <div class="meta">${r.meta}</div>
+      <div class="source">${r.source}<span class="stamp">${r.statusLabel}</span></div>
+      ${r.image ? `<a class="img-link" href="${r.image}" target="_blank" rel="noopener" onclick="event.stopPropagation()">View original scan</a>` : ''}
+    </div>`;
+}
+
+function renderBucket(type, searchInput, gridEl, countEl){
+  const q = searchInput.value.trim().toLowerCase();
+  const list = records.filter(r=>r.type===type).filter(r=>{
+    if(!q) return true;
+    const hay = (r.title+' '+r.meta+' '+r.note+' '+r.source).toLowerCase();
+    return hay.includes(q);
+  });
+  countEl.textContent = `${list.length} record${list.length===1?'':'s'} shown`;
+  gridEl.innerHTML = list.map(cardHTML).join('') || '<p style="color:var(--ink-soft);font-style:italic;">No records match that search.</p>';
+  gridEl.querySelectorAll('.card').forEach(c=>{
+    c.addEventListener('click', ()=> openModal(c.dataset.id));
+  });
+}
+
+const buckets = [
+  { type:'Person', search:document.getElementById('searchVolunteers'), grid:document.getElementById('gridVolunteers'), count:document.getElementById('countVolunteers') },
+  { type:'Anecdote', search:document.getElementById('searchAnecdotes'), grid:document.getElementById('gridAnecdotes'), count:document.getElementById('countAnecdotes') },
+  { type:'Image', search:document.getElementById('searchImages'), grid:document.getElementById('gridImages'), count:document.getElementById('countImages') }
+];
+buckets.forEach(b=>{
+  b.search.addEventListener('input', ()=> renderBucket(b.type, b.search, b.grid, b.count));
+  renderBucket(b.type, b.search, b.grid, b.count);
+});
+
+/* ---------- UNITS: grouped by state, then branch, then regiment number ---------- */
+const unitsSearchEl = document.getElementById('searchUnits');
+const BRANCH_ORDER = ['Infantry','Cavalry','Artillery','Other'];
+let expandedStates = new Set();
+
+function unitRegNum(r){ return typeof r.regNum === 'number' ? r.regNum : 9999; }
+
+function renderUnitsPage(){
+  const q = unitsSearchEl.value.trim().toLowerCase();
+  const allUnits = records.filter(r=>r.type==='Unit');
+  const matched = q ? allUnits.filter(r=>{
+    const hay = (r.title+' '+r.meta+' '+r.note+' '+r.source+' '+(r.state||'')).toLowerCase();
+    return hay.includes(q);
+  }) : allUnits;
+  const searching = q.length > 0;
+
+  const groups = {};
+  matched.forEach(r=>{
+    const state = r.state || 'Unresolved / Unknown';
+    (groups[state] = groups[state] || []).push(r);
+  });
+
+  const stateNames = Object.keys(groups).filter(s=>s!=='Unresolved / Unknown').sort();
+  if(groups['Unresolved / Unknown']) stateNames.push('Unresolved / Unknown');
+
+  const html = stateNames.map(state=>{
+    const list = groups[state];
+    const isOpen = searching || expandedStates.has(state);
+
+    const branchGroups = {};
+    list.forEach(r=>{
+      const b = r.branch || 'Other';
+      (branchGroups[b] = branchGroups[b] || []).push(r);
+    });
+    const branchOrder = [...BRANCH_ORDER, ...Object.keys(branchGroups).filter(b=>!BRANCH_ORDER.includes(b))];
+
+    const branchHTML = branchOrder.filter(b=>branchGroups[b]).map(b=>{
+      const items = branchGroups[b].slice().sort((a,c)=> unitRegNum(a)-unitRegNum(c));
+      return `
+        <div class="branch-group">
+          <p class="branch-label">${b}</p>
+          ${items.map(r=>`
+            <div class="unit-row" data-id="${r.id}">
+              <span class="unit-row-title">${r.title}</span>
+              <span class="unit-row-meta">${r.meta}</span>
+            </div>
+          `).join('')}
+        </div>`;
+    }).join('');
+
+    return `
+      <div class="state-group">
+        <button class="state-header" data-state="${state}">
+          <span class="state-name">${state}</span>
+          <span class="state-count">${list.length}</span>
+          <span class="state-caret">${isOpen ? '\u2212' : '+'}</span>
+        </button>
+        <div class="state-panel" style="display:${isOpen ? 'block' : 'none'}">
+          ${branchHTML}
+        </div>
+      </div>`;
+  }).join('') || '<p style="color:var(--ink-soft);font-style:italic;">No units match that search.</p>';
+
+  document.getElementById('unitsAccordion').innerHTML = html;
+
+  document.querySelectorAll('.state-header').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const state = btn.dataset.state;
+      if(expandedStates.has(state)) expandedStates.delete(state); else expandedStates.add(state);
+      renderUnitsPage();
+    });
+  });
+  document.querySelectorAll('.unit-row').forEach(row=>{
+    row.addEventListener('click', ()=> openModal(row.dataset.id));
+  });
+}
+unitsSearchEl.addEventListener('input', renderUnitsPage);
+renderUnitsPage();
+
+function renderHero(containerId, recordId, blurb){
+  const r = records.find(x=>x.id===recordId);
+  const el = document.getElementById(containerId);
+  if(!r || !el) return;
+  el.innerHTML = `
+    <div class="hero-frame" data-id="${r.id}">
+      <div class="img-frame">
+        <span class="img-frame-caption">${r.caption||r.title}</span>
+        <span class="img-frame-note">No digital scan on file yet</span>
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow-mini">${r.type} &middot; ${r.saloon}</p>
+        <h3>${r.title}</h3>
+        <p>${blurb}</p>
+      </div>
+    </div>`;
+  el.querySelector('.hero-frame').addEventListener('click', ()=> openModal(r.id));
+}
+
+renderHero('heroTimeline', 'img-cooper-exterior-1862',
+  'The Cooper Shop and Union saloon were both illustrated in the same September 27, 1862 issue — a pairing that shows up again below if you browse to that date.');
+renderHero('heroUnits', 'img-cooper-eldredge',
+  'The clearest surviving exterior view — a crowd of soldiers is exactly what a regiment arriving at the saloon would have looked like.');
+renderHero('heroVolunteers', 'img-union-birdseye-roster',
+  'This single engraving carries the fullest known list of the people who actually ran the Union saloon.');
+renderHero('heroAnecdotes', 'img-union-moran-painting',
+  'A painting that preserves the saloon\'s own words to soldiers — mottoes painted on its walls that don\'t survive in any photograph.');
+renderHero('heroImages', 'img-union-hospital-colored',
+  'One of eight standout images identified so far. Browse the rest below.');
+
+function openModal(id){
+  const r = records.find(x=>x.id===id);
+  if(!r) return;
+  const related = r.links.map(lid=>records.find(x=>x.id===lid)).filter(Boolean);
+  const frame = r.type==='Image'
+    ? `<div class="img-frame"><span class="img-frame-caption">${r.caption||r.title}</span><span class="img-frame-note">No digital scan on file yet</span></div>`
+    : '';
+  modal.innerHTML = `
+    <button class="close" id="closeBtn">CLOSE ✕</button>
+    ${frame}
+    <div class="cat">${r.type}${r.saloon ? ' · '+r.saloon : ''}</div>
+    <h2>${r.title}</h2>
+    <div class="meta">${r.meta}</div>
+    <p class="note">${r.note}</p>
+    <div class="source-block">Source: ${r.source}<span class="stamp">${r.statusLabel}</span></div>
+    ${r.image ? `<a class="img-link" href="${r.image}" target="_blank" rel="noopener">View original scan</a><br>` : ''}
+    ${related.length ? `
+      <div class="related-title">Cross-linked records</div>
+      <div class="related-pills">
+        ${related.map(rr=>`<span class="pill" data-id="${rr.id}">${rr.title}</span>`).join('')}
+      </div>
+    ` : ''}
+  `;
+  overlay.classList.add('show');
+  document.getElementById('closeBtn').addEventListener('click', closeModal);
+  modal.querySelectorAll('.pill').forEach(p=>{
+    p.addEventListener('click', ()=> openModal(p.dataset.id));
+  });
+}
+function closeModal(){ overlay.classList.remove('show'); }
+overlay.addEventListener('click', (e)=>{ if(e.target===overlay) closeModal(); });
+
+/* ---------- TIMELINE (day view, month/day only — year is irrelevant here) ---------- */
+const dayRecords = records.filter(r=>r.date);
+
+function parseISO(s){
+  const [y,m,d] = s.split('-').map(Number);
+  return { year:y, month:m, day:d };
+}
+const MONTH_NAMES = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+// Days per month using 1864 (a leap year, since it falls in range) so Feb 29 is selectable.
+const DAYS_IN_MONTH = [31,29,31,30,31,30,31,31,30,31,30,31];
+
+let curMonth, curDay;
+(function initToday(){
+  const t = new Date();
+  curMonth = t.getMonth()+1;
+  curDay = t.getDate();
+  if(curDay > DAYS_IN_MONTH[curMonth-1]) curDay = DAYS_IN_MONTH[curMonth-1];
+})();
+
+const monthSelect = document.getElementById('monthSelect');
+const daySelect = document.getElementById('daySelect');
+
+function populateMonthSelect(){
+  monthSelect.innerHTML = MONTH_NAMES.map((m,i)=>`<option value="${i+1}">${m}</option>`).join('');
+}
+function populateDaySelect(){
+  const n = DAYS_IN_MONTH[curMonth-1];
+  daySelect.innerHTML = Array.from({length:n}, (_,i)=>`<option value="${i+1}">${i+1}</option>`).join('');
+}
+
+function stepDay(delta){
+  // Walk month/day forward or backward by one, wrapping at year boundaries.
+  curDay += delta;
+  if(curDay < 1){
+    curMonth -= 1;
+    if(curMonth < 1) curMonth = 12;
+    curDay = DAYS_IN_MONTH[curMonth-1];
+  } else if(curDay > DAYS_IN_MONTH[curMonth-1]){
+    curDay = 1;
+    curMonth += 1;
+    if(curMonth > 12) curMonth = 1;
+  }
+}
+
+function renderDaily(){
+  populateMonthSelect();
+  monthSelect.value = curMonth;
+  populateDaySelect();
+  if(curDay > DAYS_IN_MONTH[curMonth-1]) curDay = DAYS_IN_MONTH[curMonth-1];
+  daySelect.value = curDay;
+
+  document.getElementById('dayHeading').textContent = MONTH_NAMES[curMonth-1] + ' ' + curDay;
+
+  const results = dayRecords
+    .map(r=>({ r, d: parseISO(r.date) }))
+    .filter(x=> x.d.month===curMonth && x.d.day===curDay)
+    .sort((a,b)=> a.d.year - b.d.year);
+
+  const listEl = document.getElementById('dayEntries');
+  if(results.length===0){
+    const uniqueDays = [...new Map(dayRecords.map(r=>{
+      const d = parseISO(r.date);
+      return [d.month+'-'+d.day, {month:d.month, day:d.day}];
+    })).values()].sort((a,b)=> a.month-b.month || a.day-b.day);
+    listEl.innerHTML = `
+      <div class="empty-day">No entries recorded in the surviving ledgers for this date, in any year 1861–1865.</div>
+      <div class="quick-dates">
+        ${uniqueDays.map(d=>`<button class="quick-date-btn" data-month="${d.month}" data-day="${d.day}">${MONTH_NAMES[d.month-1]} ${d.day}</button>`).join('')}
+      </div>`;
+  } else {
+    listEl.innerHTML = results.map(({r,d})=>{
+      if(r.type==='Image'){
+        return `
+        <div class="entry-row has-image" data-id="${r.id}">
+          <div class="img-frame mini"><span class="img-frame-caption">${r.caption||r.title}</span></div>
+          <div class="entry-left">
+            <h4>${r.title}</h4>
+            <div class="meta">${r.meta}</div>
+          </div>
+          <span class="saloon-tag">${d.year} &middot; ${r.saloon}</span>
+        </div>`;
+      }
+      return `
+        <div class="entry-row" data-id="${r.id}">
+          <div class="entry-left">
+            <h4>${r.title}</h4>
+            <div class="meta">${r.meta}</div>
+          </div>
+          <span class="saloon-tag">${d.year} &middot; ${r.saloon}</span>
+        </div>`;
+    }).join('');
+  }
+
+  listEl.querySelectorAll('.entry-row').forEach(row=>{
+    row.addEventListener('click', ()=> openModal(row.dataset.id));
+  });
+  listEl.querySelectorAll('.quick-date-btn').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      curMonth = Number(btn.dataset.month);
+      curDay = Number(btn.dataset.day);
+      renderDaily();
+    });
+  });
+}
+
+document.getElementById('prevDay').addEventListener('click', ()=>{ stepDay(-1); renderDaily(); });
+document.getElementById('nextDay').addEventListener('click', ()=>{ stepDay(1); renderDaily(); });
+monthSelect.addEventListener('change', ()=>{ curMonth = Number(monthSelect.value); renderDaily(); });
+daySelect.addEventListener('change', ()=>{ curDay = Number(daySelect.value); renderDaily(); });
+
+const pageIds = { timeline:'pageTimeline', units:'pageUnits', volunteers:'pageVolunteers', anecdotes:'pageAnecdotes', images:'pageImages' };
+document.querySelectorAll('.nav-btn').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('.nav-btn').forEach(b=>b.classList.toggle('active', b===btn));
+    const page = btn.dataset.page;
+    Object.entries(pageIds).forEach(([key, id])=>{
+      document.getElementById(id).style.display = (key===page) ? '' : 'none';
+    });
+    if(page==='timeline') renderDaily();
+  });
+});
+
+renderDaily();
+</script>
+</body>
+</html>
