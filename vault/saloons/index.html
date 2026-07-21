@@ -554,6 +554,12 @@
     display:none;box-shadow:0 2px 8px rgba(0,0,0,.12);
   }
   .scrub-tooltip.show{display:block;}
+  /* ── Unit anecdote tag ─────────────────────────────────────── */
+  .unit-anecdote-tag{
+    font-family:'Courier New',ui-monospace,monospace;
+    font-size:10px;text-transform:uppercase;letter-spacing:.04em;
+    color:var(--ink-soft);opacity:.7;white-space:nowrap;flex-shrink:0;
+  }
 </style>
 </head>
 <body>
@@ -659,6 +665,7 @@
 <script>
 /* ---------- DATA (async loaded from data/vault-records.json) ---------- */
 let records = [], dayRecords = [];
+let reverseLinks = {};
 
 const overlay = document.getElementById('overlay');
 const modal = document.getElementById('modal');
@@ -710,6 +717,13 @@ let expandedStates = new Set();
 
 function unitRegNum(r){ return typeof r.regNum === 'number' ? r.regNum : 9999; }
 
+function unitHasAnecdote(id){
+  const r=records.find(x=>x.id===id);
+  const fwd=(r&&r.links)||[];
+  const rev=reverseLinks[id]||[];
+  return [...fwd,...rev].some(lid=>{ const t=records.find(x=>x.id===lid); return t&&t.type==='Anecdote'; });
+}
+
 function renderUnitsPage(){
   const q = unitsSearchEl.value.trim().toLowerCase();
   const allUnits = records.filter(r=>r.type==='Unit');
@@ -744,12 +758,13 @@ function renderUnitsPage(){
       return `
         <div class="branch-group">
           <p class="branch-label">${b}</p>
-          ${items.map(r=>`
-            <div class="unit-row" data-id="${r.id}">
+          ${items.map(r=>{
+            const anecTag=unitHasAnecdote(r.id)?'<span class="unit-anecdote-tag">&middot;&thinsp;anecdote</span>':'';
+            return `<div class="unit-row" data-id="${r.id}">
               <span class="unit-row-title">${r.title}</span>
-              <span class="unit-row-meta">${r.meta}</span>
-            </div>
-          `).join('')}
+              ${anecTag}<span class="unit-row-meta">${r.meta}</span>
+            </div>`;
+          }).join('')}
         </div>`;
     }).join('');
 
@@ -803,9 +818,11 @@ function renderHero(containerId, recordId, blurb){
 function openModal(id){
   const r = records.find(x=>x.id===id);
   if(!r) return;
-  const links = r.links || [];
-  const related = links.slice(0, 20).map(lid=>records.find(x=>x.id===lid)).filter(Boolean);
-  const moreCount = links.length > 20 ? links.length - 20 : 0;
+  const fwdLinks = r.links || [];
+  const revLinks = (reverseLinks[id]||[]).filter(lid=>!fwdLinks.includes(lid));
+  const allLinkIds = [...fwdLinks, ...revLinks];
+  const related = allLinkIds.slice(0,20).map(lid=>records.find(x=>x.id===lid)).filter(Boolean);
+  const moreCount = allLinkIds.length > 20 ? allLinkIds.length - 20 : 0;
   const frame = r.type==='Image'
     ? `<div class="img-frame"><span class="img-frame-caption">${r.caption||r.title}</span><span class="img-frame-note">No digital scan on file yet</span></div>`
     : '';
@@ -1120,6 +1137,14 @@ async function init(){
     return;
   }
   loadingEl.style.display = 'none';
+
+  reverseLinks = {};
+  for(const r of records){
+    for(const lid of (r.links||[])){
+      if(!reverseLinks[lid]) reverseLinks[lid]=[];
+      reverseLinks[lid].push(r.id);
+    }
+  }
 
   dayRecords = records.filter(r=>r.date);
   curYear = findFirstYearWithEntries(curMonth, curDay);
