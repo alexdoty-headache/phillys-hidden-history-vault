@@ -1,0 +1,12 @@
+{
+  "name": "phillys-hidden-history-vault",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync-airtable": "node scripts/sync-airtable.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}

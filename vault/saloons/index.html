@@ -493,7 +493,7 @@
   </header>
 
   <div class="proto-note">
-    <b>Prototype notice —</b> this is a working sketch of the exploration experience, built from a small hand-picked sample (25 records) of already-verified findings pulled from the vault's research files. It is not connected to the live Airtable base and does not represent the full ~1,478-row ledger or ~878-unit dataset. Its purpose is to test the browsing/search/cross-link experience before deciding how to build the real thing.
+    <b>Prototype notice —</b> this explorer is connected to the live Airtable research base and loads the full dataset: ~1,478 Cooper Shop Ledger entries, ~1,422 UVRS diary entries, ~1,089 units, and ~112 leadership records. Data loads on page open; run <code>npm run sync-airtable</code> from the project root to refresh the local JSON cache.
   </div>
 
   <nav class="top-nav">
@@ -503,6 +503,8 @@
     <button class="nav-btn" data-page="anecdotes">Anecdotes</button>
     <button class="nav-btn" data-page="images">Images</button>
   </nav>
+
+  <p id="loadingMsg" style="padding:20px 0 10px; font-family:'Courier New', ui-monospace, monospace; font-size:13px; color:var(--ink-soft);">Loading records&hellip;</p>
 
   <div id="pageTimeline" class="page">
     <p class="bucket-intro">Browse the record day by day. <em>A full drag-through timeline of 1861–65 is planned — this day-by-day view is a placeholder for it.</em></p>
@@ -565,349 +567,8 @@
 </div>
 
 <script>
-const records = [
-  {
-    id:'unit-69ny', type:'Unit',
-    title:'69th New York Volunteers ("Fighting 69th")',
-    meta:'Col. Michael Corcoran, commanding',
-    status:'verified', statusLabel:'Verified',
-    saloon:'Cooper',
-    state:'New York', branch:'Infantry', regNum:69,
-    note:'Colonel Michael Corcoran was held as a Confederate prisoner of war from July 1861 to August 1862. Following his release, his reception and entertainment at the Cooper Shop Volunteer Refreshment Saloon was remembered by the Committee as one of its most marked wartime moments.',
-    source:'Philadelphia Inquirer, Nov. 8, 1865 — Cooper Shop Committee closing address',
-    image:'https://drive.google.com/file/d/1BbXjJh69uWjWmT0enQfLze7Qmfr30Eqg/view',
-    links:['anec-corcoran']
-  },
-  {
-    id:'unit-84ny', type:'Unit',
-    title:'84th New York Infantry ("Brooklyn Rifles")',
-    meta:'Col. T. A. Dodge · Dec 2, 1861 · 750 men',
-    status:'verified', statusLabel:'Verified',
-    saloon:'Union',
-    state:'New York', branch:'Infantry', regNum:84,
-    note:'The 84th New York, known as the "Brooklyn Rifles," was commanded by Col. T. A. Dodge. 750 men were fed at the Union saloon on December 2, 1861.',
-    source:'HSP Fales Collection, Union ledger',
-    links:['ledger-84ny']
-  },
-  {
-    id:'ledger-84ny', type:'Ledger Entry',
-    title:'Union Ledger — Dec 2, 1861',
-    meta:'750 men fed · 84th NY',
-    status:'verified', statusLabel:'Verified',
-    saloon:'Union',
-    date:'1861-12-02',
-    note:'A single-line ledger entry recording that 750 men of the 84th New York were served on this date.',
-    source:'HSP Fales Collection, Union ledger',
-    links:['unit-84ny']
-  },
-  {
-    id:'ledger-contrabands', type:'Ledger Entry',
-    title:'"18 Contrabands & Officers" — Dec 20, 1861',
-    meta:'18 people served',
-    status:'gap', statusLabel:'Gap identified',
-    saloon:'Union',
-    date:'1861-12-20',
-    note:'A ledger entry recording that the saloon served 18 enslaved or formerly enslaved people traveling with officers — the only entry of its kind found so far in this stretch of the record.',
-    source:'HSP Fales Collection, Union ledger',
-    links:[]
-  },
-  {
-    id:'unit-101ny', type:'Unit',
-    title:'101st New York Infantry',
-    meta:'Col. Jardella · Mar 8, 1862 · 1,038 men',
-    status:'verified', statusLabel:'Verified',
-    saloon:'Union',
-    state:'New York', branch:'Infantry', regNum:101,
-    date:'1862-03-08',
-    note:'1,038 men of the 101st New York were fed under Col. Jardella\'s command.',
-    source:'HSP Fales Collection, Union ledger',
-    links:['unit-95ny']
-  },
-  {
-    id:'unit-95ny', type:'Unit',
-    title:'95th New York Infantry',
-    meta:'Col. Biddle · Mar 9, 1862 · 915 men',
-    status:'verified', statusLabel:'Verified',
-    saloon:'Union',
-    state:'New York', branch:'Infantry', regNum:95,
-    date:'1862-03-09',
-    note:'915 men of the 95th New York passed through the day after the 101st New York, under Col. Biddle.',
-    source:'HSP Fales Collection, Union ledger',
-    links:['unit-101ny']
-  },
-  {
-    id:'unit-auburn-battery', type:'Unit',
-    title:'1st Independent Battery, NY Light Artillery (Auburn, NY)',
-    meta:'Captain name unresolved: "Kennedy" vs. "Henneday"',
-    status:'deadend', statusLabel:'Dead end (documented)',
-    saloon:'Union',
-    state:'New York', branch:'Artillery', regNum:1,
-    note:'A light artillery battery from Auburn, New York passed through Philadelphia in late 1861. Sources disagree on their captain\'s name — one of the small mysteries still open in the ledger.',
-    source:'HSP Fales Collection, Union ledger',
-    links:[]
-  },
-  {
-    id:'unit-116pa', type:'Unit',
-    title:'116th Pennsylvania Infantry',
-    meta:'Outbound · Sep 2, 1862 · 600 men',
-    status:'verified', statusLabel:'Verified',
-    saloon:'Cooper',
-    state:'Pennsylvania', branch:'Infantry', regNum:116,
-    date:'1862-09-02',
-    note:'The 116th Pennsylvania was fed outbound in September 1862, one of many Pennsylvania regiments that passed through their own state\'s saloon on the way to the front.',
-    source:'Cooper Shop Ledger, Sept. 2, 1862 (cross-referenced against a regimental history)',
-    links:[]
-  },
-  {
-    id:'unit-121pa', type:'Unit',
-    title:'121st Pennsylvania Infantry',
-    meta:'Homeward · Jun 4, 1865 · 211 men',
-    status:'verified', statusLabel:'Verified',
-    saloon:'Cooper',
-    state:'Pennsylvania', branch:'Infantry', regNum:121,
-    date:'1865-06-04',
-    note:'The 121st Pennsylvania passed through on its way home in June 1865, near the very end of the saloons\' wartime service.',
-    source:'Cooper Shop Ledger, June 4, 1865 (cross-referenced against a regimental history)',
-    links:[]
-  },
-  {
-    id:'ledger-93ny', type:'Ledger Entry',
-    title:'93rd New York Infantry — midnight arrival',
-    meta:'Mar 7, 1862 · fifth regiment fed that night',
-    status:'verified', statusLabel:'Verified',
-    saloon:'Cooper',
-    date:'1862-03-07',
-    note:'The 93rd New York arrived at midnight and was fed as the fifth regiment that saloon served that night alone — a glimpse of just how busy a single evening could get.',
-    source:'Charles W. Roberts, Personal Recollections of the 93rd New York (1895)',
-    links:['ledger-103ny']
-  },
-  {
-    id:'ledger-103ny', type:'Ledger Entry',
-    title:'103rd New York "Seward Infantry" — telegraphed ahead for coffee',
-    meta:'Mar 7, 1862 · 1,000 men · Col. Baron Egloffstein',
-    status:'verified', statusLabel:'Verified',
-    saloon:'Union',
-    date:'1862-03-07',
-    note:'Before arriving at 1 a.m., the 103rd New York telegraphed ahead with a specific request: hot coffee. The ledger keeper noted it as a memorable touch of advance planning.',
-    source:'HSP Fales Collection, Union ledger',
-    links:['ledger-93ny']
-  },
-  {
-    id:'ledger-100ny', type:'Ledger Entry',
-    title:'100th New York — a gift back to the saloon',
-    meta:'Mar 10, 1862 · 860 men · Col. James M. Brown',
-    status:'verified', statusLabel:'Verified',
-    saloon:'Union',
-    date:'1862-03-10',
-    note:'On departure, the 100th New York donated 1,500 loaves of bread and 3 barrels of meat back to the saloon that had just fed them.',
-    source:'HSP Fales Collection, Union ledger',
-    links:[]
-  },
-  {
-    id:'ledger-9nj', type:'Ledger Entry',
-    title:'9th New Jersey — outbound',
-    meta:'Dec 4, 1861 · 1,150 men',
-    status:'verified', statusLabel:'Verified',
-    saloon:'Cooper',
-    date:'1861-12-04',
-    note:'The 9th New Jersey landed at Camden at dusk and marched directly to the Cooper Shop for a meal before continuing on. The regiment would return twice more before the war\'s end.',
-    source:'J. Madison Drake, History of the Ninth New Jersey (1889)',
-    links:[]
-  },
-  {
-    id:'ledger-6nh', type:'Ledger Entry',
-    title:'6th New Hampshire',
-    meta:'Dec 27, 1861 · 1,080 men',
-    status:'verified', statusLabel:'Verified',
-    saloon:'Cooper',
-    date:'1861-12-27',
-    note:'1,080 men of the 6th New Hampshire were fed at the Cooper Shop, later recalled by a veteran of the regiment who named Cooper himself as "the patriotic originator of that retreat."',
-    source:'Jackman, History of the Sixth New Hampshire (1891)',
-    links:[]
-  },
-  {
-    id:'person-cooper', type:'Person',
-    title:'William M. Cooper',
-    meta:'Founder & President, Cooper Shop Refreshment Saloon',
-    status:'unchecked', statusLabel:'Under active verification',
-    saloon:'Cooper',
-    note:'Named as founder in multiple contemporary sources and confirmed independently by his son\'s 1884 letter. A handful of later accounts give his name as "Erasmus W. Cooper" or "William H. Cooper" instead — possibly a different person, such as the building\'s owner.',
-    source:'ADR-001 — Cooper Shop Founder Name',
-    links:['person-clara-cooper','person-atkinson']
-  },
-  {
-    id:'person-ross', type:'Person',
-    title:'Anna M. Ross',
-    meta:'Lady Principal, Cooper Shop Volunteer Hospital · d. c. Dec 23, 1863',
-    status:'verified', statusLabel:'Verified',
-    saloon:'Cooper',
-    note:'Lady Principal of the Cooper Shop Hospital from its opening. Signed fundraising correspondence as "Anna M. Ross, Lady Principal." Died at approximately age 50 and was buried at Monument Cemetery; succeeded by Mrs. Abigail Horner.',
-    source:'Moore, The Rebellion Record (1866), Chapter IV',
-    image:'https://drive.google.com/file/d/1BbXjJh69uWjWmT0enQfLze7Qmfr30Eqg/view',
-    links:['person-horner']
-  },
-  {
-    id:'person-horner', type:'Person',
-    title:'Mrs. Abigail Horner',
-    meta:'Lady Principal, Cooper Shop Hospital (succeeded Ross)',
-    status:'verified', statusLabel:'Verified',
-    saloon:'Cooper',
-    note:'Served nearly four years as Lady Principal of the Cooper Shop Hospital following Anna M. Ross\'s death. Filed a final report on September 9, 1865.',
-    source:'Moore, The Rebellion Record (1866), Chapter IV',
-    image:'https://drive.google.com/file/d/1BbXjJh69uWjWmT0enQfLze7Qmfr30Eqg/view',
-    links:['person-ross']
-  },
-  {
-    id:'person-corson', type:'Person',
-    title:'Robert R. Corson',
-    meta:'Union saloon field operative, self-styled "Chief Pumper"',
-    status:'verified', statusLabel:'Verified',
-    saloon:'Union',
-    note:'Corson operated a coal office at 133 Walnut St. with partner Chas. Bacon, and signed his UVRS field reports "Chief Pumper" or "C.P." — a self-deprecating title that reveals the saloon\'s informal internal culture.',
-    source:'HSP Fales Collection, IMG_4661–4677 correspondence',
-    links:['anec-hallowell']
-  },
-  {
-    id:'anec-hallowell', type:'Anecdote',
-    title:'"The great apology for war"',
-    meta:'N. P. Hallowell to R. R. Corson · Dec 3, 1861',
-    status:'verified', statusLabel:'Verified',
-    saloon:'Union',
-    note:'Writing six weeks after Ball\'s Bluff, Hallowell called the UVRS\'s humanitarian work "the great apology for war," reflecting that war "intensifies the brutal passions of men" but also "developes to an unwonted degree all that is noble and Good in our nature." He mentions his sister Anna Hallowell as an active UVRS volunteer.',
-    source:'HSP Fales Collection letter, IMG_4661–4677 range',
-    links:['person-corson']
-  },
-  {
-    id:'anec-corcoran', type:'Anecdote',
-    title:'Colonel Corcoran\'s homecoming reception',
-    meta:'Cooper Shop Saloon · 1862',
-    status:'verified', statusLabel:'Verified',
-    saloon:'Cooper',
-    note:'On his release from Confederate imprisonment, Col. Michael Corcoran of the 69th NY was received and entertained at the Cooper Shop — an event the Committee later singled out in its own closing address as one of its most memorable moments of service.',
-    source:'Philadelphia Inquirer, Nov. 8, 1865',
-    image:'https://drive.google.com/file/d/1BbXjJh69uWjWmT0enQfLze7Qmfr30Eqg/view',
-    links:['unit-69ny']
-  },
-  {
-    id:'person-atkinson', type:'Person',
-    title:'Mrs. Maria Atkinson, Mrs. Ellen G. Deaney, Mrs. Catharine Gaw',
-    meta:'Last three surviving members, Ladies\' Committee of Fifteen (as of 1906)',
-    status:'verified', statusLabel:'Verified',
-    saloon:'Cooper',
-    note:'Honored by the Anna M. Ross G.A.R. Post at Mechanics\' Cemetery on Memorial Day 1906 with gold medals. Mrs. Atkinson was identified in the article as William M. Cooper\'s daughter, then age 65.',
-    source:'Philadelphia Inquirer, May 30, 1906',
-    links:['person-cooper','person-clara-cooper']
-  },
-  {
-    id:'person-clara-cooper', type:'Person',
-    title:'Miss Clara T. Cooper',
-    meta:'Daughter of William M. Cooper · d. before Jan 6, 1863',
-    status:'verified', statusLabel:'Verified',
-    saloon:'Cooper',
-    note:'Described in committee resolutions as "one of the original, though the youngest member" of the Ladies\' Committee — and, on account of her long service relative to her age, also called "one of the oldest members." The resolution on her death was signed by her father as Committee President.',
-    source:'Moore, The Rebellion Record (1866), Chapter III',
-    image:'https://drive.google.com/file/d/1BbXjJh69uWjWmT0enQfLze7Qmfr30Eqg/view',
-    links:['person-cooper']
-  },
-  {
-    id:'open-founding-date', type:'Open Question',
-    title:'Union saloon founding date: May 27 or June 1, 1861?',
-    meta:'ADR item — unresolved',
-    status:'open', statusLabel:'Open question',
-    saloon:'Union',
-    note:'A commemorative 1901 token inscribes May 27, 1861 as the founding date. Rebellion Record Vol. 4 independently yields the same May 27 date plus a December 1861 committee roster, while other sources point to June 1. Current working theory: two saloons opened on consecutive days, not one date recorded two ways — but this is not yet confirmed by a single contemporaneous document naming both dates together.',
-    source:'Cross-referenced: 1901 token; Rebellion Record Vol. 4',
-    links:['person-cooper']
-  },
-  {
-    id:'img-cooper-exterior-1862', type:'Image',
-    title:'Exterior of the Cooper Shop, 1862',
-    meta:'Frank Leslie\'s Illustrated Newspaper · Sept. 27, 1862',
-    status:'verified', statusLabel:'Verified',
-    saloon:'Cooper',
-    date:'1862-09-27',
-    caption:'"EXTERIOR OF THE COOPER SHOP REFRESHMENT SALOON, FOR THE ENTERTAINMENT OF THE UNION VOLUNTEERS ON THEIR WAY TO WASHINGTON."',
-    note:'The earliest confirmed dated engraving of the Cooper Shop building, published the same week as a companion interior view of the Union saloon. "WM. M. COOPER" is legible on the facade, with a flag reading "WILLIAM M. COOPER" flying above stacked rifles and a crowd of soldiers.',
-    source:'Frank Leslie\'s Illustrated Newspaper, Sept. 27, 1862',
-    links:['img-union-interior-1862','person-cooper']
-  },
-  {
-    id:'img-union-interior-1862', type:'Image',
-    title:'Interior of the Union Saloon, 1862',
-    meta:'Frank Leslie\'s Illustrated Newspaper · Sept. 27, 1862 · sketch by F. H. Schell',
-    status:'verified', statusLabel:'Verified',
-    saloon:'Union',
-    date:'1862-09-27',
-    caption:'"INTERIOR OF THE UNION REFRESHMENT SALOON, CORNER OF WASHINGTON AND SWANSON STREETS, PHILADELPHIA."',
-    note:'Published the same week as the Cooper Shop exterior view, under the joint headline "National Refreshment Saloons in Philadelphia" — a rare look inside the dining hall itself, sketched on site by staff artist F. H. Schell.',
-    source:'Frank Leslie\'s Illustrated Newspaper, Sept. 27, 1862',
-    links:['img-cooper-exterior-1862']
-  },
-  {
-    id:'img-cooper-eldredge', type:'Image',
-    title:'"The Cooper Shop"',
-    meta:'Enclosed with a veteran\'s letter, 1893',
-    status:'verified', statusLabel:'Verified',
-    saloon:'Cooper',
-    caption:'"THE COOPER SHOP."',
-    note:'The clearest known exterior view of the building: a canvas banner reading "Cooper Shop Volunteer Refreshment Saloon Free," Cooper\'s own cooperage business legible on the adjacent structure, masts and a steamboat smokestack from the Washington Avenue wharf behind it, and a crowd filling the street.',
-    source:'Enclosure to a 3rd New Hampshire veteran\'s letter, 1893',
-    links:['person-cooper']
-  },
-  {
-    id:'img-cooper-1864-combined', type:'Image',
-    title:'The Cooper Shop and Hospital in 1864',
-    meta:'Engraving, 1864',
-    status:'verified', statusLabel:'Verified',
-    saloon:'Cooper',
-    caption:'"THE COOPER-SHOP VOLUNTEER REFRESHMENT SALOON AND HOSPITAL IN 1864."',
-    note:'Shows the Soldiers Hospital and the Cooper Shop side by side. The facade also reads "Baptist Bethel" above Cooper\'s name — an unresolved question about whether the saloon occupied a former church building.',
-    source:'Engraving, 1864 (LOC scrapbook, MMC-2446)',
-    links:['person-cooper']
-  },
-  {
-    id:'img-union-exterior-photo', type:'Image',
-    title:'Period photograph of the Union saloon',
-    meta:'Photographer unknown',
-    status:'verified', statusLabel:'Verified',
-    saloon:'Union',
-    note:'One of the clearest surviving period photographs of an intact Union saloon building, with the roofline sign fully legible and railroad tracks running through the foreground — physical proof of how close the saloon sat to the rail line it served.',
-    source:'LOC scrapbook, MMC-2446',
-    links:[]
-  },
-  {
-    id:'img-union-hospital-colored', type:'Image',
-    title:'The Union saloon and hospital, hand-colored',
-    meta:'Hand-tinted photograph',
-    status:'verified', statusLabel:'Verified',
-    saloon:'Union',
-    note:'A rare hand-colored image showing the full Union saloon and hospital complex — a carved and gilded eagle on the roof peak, a cannon on display out front, and a crowd of soldiers gathered below.',
-    source:'LOC scrapbook, MMC-2446',
-    links:[]
-  },
-  {
-    id:'img-union-moran-painting', type:'Image',
-    title:'Edward Moran\'s winter view, 1865',
-    meta:'Signed and dated "Ed. Moran. 1865."',
-    status:'verified', statusLabel:'Verified',
-    saloon:'Union',
-    caption:'"WELCOME TO THE BRAVE VOLUNTEERS!"',
-    note:'A painting by Edward Moran shows the saloon in snow, with the patriotic mottoes painted on its walls — "Your country calls," "Brave, your deeds for liberty will never die!" — text that survives nowhere else, since it doesn\'t appear in any photograph.',
-    source:'Edward Moran, oil painting, 1865',
-    links:['anec-hallowell']
-  },
-  {
-    id:'img-union-birdseye-roster', type:'Image',
-    title:'Bird\'s-eye view with the full roster',
-    meta:'Bradley & Co., 66 North Fourth Street',
-    status:'verified', statusLabel:'Verified',
-    saloon:'Union',
-    caption:'"VIEW OF THE UNION VOLUNTEER REFRESHMENT SALOON, PHILADELPHIA, WHERE OVER 300,000 UNION SOLDIERS HAVE BEEN FED."',
-    note:'Pairs an engraved bird\'s-eye view with the fullest known list of officers and committee members — including both Robert R. Corson and "E. W. Cooper," a figure distinct from the Cooper Shop\'s William M. Cooper.',
-    source:'Bradley & Co., Philadelphia',
-    links:['person-corson','person-cooper']
-  }
-];
+/* ---------- DATA (async loaded from data/vault-records.json) ---------- */
+let records = [], dayRecords = [];
 
 const overlay = document.getElementById('overlay');
 const modal = document.getElementById('modal');
@@ -927,7 +588,7 @@ function cardHTML(r){
       <div class="cat">${r.type}${r.saloon ? ' · '+r.saloon : ''}</div>
       <h3>${r.title}</h3>
       <div class="meta">${r.meta}</div>
-      <div class="source">${r.source}<span class="stamp">${r.statusLabel}</span></div>
+      <div class="source">${r.source||''}<span class="stamp">${r.statusLabel}</span></div>
       ${r.image ? `<a class="img-link" href="${r.image}" target="_blank" rel="noopener" onclick="event.stopPropagation()">View original scan</a>` : ''}
     </div>`;
 }
@@ -936,7 +597,7 @@ function renderBucket(type, searchInput, gridEl, countEl){
   const q = searchInput.value.trim().toLowerCase();
   const list = records.filter(r=>r.type===type).filter(r=>{
     if(!q) return true;
-    const hay = (r.title+' '+r.meta+' '+r.note+' '+r.source).toLowerCase();
+    const hay = (r.title+' '+r.meta+' '+(r.note||'')+' '+(r.source||'')).toLowerCase();
     return hay.includes(q);
   });
   countEl.textContent = `${list.length} record${list.length===1?'':'s'} shown`;
@@ -951,10 +612,6 @@ const buckets = [
   { type:'Anecdote', search:document.getElementById('searchAnecdotes'), grid:document.getElementById('gridAnecdotes'), count:document.getElementById('countAnecdotes') },
   { type:'Image', search:document.getElementById('searchImages'), grid:document.getElementById('gridImages'), count:document.getElementById('countImages') }
 ];
-buckets.forEach(b=>{
-  b.search.addEventListener('input', ()=> renderBucket(b.type, b.search, b.grid, b.count));
-  renderBucket(b.type, b.search, b.grid, b.count);
-});
 
 /* ---------- UNITS: grouped by state, then branch, then regiment number ---------- */
 const unitsSearchEl = document.getElementById('searchUnits');
@@ -967,7 +624,7 @@ function renderUnitsPage(){
   const q = unitsSearchEl.value.trim().toLowerCase();
   const allUnits = records.filter(r=>r.type==='Unit');
   const matched = q ? allUnits.filter(r=>{
-    const hay = (r.title+' '+r.meta+' '+r.note+' '+r.source+' '+(r.state||'')).toLowerCase();
+    const hay = (r.title+' '+r.meta+' '+(r.note||'')+' '+(r.source||'')+' '+(r.state||'')).toLowerCase();
     return hay.includes(q);
   }) : allUnits;
   const searching = q.length > 0;
@@ -1011,7 +668,7 @@ function renderUnitsPage(){
         <button class="state-header" data-state="${state}">
           <span class="state-name">${state}</span>
           <span class="state-count">${list.length}</span>
-          <span class="state-caret">${isOpen ? '\u2212' : '+'}</span>
+          <span class="state-caret">${isOpen ? '−' : '+'}</span>
         </button>
         <div class="state-panel" style="display:${isOpen ? 'block' : 'none'}">
           ${branchHTML}
@@ -1033,7 +690,6 @@ function renderUnitsPage(){
   });
 }
 unitsSearchEl.addEventListener('input', renderUnitsPage);
-renderUnitsPage();
 
 function renderHero(containerId, recordId, blurb){
   const r = records.find(x=>x.id===recordId);
@@ -1054,21 +710,12 @@ function renderHero(containerId, recordId, blurb){
   el.querySelector('.hero-frame').addEventListener('click', ()=> openModal(r.id));
 }
 
-renderHero('heroTimeline', 'img-cooper-exterior-1862',
-  'The Cooper Shop and Union saloon were both illustrated in the same September 27, 1862 issue — a pairing that shows up again below if you browse to that date.');
-renderHero('heroUnits', 'img-cooper-eldredge',
-  'The clearest surviving exterior view — a crowd of soldiers is exactly what a regiment arriving at the saloon would have looked like.');
-renderHero('heroVolunteers', 'img-union-birdseye-roster',
-  'This single engraving carries the fullest known list of the people who actually ran the Union saloon.');
-renderHero('heroAnecdotes', 'img-union-moran-painting',
-  'A painting that preserves the saloon\'s own words to soldiers — mottoes painted on its walls that don\'t survive in any photograph.');
-renderHero('heroImages', 'img-union-hospital-colored',
-  'One of eight standout images identified so far. Browse the rest below.');
-
 function openModal(id){
   const r = records.find(x=>x.id===id);
   if(!r) return;
-  const related = r.links.map(lid=>records.find(x=>x.id===lid)).filter(Boolean);
+  const links = r.links || [];
+  const related = links.slice(0, 20).map(lid=>records.find(x=>x.id===lid)).filter(Boolean);
+  const moreCount = links.length > 20 ? links.length - 20 : 0;
   const frame = r.type==='Image'
     ? `<div class="img-frame"><span class="img-frame-caption">${r.caption||r.title}</span><span class="img-frame-note">No digital scan on file yet</span></div>`
     : '';
@@ -1078,19 +725,20 @@ function openModal(id){
     <div class="cat">${r.type}${r.saloon ? ' · '+r.saloon : ''}</div>
     <h2>${r.title}</h2>
     <div class="meta">${r.meta}</div>
-    <p class="note">${r.note}</p>
-    <div class="source-block">Source: ${r.source}<span class="stamp">${r.statusLabel}</span></div>
+    <p class="note">${r.note||''}</p>
+    <div class="source-block">Source: ${r.source||'—'}<span class="stamp">${r.statusLabel}</span></div>
     ${r.image ? `<a class="img-link" href="${r.image}" target="_blank" rel="noopener">View original scan</a><br>` : ''}
     ${related.length ? `
       <div class="related-title">Cross-linked records</div>
       <div class="related-pills">
         ${related.map(rr=>`<span class="pill" data-id="${rr.id}">${rr.title}</span>`).join('')}
+        ${moreCount ? `<span class="pill" style="opacity:0.55;cursor:default;">+${moreCount} more</span>` : ''}
       </div>
     ` : ''}
   `;
   overlay.classList.add('show');
   document.getElementById('closeBtn').addEventListener('click', closeModal);
-  modal.querySelectorAll('.pill').forEach(p=>{
+  modal.querySelectorAll('.pill[data-id]').forEach(p=>{
     p.addEventListener('click', ()=> openModal(p.dataset.id));
   });
 }
@@ -1098,12 +746,6 @@ function closeModal(){ overlay.classList.remove('show'); }
 overlay.addEventListener('click', (e)=>{ if(e.target===overlay) closeModal(); });
 
 /* ---------- TIMELINE (day view, month/day only — year is irrelevant here) ---------- */
-const dayRecords = records.filter(r=>r.date);
-
-function parseISO(s){
-  const [y,m,d] = s.split('-').map(Number);
-  return { year:y, month:m, day:d };
-}
 const MONTH_NAMES = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 // Days per month using 1864 (a leap year, since it falls in range) so Feb 29 is selectable.
 const DAYS_IN_MONTH = [31,29,31,30,31,30,31,31,30,31,30,31];
@@ -1128,7 +770,6 @@ function populateDaySelect(){
 }
 
 function stepDay(delta){
-  // Walk month/day forward or backward by one, wrapping at year boundaries.
   curDay += delta;
   if(curDay < 1){
     curMonth -= 1;
@@ -1139,6 +780,11 @@ function stepDay(delta){
     curMonth += 1;
     if(curMonth > 12) curMonth = 1;
   }
+}
+
+function parseISO(s){
+  const [y,m,d] = s.split('-').map(Number);
+  return { year:y, month:m, day:d };
 }
 
 function renderDaily(){
@@ -1176,7 +822,7 @@ function renderDaily(){
             <h4>${r.title}</h4>
             <div class="meta">${r.meta}</div>
           </div>
-          <span class="saloon-tag">${d.year} &middot; ${r.saloon}</span>
+          <span class="saloon-tag">${d.year} &middot; ${r.saloon||''}</span>
         </div>`;
       }
       return `
@@ -1185,7 +831,7 @@ function renderDaily(){
             <h4>${r.title}</h4>
             <div class="meta">${r.meta}</div>
           </div>
-          <span class="saloon-tag">${d.year} &middot; ${r.saloon}</span>
+          <span class="saloon-tag">${d.year} &middot; ${r.saloon||''}</span>
         </div>`;
     }).join('');
   }
@@ -1219,7 +865,42 @@ document.querySelectorAll('.nav-btn').forEach(btn=>{
   });
 });
 
-renderDaily();
+/* ---------- ASYNC INIT — fetches real data then renders ---------- */
+async function init(){
+  const loadingEl = document.getElementById('loadingMsg');
+  try {
+    const res = await fetch('../../data/vault-records.json');
+    if(!res.ok) throw new Error(`HTTP ${res.status}`);
+    records = await res.json();
+  } catch(err) {
+    loadingEl.textContent = 'Error loading records — try refreshing. ('+err.message+')';
+    return;
+  }
+  loadingEl.style.display = 'none';
+
+  dayRecords = records.filter(r=>r.date);
+
+  buckets.forEach(b=>{
+    b.search.addEventListener('input', ()=> renderBucket(b.type, b.search, b.grid, b.count));
+    renderBucket(b.type, b.search, b.grid, b.count);
+  });
+  renderUnitsPage();
+
+  // Hero record IDs use prototype values here; update to real Airtable record IDs once pinned.
+  renderHero('heroTimeline', 'img-cooper-exterior-1862',
+    'The Cooper Shop and Union saloon were both illustrated in the same September 27, 1862 issue — a pairing that shows up again below if you browse to that date.');
+  renderHero('heroUnits', 'img-cooper-eldredge',
+    'The clearest surviving exterior view — a crowd of soldiers is exactly what a regiment arriving at the saloon would have looked like.');
+  renderHero('heroVolunteers', 'img-union-birdseye-roster',
+    'This single engraving carries the fullest known list of the people who actually ran the Union saloon.');
+  renderHero('heroAnecdotes', 'img-union-moran-painting',
+    'A painting that preserves the saloon\'s own words to soldiers — mottoes painted on its walls that don\'t survive in any photograph.');
+  renderHero('heroImages', 'img-union-hospital-colored',
+    'One of eight standout images identified so far. Browse the rest below.');
+
+  renderDaily();
+}
+init();
 </script>
 </body>
 </html>

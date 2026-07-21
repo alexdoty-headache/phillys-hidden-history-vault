@@ -1,0 +1,1490 @@
+[
+  {
+    "id": "rec06lvq7Tk0sAaQZ",
+    "createdTime": "2026-07-15T17:00:57.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. William M. Cooper",
+      "Sources": "Taylor (1913) p.211",
+      "Source Count": "1 source",
+      "Notes": "Wife of founder William M. Cooper. Given name not recorded in this source.",
+      "Gender": "F",
+      "Role/Title": "Ladies committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "rec0LSPIPmEUzP0xM",
+    "createdTime": "2026-07-15T16:59:51.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Walter R. Mellon",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "rec0OGKEqx5gn38oX",
+    "createdTime": "2026-07-15T17:00:24.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "L. W. Thornton",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "rec0iuxHaemImxAUd",
+    "createdTime": "2026-07-15T16:58:26.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Helen B. Barrows",
+      "Sources": "Taylor (1913) p.207 ('Helen B. Barrows'); Fair Record (1863) p.5 ('Ellen B. Barrows')",
+      "Source Count": "2+ independent sources",
+      "Notes": "Likely wife of Chairman Arad Barrows. First name variant (Helen/Ellen) not resolved.",
+      "Gender": "F",
+      "Role/Title": "Committee of Ladies",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "rec1DwOraLj4PgIxs",
+    "createdTime": "2026-07-15T16:59:51.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Philip Fitzpatrick",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "rec1QpfYpqkkXDmes",
+    "createdTime": "2026-07-15T16:58:26.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Hannah P. Smith",
+      "Sources": "Taylor (1913) p.207 ('Mrs.'); Fair Record (1863) p.5 ('Miss Hannah Smith')",
+      "Source Count": "2+ independent sources",
+      "Notes": "Title (Mrs./Miss) differs between sources -- not resolved.",
+      "Gender": "F",
+      "Role/Title": "Committee of Ladies",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "rec1SSPuxZkqgz1H5",
+    "createdTime": "2026-07-15T17:00:24.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "E. S. Cooper",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "rec31KRQPUADDth2X",
+    "createdTime": "2026-07-15T16:59:51.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Samuel W. Nickels",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "rec3U1xRNZuN0PU4I",
+    "createdTime": "2026-07-15T17:00:57.000Z",
+    "fields": {
+      "Status": "Needs full name",
+      "Name (as recorded)": "Miss C. T. Cooper",
+      "Sources": "Taylor (1913) p.211",
+      "Source Count": "1 source",
+      "Notes": "Possibly a daughter of William M. Cooper -- not confirmed.",
+      "Gender": "F",
+      "Role/Title": "Ladies committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "rec3pIH59YkUSAVdt",
+    "createdTime": "2026-07-15T17:00:57.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Louise P. Turnbull",
+      "Sources": "Taylor (1913) p.211",
+      "Source Count": "1 source",
+      "Gender": "F",
+      "Role/Title": "Ladies committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "rec4HJmxKCVbWbBQh",
+    "createdTime": "2026-07-15T17:00:57.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. E. Deaney",
+      "Sources": "Taylor (1913) p.211",
+      "Source Count": "1 source",
+      "Gender": "F",
+      "Role/Title": "Ladies committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "rec4jX3soZMgGmeT2",
+    "createdTime": "2026-07-15T16:58:26.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Miss Mary D. Grover",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Gender": "F",
+      "Role/Title": "Committee of Ladies",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "rec4uiC0uZLGP75eH",
+    "createdTime": "2026-07-15T16:57:36.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "John T. Wilson",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "rec6JJ8llsDXTzcUd",
+    "createdTime": "2026-07-15T16:58:26.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Martha V. R. Ward",
+      "Sources": "Taylor (1913) p.207",
+      "Source Count": "1 source",
+      "Notes": "Possibly related to Dr. Ward (surgeon), given shared surname -- not confirmed.",
+      "Gender": "F",
+      "Role/Title": "Committee of Ladies",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "rec78h1kTwCDfxP12",
+    "createdTime": "2026-07-15T17:00:24.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "James Tosing",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "rec7ZLer7d3GNHAo7",
+    "createdTime": "2026-07-15T16:59:51.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "W. R. S. Cooper",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Notes": "Possibly related to William M. Cooper -- not confirmed.",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "rec7fkD2cQrKN3DgB",
+    "createdTime": "2026-07-15T16:57:36.000Z",
+    "fields": {
+      "Status": "Fully identified",
+      "Name (as recorded)": "B. S. Brown",
+      "Sources": "Taylor (1913) p.206-207; Fair Record (1863) p.5, p.10",
+      "Source Count": "2+ independent sources",
+      "Notes": "Founding narrative: began with 11 lbs of coffee on a curbstone (Fair Record p.10). OCR of Fair Record renders name 'Barzilla'; Taylor spells 'Barzilai' -- likely same spelling variant, not confirmed which is correct.",
+      "Gender": "M",
+      "Best Full Name": "Barzilai S. Brown",
+      "Role/Title": "Treasurer; founder of the saloon",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "rec97tgGpSwpyt0kZ",
+    "createdTime": "2026-07-15T17:00:24.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Capt. R. H. Hoffner",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "rec9NhBeheRTkqZqh",
+    "createdTime": "2026-07-15T16:57:36.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Isaac B. Smith, Sr.",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recAaXNg9ppN6enqJ",
+    "createdTime": "2026-07-15T16:58:26.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Annie A. Elkinton",
+      "Sources": "Taylor (1913) p.207 ('Annie A. Elkinton'); Fair Record (1863) p.5 ('Anna Elkinton')",
+      "Source Count": "2+ independent sources",
+      "Gender": "F",
+      "Role/Title": "Committee of Ladies",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recBULgGFxR8rXtLM",
+    "createdTime": "2026-07-15T16:58:26.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Mary Davis Wade",
+      "Sources": "Taylor (1913) p.207 ('Mary Davis Wade'); Fair Record (1863) p.5 ('Mary D. Wade')",
+      "Source Count": "2+ independent sources",
+      "Notes": "Likely wife of Secretary J.B. Wade.",
+      "Gender": "F",
+      "Role/Title": "Committee of Ladies",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recBnD6ft1JZ1nHbu",
+    "createdTime": "2026-07-15T17:00:24.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Christopher Jacoby",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recBo5u3EnW1uOoAO",
+    "createdTime": "2026-07-15T16:57:36.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Erasmus W. Cooper",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recCQbKNYh2TjDZAY",
+    "createdTime": "2026-07-15T16:57:36.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Isaac B. Smith, Jr.",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recCRwvBeEGGLDXnv",
+    "createdTime": "2026-07-15T16:57:36.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Chris. Powell",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recD07wLwJgwIAyV1",
+    "createdTime": "2026-07-15T17:00:24.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "G. R. Birch",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recDpxsz5TnhK4i5c",
+    "createdTime": "2026-07-15T16:57:36.000Z",
+    "fields": {
+      "Status": "Fully identified",
+      "Name (as recorded)": "Arad Barrows",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Gender": "M",
+      "Role/Title": "Chairman",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recFMsZEd32T01Nbc",
+    "createdTime": "2026-07-15T17:00:57.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Mary Plant",
+      "Sources": "Taylor (1913) p.211",
+      "Source Count": "1 source",
+      "Notes": "Likely wife of Jacob Plant or Isaac Plant (both committee).",
+      "Gender": "F",
+      "Role/Title": "Ladies committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recFV2hP817diuC4W",
+    "createdTime": "2026-07-15T16:57:36.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "James McGlathery",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recGAqMFpraKu2Kz6",
+    "createdTime": "2026-07-15T16:57:36.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Curtis Myers",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5 (rendered 'Jtis Myers' in OCR)",
+      "Source Count": "2+ independent sources",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recHZzHZR3i4H9qCV",
+    "createdTime": "2026-07-15T17:00:57.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Elizabeth Vansdale",
+      "Sources": "Taylor (1913) p.211",
+      "Source Count": "1 source",
+      "Gender": "F",
+      "Role/Title": "Ladies committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recHbtVPTV1MdNCI0",
+    "createdTime": "2026-07-15T17:00:24.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Henry Dubosq",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recHuusVxeEKTeNoG",
+    "createdTime": "2026-07-15T16:59:51.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "A. M. Simpson",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recIVE26eaUgT4PXO",
+    "createdTime": "2026-07-15T16:58:26.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Mary Lee",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Gender": "F",
+      "Role/Title": "Committee of Ladies",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recIsUM8Q72M2S2mQ",
+    "createdTime": "2026-07-15T16:58:26.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Miss Martha B. Krider",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Notes": "Likely relation of John Krider, Sr. (committee).",
+      "Gender": "F",
+      "Role/Title": "Committee of Ladies",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recJCFQHh2eBnz0HP",
+    "createdTime": "2026-07-15T16:59:51.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "L. B. M. Dolby",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recJxBUDufh6BbWaq",
+    "createdTime": "2026-07-15T17:00:57.000Z",
+    "fields": {
+      "Status": "Needs full name",
+      "Name (as recorded)": "Miss E. Whetstone",
+      "Sources": "Taylor (1913) p.211",
+      "Source Count": "1 source",
+      "Gender": "F",
+      "Role/Title": "Ladies committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recKPc7LklIK7qzpc",
+    "createdTime": "2026-07-15T16:57:36.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "John Krider, Sr.",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recLAEGPlawOdjozR",
+    "createdTime": "2026-07-15T16:58:26.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Mary L. Field",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Gender": "F",
+      "Role/Title": "Committee of Ladies",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recLr5kttQRJNtXP0",
+    "createdTime": "2026-07-15T16:57:36.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Chas. H. Kingston",
+      "Sources": "Taylor (1913) p.207",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recLxwYR41a6B0yxF",
+    "createdTime": "2026-07-15T17:00:24.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "T. L. Coward",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Notes": "Likely related to Joseph Coward and Mrs. Jane Coward (both also committee/ladies).",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recMRmpUoTeKcyxxH",
+    "createdTime": "2026-07-15T17:00:57.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Grace Nickels",
+      "Sources": "Taylor (1913) p.211",
+      "Source Count": "1 source",
+      "Notes": "Likely wife of Samuel W. Nickels (committee).",
+      "Gender": "F",
+      "Role/Title": "Ladies committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recMe2yGsSZj5N33H",
+    "createdTime": "2026-07-15T17:00:24.000Z",
+    "fields": {
+      "Status": "Needs post-war research",
+      "Name (as recorded)": "Dr. A. Nebinger",
+      "Sources": "Taylor (1913) p.210-211 (committee roster) and p.211 (separate hospital passage: 'in charge of Dr. Andrew Nebinger... continued in service throughout the war')",
+      "Source Count": "2+ independent sources",
+      "Notes": "Confirmed as the sole surgeon-in-charge -- ruled out a competing Gemini-report claim of a 'Surgeon John Down Heritage' (see saloon-anecdote-tracker.md, Rejected table).",
+      "Gender": "M",
+      "Best Full Name": "Andrew Nebinger",
+      "Role/Title": "Surgeon-in-charge of the Cooper Shop Hospital",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recMyCUJnU5llPFJ5",
+    "createdTime": "2026-07-15T17:00:57.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Jane Coward",
+      "Sources": "Taylor (1913) p.211",
+      "Source Count": "1 source",
+      "Notes": "Likely related to T.L. Coward and Joseph Coward (both committee).",
+      "Gender": "F",
+      "Role/Title": "Ladies committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recNSvgEfAXXdtnpt",
+    "createdTime": "2026-07-15T16:59:51.000Z",
+    "fields": {
+      "Status": "Fully identified",
+      "Name (as recorded)": "William M. Cooper",
+      "Sources": "Taylor (1913) p.210-212; House Divided (Dickinson College, hd.housedivided.dickinson.edu/node/33454)",
+      "Source Count": "2+ independent sources",
+      "Notes": "Born ~1811; co-owned Otsego St. cooperage w/ H.W. Pearce; opened the saloon May 26, 1861; died in poverty, age 69, Feb 1880. Veterans reportedly offered to cover his debts (see saloon-anecdote-tracker.md, VERIFIED institutional facts).",
+      "Gender": "M",
+      "Role/Title": "Founder; committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recNVglHY04arI9de",
+    "createdTime": "2026-07-15T17:00:57.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Sarah Ewing",
+      "Sources": "Taylor (1913) p.211",
+      "Source Count": "1 source",
+      "Gender": "F",
+      "Role/Title": "Ladies committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recNYKhYNzy5FuHBw",
+    "createdTime": "2026-07-15T16:58:26.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Eliza J. Smith",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Gender": "F",
+      "Role/Title": "Committee of Ladies",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recNel0oJoB296nEn",
+    "createdTime": "2026-07-15T16:57:36.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Chas. M. Clampitt",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5 ('Charles S. Clampitt')",
+      "Source Count": "2+ independent sources",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recQYqAhsRoaMlt8p",
+    "createdTime": "2026-07-15T16:58:26.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Emily Mason",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Notes": "Likely wife of Capt. W.S. Mason (committee).",
+      "Gender": "F",
+      "Role/Title": "Committee of Ladies",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recQkYFRA6cvza3Bp",
+    "createdTime": "2026-07-15T16:58:26.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Hannah F. Baily",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5 ('Hannah F. Bailey')",
+      "Source Count": "2+ independent sources",
+      "Gender": "F",
+      "Role/Title": "Committee of Ladies",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recQqwOE2WbDEyk5X",
+    "createdTime": "2026-07-15T16:57:36.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "John W. Hicks",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recSBZWtmHfeGXDWU",
+    "createdTime": "2026-07-15T16:58:26.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Sarah J. Flemington",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5 ('Sarah Femington')",
+      "Source Count": "2+ independent sources",
+      "Gender": "F",
+      "Role/Title": "Committee of Ladies",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recU47lE2jnJ29TjQ",
+    "createdTime": "2026-07-15T16:58:26.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Eliza G. Plummer",
+      "Sources": "Taylor (1913) p.207 ('Eliza G. Plummer'); Fair Record (1863) p.5 ('Eliza Plumer')",
+      "Source Count": "2+ independent sources",
+      "Gender": "F",
+      "Role/Title": "Committee of Ladies",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recUePE4zLD1Tl42I",
+    "createdTime": "2026-07-15T17:00:24.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "E. J. Herrity",
+      "Sources": "Taylor (1913) p.211",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recWb7GNHcH1E6lzD",
+    "createdTime": "2026-07-15T17:00:24.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "C. L. Wilson",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recX0ZbLIrfrahFKK",
+    "createdTime": "2026-07-15T17:00:24.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "H. H. Webb",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recXHzaJJcUcJKCGt",
+    "createdTime": "2026-07-15T16:59:51.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "C. V. Fort",
+      "Sources": "Taylor (1913) p.210; also addressee on the Gale letter (Report 6, see saloon-anecdote-tracker.md)",
+      "Source Count": "2+ independent sources",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recXdz6kQZDJWLxyE",
+    "createdTime": "2026-07-15T16:58:26.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Mary Grover",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Gender": "F",
+      "Role/Title": "Committee of Ladies",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recYOJayjrz9zPk9e",
+    "createdTime": "2026-07-15T17:00:57.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. M. Haines",
+      "Sources": "Taylor (1913) p.211",
+      "Source Count": "1 source",
+      "Gender": "F",
+      "Role/Title": "Ladies committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recYPpokbv8Sk1JT2",
+    "createdTime": "2026-07-15T16:57:36.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "James Carroll",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5 ('James Carrel')",
+      "Source Count": "2+ independent sources",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recYSIBW4sWfnABAq",
+    "createdTime": "2026-07-15T16:59:51.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "R. H. Ransley",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recYUwwuCXfJsNDA2",
+    "createdTime": "2026-07-15T16:59:51.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "T. H. Rice",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recYhHIj7gtKsqZOm",
+    "createdTime": "2026-07-15T16:59:51.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "H. W. Pearce",
+      "Sources": "Taylor (1913) p.210; House Divided",
+      "Source Count": "2+ independent sources",
+      "Gender": "M",
+      "Role/Title": "Cooperage business partner; committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recZUDejnGOzklnsq",
+    "createdTime": "2026-07-15T16:58:26.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Priscilla Grover",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Gender": "F",
+      "Role/Title": "Committee of Ladies",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recaCBm9UffDEhVJ8",
+    "createdTime": "2026-07-15T16:58:26.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Eliza A. Helmbold",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Gender": "F",
+      "Role/Title": "Committee of Ladies",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recar8GwA143mC6pu",
+    "createdTime": "2026-07-15T16:58:26.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Miss Annie B. Grover",
+      "Sources": "Taylor (1913) p.207 ('Annie B. Grover'); Fair Record (1863) p.5 ('Anna Grover')",
+      "Source Count": "2+ independent sources",
+      "Gender": "F",
+      "Role/Title": "Committee of Ladies",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recb5rp2wQpQ1DFxt",
+    "createdTime": "2026-07-15T16:59:51.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Jacob Plant",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recbLfcGIcqWUE8Sv",
+    "createdTime": "2026-07-15T16:57:36.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "John B. Smith",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recbMicJqNlwVwHBi",
+    "createdTime": "2026-07-15T17:00:24.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "R. G. Simpson",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recbPsSbNQC01UNtA",
+    "createdTime": "2026-07-15T16:59:51.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "William Morrison",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recbV41b9fpNjMTv7",
+    "createdTime": "2026-07-15T17:00:57.000Z",
+    "fields": {
+      "Status": "Needs full name",
+      "Name (as recorded)": "Mrs. Capt. Thos. Watson",
+      "Sources": "Taylor (1913) p.211",
+      "Source Count": "1 source",
+      "Gender": "F",
+      "Role/Title": "Ladies committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recbkdGcF7L02b2IL",
+    "createdTime": "2026-07-15T16:58:26.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Elizabeth Horton",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Gender": "F",
+      "Role/Title": "Committee of Ladies",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "reccv170NfJZUgjxb",
+    "createdTime": "2026-07-16T17:45:47.000Z",
+    "fields": {
+      "Status": "Needs full name",
+      "Name (as recorded)": "Mrs. Priscilla B. Charles",
+      "Sources": "Milwaukee Journal Sentinel, Feb. 17, 1884, p.4: 'Mrs. Priscilla B. Charles, who died in Washington, Lancaster county, Pa., a few days ago, was a volunteer assistant in the famous Cooper Shop Volunteer refreshment saloon in Philadelphia. It was there she first met her husband, a member of the 121st Pennsylvania volunteers.' Found 2026-07-16.",
+      "Source Count": "1 source",
+      "Notes": "'Charles' is her married surname -- likely taken from her husband, the unnamed 121st PA Volunteers member she met while volunteering at the saloon. Maiden name not given in this source. She died shortly before Feb 17, 1884 in Washington (borough), Lancaster County, PA -- worth checking Lancaster County vital/cemetery records if her maiden name or husband's full name is ever needed. A genuine wartime-romance story tied to the saloon, distinct from the other named volunteers/committee members already in this table.",
+      "Gender": "F",
+      "Role/Title": "Volunteer assistant",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recdzxyObLehFDDN1",
+    "createdTime": "2026-07-15T16:57:36.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Capt. W. S. Mason",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "rece57iuiicq95Lrw",
+    "createdTime": "2026-07-15T17:00:24.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "William H. Dennis",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "rececA0oJeyycK0CW",
+    "createdTime": "2026-07-15T16:59:51.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "A. S. Simpson",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recegxLTGilvME20O",
+    "createdTime": "2026-07-15T17:00:24.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "James Toomey",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recel2fKyEWZXZtsB",
+    "createdTime": "2026-07-15T17:00:57.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Miss Catharine Alexander",
+      "Sources": "Taylor (1913) p.211",
+      "Source Count": "1 source",
+      "Gender": "F",
+      "Role/Title": "Ladies committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recf7HkePKYjfDbhc",
+    "createdTime": "2026-07-15T17:00:24.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "William Sprowle",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recfJZRC55V3FDNJJ",
+    "createdTime": "2026-07-15T17:00:24.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Joseph Coward",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recgxScSwdxqeUwgp",
+    "createdTime": "2026-07-15T16:57:36.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Charles B. Grieves",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "rechJpFEtmZzT4hfB",
+    "createdTime": "2026-07-15T17:00:24.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Capt. A. H. Cain",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "rechYJzvA4YCU6EjP",
+    "createdTime": "2026-07-15T17:00:24.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Isaac Plant",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "rechnf6p6oOx9ywMM",
+    "createdTime": "2026-07-15T16:57:36.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Richard Sharp",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recjVaVkT6GEtwxuc",
+    "createdTime": "2026-07-15T16:57:36.000Z",
+    "fields": {
+      "Status": "Needs full name",
+      "Name (as recorded)": "Dr. E. Ward",
+      "Sources": "Taylor (1913) p.207-208 ('Dr. Elias Ward'); Fair Record (1863) p.5 ('W. Eliab Ward') and p.14 ('Dr. Eliab Ward')",
+      "Source Count": "2+ independent sources",
+      "Notes": "Served throughout the war per Taylor. Name spelling genuinely inconsistent across both sources -- do not assume which is correct without further research.",
+      "Gender": "M",
+      "Best Full Name": "Elias Ward or Eliab Ward -- spelling not resolved",
+      "Role/Title": "Surgeon (hospital in charge)",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "reck75NbhTyEV2i3K",
+    "createdTime": "2026-07-15T17:00:57.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Catharine Vansdale",
+      "Sources": "Taylor (1913) p.211",
+      "Source Count": "1 source",
+      "Gender": "F",
+      "Role/Title": "Ladies committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "reclq6kux8aWtqngj",
+    "createdTime": "2026-07-15T16:57:36.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "L. M. J. Lemmens",
+      "Sources": "Taylor (1913) p.207",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recmeylL3j9dQwMzf",
+    "createdTime": "2026-07-15T16:58:26.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Mary A. Cassedy",
+      "Sources": "Taylor (1913) p.207",
+      "Source Count": "1 source",
+      "Notes": "Fair Record's ladies list has a possible duplicate 'Mary Grover' entry near where this name might correspond -- not confirmed as the same/different person.",
+      "Gender": "F",
+      "Role/Title": "Committee of Ladies",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recnAWhEWDfAgP77M",
+    "createdTime": "2026-07-15T16:57:36.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "George Flomerfelt",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recobyqse09eop43F",
+    "createdTime": "2026-07-15T16:58:26.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Miss Amanda M. Lee",
+      "Sources": "Taylor (1913) p.207 ('Amanda M. Lee'); Fair Record (1863) p.5 ('Amanda Lee')",
+      "Source Count": "2+ independent sources",
+      "Gender": "F",
+      "Role/Title": "Committee of Ladies",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recpEYCAh0XvR7rrP",
+    "createdTime": "2026-07-15T16:58:26.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Eleanor J. Lowry",
+      "Sources": "Taylor (1913) p.207 ('Eleanor J. Lowry'); Fair Record (1863) p.5 ('Ellen J. Lowry')",
+      "Source Count": "2+ independent sources",
+      "Gender": "F",
+      "Role/Title": "Committee of Ladies",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recpMr2fRGsTaI2jT",
+    "createdTime": "2026-07-15T17:00:24.000Z",
+    "fields": {
+      "Status": "Needs post-war research",
+      "Name (as recorded)": "Rev. Joseph Perry",
+      "Sources": "Taylor (1913) p.211",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recqEm7ZR3VZ7dtL2",
+    "createdTime": "2026-07-15T17:00:57.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Susan Turner",
+      "Sources": "Taylor (1913) p.211",
+      "Source Count": "1 source",
+      "Gender": "F",
+      "Role/Title": "Ladies committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recqSRAFWOsKzXuaT",
+    "createdTime": "2026-07-15T16:58:26.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Kate B. Anderson",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Gender": "F",
+      "Role/Title": "Committee of Ladies",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recqkixDTJlnUkHiY",
+    "createdTime": "2026-07-15T16:57:36.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Charles N. Young",
+      "Sources": "Taylor (1913) p.207",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recrbW3ocFJmYpHtm",
+    "createdTime": "2026-07-15T16:58:26.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Margaret Boyer",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Gender": "F",
+      "Role/Title": "Committee of Ladies",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recsACOn9Gq54BoSe",
+    "createdTime": "2026-07-15T17:00:24.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Joseph E. Sass",
+      "Sources": "Taylor (1913) p.210-211",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recsqDf1jtSiMQIZQ",
+    "createdTime": "2026-07-15T16:58:26.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Mary Green",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Gender": "F",
+      "Role/Title": "Committee of Ladies",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recuJ1nA6heyHyP16",
+    "createdTime": "2026-07-15T16:58:26.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Miss Annie L. Field",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5 ('Annie Field')",
+      "Source Count": "2+ independent sources",
+      "Gender": "F",
+      "Role/Title": "Committee of Ladies",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recuiURYKHmrKHwNW",
+    "createdTime": "2026-07-15T16:57:36.000Z",
+    "fields": {
+      "Status": "Needs post-war research",
+      "Name (as recorded)": "Robert R. Corson",
+      "Sources": "Taylor (1913) p.207-208; Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Gender": "M",
+      "Role/Title": "Committee; State Military Agent; author of the 'Soldiers' Guide'",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recut9O3NsQKreHgj",
+    "createdTime": "2026-07-15T16:57:36.000Z",
+    "fields": {
+      "Status": "Needs full name",
+      "Name (as recorded)": "J. T. Williams",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Notes": "First name given as 'Job' in Fair Record OCR -- possible OCR error for 'J.', not confirmed.",
+      "Gender": "M",
+      "Best Full Name": "Job T. Williams (per Fair Record) or J.T. Williams (per Taylor)",
+      "Role/Title": "Steward",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recutNGajDfc2JQPJ",
+    "createdTime": "2026-07-15T16:58:26.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Miss Catharine Baily",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5 ('Catherine Baily')",
+      "Source Count": "2+ independent sources",
+      "Gender": "F",
+      "Role/Title": "Committee of Ladies",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recvDpFdDmQd8zwQn",
+    "createdTime": "2026-07-15T16:57:36.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "John Savery",
+      "Sources": "Taylor (1913) p.207",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recvWKLIypdE6OzHT",
+    "createdTime": "2026-07-15T17:00:24.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "J. T. Packer",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recw74f0yM7wFyVhk",
+    "createdTime": "2026-07-15T16:57:36.000Z",
+    "fields": {
+      "Status": "Fully identified",
+      "Name (as recorded)": "J. B. Wade",
+      "Sources": "Taylor (1913) p.207; Fair Record (1863) p.5 (gives full first/middle name)",
+      "Source Count": "2+ independent sources",
+      "Gender": "M",
+      "Best Full Name": "Joseph B. Wade",
+      "Role/Title": "Recording Secretary",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recwd22HQVj4T3QYg",
+    "createdTime": "2026-07-15T17:00:57.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "Mrs. Sarah Mellon",
+      "Sources": "Taylor (1913) p.211",
+      "Source Count": "1 source",
+      "Notes": "Likely wife of Walter R. Mellon (committee).",
+      "Gender": "F",
+      "Role/Title": "Ladies committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recxJY7QeVrWvDNJH",
+    "createdTime": "2026-07-15T17:00:24.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "R. Nebinger",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Notes": "Likely relation of Dr. Andrew Nebinger -- not confirmed.",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "recyQD3HMrZtnOdFr",
+    "createdTime": "2026-07-15T16:57:36.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "D. L. Flanagan",
+      "Sources": "Taylor (1913) p.207 ('Flanagan'); Fair Record (1863) p.5 ('Flanigan')",
+      "Source Count": "2+ independent sources",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recysE716wza6CAc0",
+    "createdTime": "2026-07-15T16:57:36.000Z",
+    "fields": {
+      "Status": "Needs post-war research",
+      "Name (as recorded)": "Samuel B. Fales",
+      "Sources": "Taylor (1913) p.207, 212 (source for the Cooper Shop reopening/closing detail); Fair Record (1863) p.5",
+      "Source Count": "2+ independent sources",
+      "Notes": "Also the addressee (with C.V. Fort) on the Gale letter re: the Cooper Shop (see saloon-anecdote-tracker.md, Report 6). Possibly authored Lossing correspondence and a memorial broadside per Report 9 (unconfirmed lead).",
+      "Gender": "M",
+      "Role/Title": "Committee; Corresponding Secretary",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "recytLfMHiqsiuhPF",
+    "createdTime": "2026-07-15T16:59:51.000Z",
+    "fields": {
+      "Status": "Name only, no further info",
+      "Name (as recorded)": "William M. Maull",
+      "Sources": "Taylor (1913) p.210",
+      "Source Count": "1 source",
+      "Gender": "M",
+      "Role/Title": "Committee",
+      "Saloon": "Cooper Shop"
+    }
+  },
+  {
+    "id": "reczhI3Vjo2udqlWn",
+    "createdTime": "2026-07-15T16:58:26.000Z",
+    "fields": {
+      "Status": "ADR-002 diarist candidate",
+      "Name (as recorded)": "Miss Sarah L. Holland",
+      "Sources": "Taylor (1913) p.207 (full name 'Sarah L. Holland'); Fair Record (1863) p.5 ('Sarah Holland')",
+      "Source Count": "2+ independent sources",
+      "Notes": "Named on the HSP printed-slip committee list alongside 'Miss R. Sickles' as a candidate for the UVRS diarist's identity. Confirmed as a real 1861 committee member by two independent primary sources (2026-07-15). Sickles does NOT appear in either roster -- Taylor notes a supplementary May 1864 General Committee report (not reproduced) that might cover her; not yet located.",
+      "Related ADR": "ADR-002",
+      "Gender": "F",
+      "Role/Title": "Committee of Ladies",
+      "Saloon": "Union Volunteer Refreshment Saloon"
+    }
+  },
+  {
+    "id": "reczoC4E8lObWtCmx",
+    "createdTime": "2026-07-15T17:00:57.000Z",
+    "fields": {
+      "Status": "Needs post-war research",
+      "Name (as recorded)": "Miss Anna M. Ross",
+      "Sources": "Taylor (1913) p.214 (Soldiers' Home board); House Divided (GAR Post 94 naming); prior research sessions (Cooper Shop hospital role)",
+      "Source Count": "2+ independent sources",
+      "Notes": "Died of overwork at the Refreshment Saloon per Taylor and House Divided; no specific death date confirmed in either. A Gemini report's claim of 'December 22, 1863' as her death date was REJECTED as a likely conflation with the Cooper Shop Soldiers' Home's real opening date (see saloon-anecdote-tracker.md). GAR Post 94 named for her; a city park in the 43rd Ward also bears her name; buried at Monument Cemetery. NOTE: does not appear in Taylor's Cooper Shop 1861 committee roster itself -- her documented hospital role may postdate that snapshot, or come from a different source not yet cross-checked here.",
+      "Gender": "F",
+      "Best Full Name": "Anna Maria Ross",
+      "Role/Title": "Cooper Shop hospital leadership (per prior sessions' research); Vice-President, Soldiers' Home in the City of Philadelphia (per Taylor)",
+      "Saloon": "Related Institution"
+    }
+  }
+]
