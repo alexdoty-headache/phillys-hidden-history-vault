@@ -869,9 +869,15 @@ document.querySelectorAll('.nav-btn').forEach(btn=>{
 async function init(){
   const loadingEl = document.getElementById('loadingMsg');
   try {
-    const res = await fetch('../../data/vault-records.json');
-    if(!res.ok) throw new Error(`HTTP ${res.status}`);
-    records = await res.json();
+    const [airtableRes, curatedRes] = await Promise.all([
+      fetch('../../data/vault-records.json'),
+      fetch('../../data/curated-records.json'),
+    ]);
+    if(!airtableRes.ok) throw new Error(`vault-records HTTP ${airtableRes.status}`);
+    if(!curatedRes.ok) throw new Error(`curated-records HTTP ${curatedRes.status}`);
+    const airtable = await airtableRes.json();
+    const curated  = await curatedRes.json();
+    records = [...airtable, ...curated];
   } catch(err) {
     loadingEl.textContent = 'Error loading records — try refreshing. ('+err.message+')';
     return;
