@@ -256,6 +256,31 @@
   }
   .pill:hover{background:var(--navy);color:var(--paper);}
 
+  /* UNIT VISIT LIST */
+  .visit-list{
+    border:1px solid var(--line);
+    margin:12px 0 18px;
+    font-size:13px;
+  }
+  .visit-row{
+    display:grid;
+    grid-template-columns:88px 52px 1fr auto;
+    gap:6px 10px;
+    padding:8px 10px;
+    border-bottom:1px solid var(--line);
+    cursor:pointer;
+    align-items:baseline;
+  }
+  .visit-row:last-child{border-bottom:none;}
+  .visit-row:hover{background:var(--paper-dark);}
+  .visit-date{font-family:'Courier New',monospace;font-size:12px;color:var(--ink-soft);white-space:nowrap;}
+  .visit-saloon{font-family:'Courier New',monospace;font-size:10px;letter-spacing:1px;text-transform:uppercase;white-space:nowrap;}
+  .visit-saloon.cooper{color:var(--verdigris);}
+  .visit-saloon.union{color:var(--oxblood);}
+  .visit-saloon.both{color:var(--navy);}
+  .visit-meta{color:var(--ink);line-height:1.3;}
+  .visit-status{font-family:'Courier New',monospace;font-size:10px;color:var(--ink-soft);opacity:0.6;white-space:nowrap;}
+
   footer{
     margin-top:50px;
     padding-top:18px;
@@ -835,39 +860,85 @@ function renderHero(containerId, recordId, blurb){
   el.querySelector('.hero-frame').addEventListener('click', ()=> openModal(r.id));
 }
 
+const VISIT_MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+function fmtVisitDate(iso){
+  if(!iso) return '—';
+  const [y,m,d] = iso.split('-').map(Number);
+  return `${VISIT_MONTHS[m-1]} ${d}, ${y}`;
+}
+function saloonClass(s){ return (s||'').toLowerCase().replace(/\s+/g,''); }
+
 function openModal(id){
   const r = records.find(x=>x.id===id);
   if(!r) return;
   const fwdLinks = r.links || [];
   const revLinks = (reverseLinks[id]||[]).filter(lid=>!fwdLinks.includes(lid));
   const allLinkIds = [...fwdLinks, ...revLinks];
-  const related = allLinkIds.slice(0,20).map(lid=>records.find(x=>x.id===lid)).filter(Boolean);
-  const moreCount = allLinkIds.length > 20 ? allLinkIds.length - 20 : 0;
+  const allRelated = allLinkIds.map(lid=>records.find(x=>x.id===lid)).filter(Boolean);
+
+  // For Unit records: split visits (Ledger Entries) from other links
+  let visitHTML = '';
+  let pillRecords = allRelated;
+  let moreCount = 0;
+
+  if(r.type === 'Unit'){
+    const visits = allRelated
+      .filter(rr => rr.type === 'Ledger Entry')
+      .sort((a,b) => (a.date||'') < (b.date||'') ? -1 : (a.date||'') > (b.date||'') ? 1 : 0);
+    const others = allRelated.filter(rr => rr.type !== 'Ledger Entry');
+
+    if(visits.length){
+      const rows = visits.map(v => {
+        const sc = saloonClass(v.saloon);
+        return `<div class="visit-row" data-id="${v.id}">
+          <span class="visit-date">${fmtVisitDate(v.date)}</span>
+          <span class="visit-saloon ${sc}">${v.saloon||'—'}</span>
+          <span class="visit-meta">${v.meta||v.title}</span>
+          <span class="visit-status">${v.statusLabel||''}</span>
+        </div>`;
+      }).join('');
+      visitHTML = `<div class="related-title">Documented visits (${visits.length})</div><div class="visit-list">${rows}</div>`;
+    }
+
+    const othersSliced = others.slice(0, 20);
+    moreCount = others.length > 20 ? others.length - 20 : 0;
+    pillRecords = othersSliced;
+  } else {
+    const sliced = allRelated.slice(0, 20);
+    moreCount = allLinkIds.length > 20 ? allLinkIds.length - 20 : 0;
+    pillRecords = sliced;
+  }
+
   const frame = r.type==='Image'
     ? `<div class="img-frame"><span class="img-frame-caption">${r.caption||r.title}</span><span class="img-frame-note">No digital scan on file yet</span></div>`
     : '';
   const pullQ = (r.type==='Anecdote' && r.interestTier==='standout' && r.pullQuote)
     ? `<div class="pull-quote">${r.pullQuote}</div>` : '';
+  const pillsHTML = pillRecords.length ? `
+    <div class="related-title">Cross-linked records</div>
+    <div class="related-pills">
+      ${pillRecords.map(rr=>`<span class="pill" data-id="${rr.id}">${rr.title}</span>`).join('')}
+      ${moreCount ? `<span class="pill" style="opacity:0.55;cursor:default;">+${moreCount} more</span>` : ''}
+    </div>` : '';
+
   modal.innerHTML = `
     <button class="close" id="closeBtn">CLOSE ✕</button>
     ${frame}
     <div class="cat">${r.type}${r.saloon ? ' · '+r.saloon : ''}</div>
     <h2>${r.title}</h2>
-    <div class="meta">${r.meta}</div>
+    <div class="meta">${r.meta||''}</div>
     ${pullQ}
     <p class="note">${r.note||''}</p>
     <div class="source-block">Source: ${r.source||'—'}<span class="stamp">${r.statusLabel}</span></div>
     ${r.image ? `<a class="img-link" href="${r.image}" target="_blank" rel="noopener">View original scan</a><br>` : ''}
-    ${related.length ? `
-      <div class="related-title">Cross-linked records</div>
-      <div class="related-pills">
-        ${related.map(rr=>`<span class="pill" data-id="${rr.id}">${rr.title}</span>`).join('')}
-        ${moreCount ? `<span class="pill" style="opacity:0.55;cursor:default;">+${moreCount} more</span>` : ''}
-      </div>
-    ` : ''}
+    ${visitHTML}
+    ${pillsHTML}
   `;
   overlay.classList.add('show');
   document.getElementById('closeBtn').addEventListener('click', closeModal);
+  modal.querySelectorAll('.visit-row[data-id]').forEach(row=>{
+    row.addEventListener('click', ()=> openModal(row.dataset.id));
+  });
   modal.querySelectorAll('.pill[data-id]').forEach(p=>{
     p.addEventListener('click', ()=> openModal(p.dataset.id));
   });
