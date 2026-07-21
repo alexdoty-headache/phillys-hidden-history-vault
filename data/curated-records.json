@@ -159,5 +159,2398 @@
       "recuiURYKHmrKHwNW",
       "recNSvgEfAXXdtnpt"
     ]
+  },
+  {
+    "id": "anec-a001",
+    "type": "Anecdote",
+    "title": "Barzilla S. Brown's founding hunger story",
+    "meta": "Philadelphia Inquirer · June 23, 1865 (with a parallel account in Aug. 29, 1865 Inquirer)",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "Barzilla S. Brown encountered soldiers disembarking at Washington Avenue wharves with no food, went door to door among neighbors to gather provisions, and personally hosted soldiers in his home — an improvised effort the Inquirer credited as the CS's origin.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-a002",
+    "type": "Anecdote",
+    "title": "Anonymous Quaker donor, $50",
+    "meta": "Philadelphia Inquirer · Approx. 1862 (exact article TBD from transcription batch)",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "An unnamed Quaker woman approached a saloon organizer and handed over $50 in cash without explanation, saying simply she wished to help the soldiers.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-a003",
+    "type": "Anecdote",
+    "title": "C. V. Fout escorts dead soldier home (97th NY)",
+    "meta": "Philadelphia Inquirer · Approx. 1862–1863",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "When a soldier from the 97th New York died at the Cooper Shop, volunteer C. V. Fout personally escorted the man's body home to his family.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-a004",
+    "type": "Anecdote",
+    "title": "Two women walk from Germantown through snowstorm to volunteer",
+    "meta": "Philadelphia Inquirer · Winter 1861–1862 (exact article TBD)",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "Two women walked from Germantown to the Cooper Shop through a significant snowstorm to volunteer their labor preparing food.",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-a005",
+    "type": "Anecdote",
+    "title": "Reynolds Artillery overnight at the Cooper Shop",
+    "meta": "Philadelphia Inquirer · Approx. 1861–1862",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "The Reynolds Artillery arrived late with no other accommodation available and slept on the floor of the Cooper Shop Refreshment Saloon.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-a006",
+    "type": "Anecdote",
+    "title": "97th New York soldier's grateful letter",
+    "meta": "Philadelphia Inquirer · Approx. 1862",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "A soldier from the 97th New York wrote a letter published in the Inquirer expressing gratitude for the hospitality received at the Cooper Shop.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-a007",
+    "type": "Anecdote",
+    "title": "Live golden eagle presented to the Cooper Shop",
+    "meta": "Philadelphia Inquirer · Approx. 1862–1863",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "Soldiers from a western regiment presented a live golden eagle to the Cooper Shop as a gift; the bird was kept there as a mascot.",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-a008",
+    "type": "Anecdote",
+    "title": "Bullet extracted from soldier at Cooper Shop",
+    "meta": "Philadelphia Inquirer · Approx. 1862–1863",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "A Union surgeon extracted a bullet from a wounded soldier at the Cooper Shop, documenting the institution's function as a surgical station as well as a feeding operation.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-a009",
+    "type": "Anecdote",
+    "title": "General Michael Corcoran's regiment stops at Cooper Shop",
+    "meta": "Philadelphia Inquirer · Approx. 1861–1862",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "General Michael Corcoran's regiment — the 69th New York — halted at the Cooper Shop during transit through Philadelphia, where the men were fed and Corcoran was received by the committee.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-a010",
+    "type": "Anecdote",
+    "title": "Scott Legion soldier's hand severed by train; treated at saloon",
+    "meta": "Philadelphia Inquirer · Approx. 1861–1862",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "A soldier from the Scott Legion had his hand severed — apparently by a train — and was brought to the Cooper Shop for treatment.",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-a011",
+    "type": "Anecdote",
+    "title": "2,500 wounded arrive after First Bull Run",
+    "meta": "Philadelphia Inquirer · Late July/August 1861",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "Following First Bull Run, approximately 2,500 wounded soldiers arrived in Philadelphia; the Cooper Shop and UVRS volunteers worked around the clock to receive them all.",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-a012",
+    "type": "Anecdote",
+    "title": "Wounded soldier wants to return to fight immediately (post-Bull Run)",
+    "meta": "Philadelphia Inquirer · Late July/August 1861",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "Among the wounded arriving after First Bull Run, one soldier — despite his injuries — insisted on returning to the front rather than being hospitalized.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-a013",
+    "type": "Anecdote",
+    "title": "105 horses destroy lumber stored at the Cooper Shop",
+    "meta": "Philadelphia Inquirer · Approx. 1861–1862",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "A group of 105 horses temporarily quartered near the Cooper Shop destroyed lumber that had been stored on the premises.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-a014",
+    "type": "Anecdote",
+    "title": "Eagle-raising ceremony; gun salute cancelled for dying soldier",
+    "meta": "Philadelphia Inquirer · Approx. 1862",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "A planned gun salute at the Cooper Shop was cancelled out of respect for a soldier who lay dying nearby.",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-a015",
+    "type": "Anecdote",
+    "title": "Death of Mrs. Eliza Plummer, Cooper Shop lady worker",
+    "meta": "Philadelphia Inquirer · Approx. 1863–1864",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "Mrs. Eliza Plummer, a Ladies' Committee member who had taken typhoid soldiers into her own home to nurse them, died in service.",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-a016",
+    "type": "Anecdote",
+    "title": "CSS Atlanta exhibited; proceeds to Cooper Shop",
+    "meta": "Philadelphia Inquirer · Summer–Fall 1863",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The captured Confederate ironclad CSS Atlanta was exhibited in Philadelphia, and admission proceeds were donated to the Cooper Shop Refreshment Saloon.",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-a017",
+    "type": "Anecdote",
+    "title": "Memorial to Mrs. Mary Ann Haines, Cooper Shop worker",
+    "meta": "Philadelphia Inquirer · Approx. 1863–1865",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "A memorial tribute was published in the Inquirer for Mrs. Mary Ann Haines, a Cooper Shop worker who died.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-a018",
+    "type": "Anecdote",
+    "title": "Mysterious death of James Hackett at or near the saloon",
+    "meta": "Philadelphia Inquirer · Approx. 1862–1865",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "A man named James Hackett died under unexplained circumstances connected in some way to the Cooper Shop.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-a019",
+    "type": "Anecdote",
+    "title": "John Donigan falls overboard near Washington Avenue wharves",
+    "meta": "Philadelphia Inquirer · Approx. 1862–1865",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "John Donigan fell overboard near the Washington Avenue wharves; his connection to either saloon is not established from the surviving record.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-a020",
+    "type": "Anecdote",
+    "title": "Ten-year-old wounded boy treated at Cooper Shop",
+    "meta": "Philadelphia Inquirer · Approx. 1863–1865",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "A wounded boy approximately ten years old was brought to the Cooper Shop for treatment, presented in the Inquirer as a remarkable case due to his extreme youth.",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-a021",
+    "type": "Anecdote",
+    "title": "Samuel Boyer reunites with his mother at the Cooper Shop",
+    "meta": "Philadelphia Inquirer · Approx. 1862–1865",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "Samuel Boyer, passing through the Cooper Shop on his way to the front, was unexpectedly reunited with his mother — one of the volunteer ladies working the tables that day.",
+    "interestTier": "standout",
+    "pullQuote": "Samuel Boyer, passing through the Cooper Shop on his way to the front, was unexpectedly reunited with his mother — one of the volunteer ladies working the tables that day.",
+    "links": []
+  },
+  {
+    "id": "anec-a022",
+    "type": "Anecdote",
+    "title": "John W. R. Cato (former Confederate) writes testimonial letter",
+    "meta": "Philadelphia Inquirer · Approx. 1863–1865",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "John W. R. Cato, described as formerly a Confederate or Southern sympathizer, wrote a published letter of testimonial praising the Cooper Shop — remarkable given his earlier allegiance.",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-a023",
+    "type": "Anecdote",
+    "title": "Col. Lockman's thank-you letter to the Cooper Shop",
+    "meta": "Philadelphia Inquirer · Approx. 1862–1865",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "Col. Lockman wrote a formal thank-you letter to the Cooper Shop committee, praising the treatment his men received.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-a024",
+    "type": "Anecdote",
+    "title": "Generals Meade, Crawford, and Humphreys received at UVRS",
+    "meta": "Philadelphia Inquirer, June 10, 1896 (reprint of June 12, 1865 original)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "At the ceremonial return of Pennsylvania veterans in June 1865, General Meade expressed himself 'highly gratified' at the warm reception at the UVRS, with Governor Curtin present and a 36-gun salute fired.",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-a025",
+    "type": "Anecdote",
+    "title": "Blockade runner expelled from the Cooper Shop",
+    "meta": "Philadelphia Inquirer · Approx. 1861–1865",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "A man identified as a blockade runner was discovered at the Cooper Shop and expelled by the committee.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-a026",
+    "type": "Anecdote",
+    "title": "Clock made from Confederate relics, displayed at Cooper Shop",
+    "meta": "Philadelphia Inquirer · Approx. 1862–1865",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "A clock fashioned from Confederate relics — captured weapons and materials — was made and displayed at the Cooper Shop Refreshment Saloon.",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-a027",
+    "type": "Anecdote",
+    "title": "Lt.-Col. Parker's \"City of Sisterly Love\" letter",
+    "meta": "Philadelphia Inquirer · Approx. 1862–1865",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "Lt.-Col. Parker praised the Cooper Shop with a deliberate revision of Philadelphia's civic motto, calling it the 'City of Sisterly Love' — acknowledging the women volunteers who made the institution work.",
+    "interestTier": "standout",
+    "pullQuote": "Lt.-Col. Parker praised the Cooper Shop with a deliberate revision of Philadelphia's civic motto, calling it the 'City of Sisterly Love' — acknowledging the women volunteers who made the institution work.",
+    "links": []
+  },
+  {
+    "id": "anec-a028",
+    "type": "Anecdote",
+    "title": "Poet Thomas Buchanan Read visits the Cooper Shop",
+    "meta": "Philadelphia Inquirer · Approx. 1862–1864",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "The poet Thomas Buchanan Read — later author of 'Sheridan's Ride' — visited the Cooper Shop during the war.",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-a029",
+    "type": "Anecdote",
+    "title": "Mr. Daniely loses arm; DuPont Powder provides relief",
+    "meta": "Philadelphia Inquirer · Approx. 1861–1865",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "Mr. Daniely suffered a serious arm injury; the DuPont Powder Company provided relief for his care.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-a030",
+    "type": "Anecdote",
+    "title": "Mrs. Eliza Plummer takes typhoid soldiers into her home",
+    "meta": "Philadelphia Inquirer · Approx. 1862–1864",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "Mrs. Eliza Plummer, a Cooper Shop volunteer, took typhoid-sick soldiers into her own home to nurse them when the saloon's space was overwhelmed.",
+    "interestTier": "standout",
+    "pullQuote": "Mrs. Eliza Plummer, a Cooper Shop volunteer, took typhoid-sick soldiers into her own home to nurse them when the saloon's space was overwhelmed.",
+    "links": []
+  },
+  {
+    "id": "anec-a031",
+    "type": "Anecdote",
+    "title": "\"Aunty Wade\" at the Cooper Shop",
+    "meta": "Philadelphia Inquirer · Approx. 1861–1865",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "A woman known only as 'Aunty Wade' was mentioned in connection with the Cooper Shop, presumably as a volunteer.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-a032",
+    "type": "Anecdote",
+    "title": "Death of Reuben M. Gattis (Cooper Shop connection)",
+    "meta": "Philadelphia Inquirer · Approx. 1861–1865",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "Reuben M. Gattis died; the newspaper connected his death to the Cooper Shop in some way not fully clear from the surviving record.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-a033",
+    "type": "Anecdote",
+    "title": "Infant death during 81st NY transit; Col. Rose draws up resolutions of condolence",
+    "meta": "HSP Fales Collection, UVRS ledger/weekly report · March 6, 1862 (date of entry; manuscript)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "When the 81st New York (1,040 men) passed through the UVRS on March 6, 1862 at 6 AM, an infant died in transit; Colonel Rose formally drew up resolutions of condolence, which the ledger records.",
+    "interestTier": "standout",
+    "pullQuote": "When the 81st New York (1,040 men) passed through the UVRS on March 6, 1862 at 6 AM, an infant died in transit; Colonel Rose formally drew up resolutions of condolence, which the ledger records.",
+    "links": []
+  },
+  {
+    "id": "anec-a034",
+    "type": "Anecdote",
+    "title": "103d NY \"Seward Infantry\" telegraphs ahead specifically requesting hot coffee",
+    "meta": "HSP Fales Collection, UVRS ledger/weekly report · March 7, 1862 (date of entry; manuscript)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "Before the 103d New York 'Seward Infantry' (1,000 men) arrived at 1 AM, the regiment telegraphed ahead with a single specific request: hot coffee. Their colonel was Baron Wilhelm von Egloffstein, a German-American cartographer-turned-soldier, rendered in the ledger as 'Col. Gloffstein.'",
+    "interestTier": "standout",
+    "pullQuote": "Before the 103d New York 'Seward Infantry' (1,000 men) arrived at 1 AM, the regiment telegraphed ahead with a single specific request: hot coffee. Their colonel was Baron Wilhelm von Egloffstein, a German-American cartographer-turned-soldier, rendered in the ledger as 'Col. Gloffstein.'",
+    "links": []
+  },
+  {
+    "id": "anec-a035",
+    "type": "Anecdote",
+    "title": "100th NY Regiment donates 1,500 loaves of bread and 3 barrels of meat on departure",
+    "meta": "HSP Fales Collection, UVRS ledger/weekly report · March 10, 1862 (date of entry; manuscript)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "When the 100th New York departed the UVRS on March 10, 1862, the regiment donated 1,500 loaves of bread and 3 barrels of meat to the saloon — a substantial reverse gift from the soldiers to the institution that had just fed them.",
+    "interestTier": "standout",
+    "pullQuote": "When the 100th New York departed the UVRS on March 10, 1862, the regiment donated 1,500 loaves of bread and 3 barrels of meat to the saloon — a substantial reverse gift from the soldiers to the institution that had just fed them.",
+    "links": []
+  },
+  {
+    "id": "anec-a036",
+    "type": "Anecdote",
+    "title": "\"Never fewer than 50–150 per night\": baseline traffic statistic, UVRS",
+    "meta": "HSP Fales Collection, UVRS weekly report · December 1861 (weekly report, IMG_4684; manuscript)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "A UVRS weekly report from December 1861 establishes the baseline overnight traffic: 'never fewer than 50–150' soldiers each night, even during periods with no large regiment transits.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-a037",
+    "type": "Anecdote",
+    "title": "9th NJ arrives with 1,500 friends from Trenton; alcohol policy documented",
+    "meta": "HSP Fales Collection, UVRS ledger/weekly report · December 4, 1861 (date of entry; manuscript)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "The 9th New Jersey arrived at the UVRS with approximately 1,500 friends and family from Trenton — a total crowd of some 2,750 people. The ledger records the alcohol policy in the same entry: refreshments were intended to 'cheer but not inebriate.'",
+    "interestTier": "standout",
+    "pullQuote": "The 9th New Jersey arrived at the UVRS with approximately 1,500 friends and family from Trenton — a total crowd of some 2,750 people. The ledger records the alcohol policy in the same entry: refreshments were intended to 'cheer but not inebriate.'",
+    "links": []
+  },
+  {
+    "id": "anec-a038",
+    "type": "Anecdote",
+    "title": "Capt. Kennedy's battery: 15-minute mobilization with no advance notice; Glee Club sings; captain's speech on Pennsylvania hospitality",
+    "meta": "HSP Fales Collection, UVRS ledger/weekly report · December 5, 1861 (date of entry; manuscript)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "A battery of 160 men arrived at 2 AM with zero advance notice. The saloon had tables set and hot coffee ready in under 15 minutes. A Glee Club sang for the soldiers. The captain remarked it was 'the third time' his men had received Pennsylvania hospitality.",
+    "interestTier": "standout",
+    "pullQuote": "A battery of 160 men arrived at 2 AM with zero advance notice. The saloon had tables set and hot coffee ready in under 15 minutes. A Glee Club sang for the soldiers. The captain remarked it was 'the third time' his men had received Pennsylvania hospitality.",
+    "links": []
+  },
+  {
+    "id": "anec-a039",
+    "type": "Anecdote",
+    "title": "12th US Infantry: men paroled under Confederate Gen. Twiggs; \"Twiggs oath\" recorded",
+    "meta": "HSP Fales Collection, UVRS ledger/weekly report · March 5, 1862 (date of entry; manuscript)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "When the 12th US Infantry (800 men) arrived at the UVRS in March 1862, the ledger noted these were paroled soldiers — men who had been captured under Confederate General Twiggs in Texas the year before and had sworn the 'Twiggs oath' not to bear arms until formally exchanged.",
+    "interestTier": "standout",
+    "pullQuote": "When the 12th US Infantry (800 men) arrived at the UVRS in March 1862, the ledger noted these were paroled soldiers — men who had been captured under Confederate General Twiggs in Texas the year before and had sworn the 'Twiggs oath' not to bear arms until formally exchanged.",
+    "links": []
+  },
+  {
+    "id": "anec-a040",
+    "type": "Anecdote",
+    "title": "2nd Battalion US Regulars accompanied by women and children from Maine",
+    "meta": "HSP Fales Collection, UVRS ledger/weekly report · March 5, 1862 (date of entry; manuscript)",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Union",
+    "note": "The 2nd Battalion of US Regulars (300 men) arrived at the UVRS accompanied by women and children from Maine — the ledger records their presence without explanation.",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-a041",
+    "type": "Anecdote",
+    "title": "2nd and 3rd Battalions 1st New England Cavalry: \"NH men over 6 ft,\" fife and music, all-night service",
+    "meta": "HSP Fales Collection, UVRS ledger/weekly report · March 16, 1862 (date of entry; manuscript)",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Union",
+    "note": "When the 1st New England Cavalry (850 men) arrived at 6 AM with fife and music, the ledger describes the New Hampshire men as 'over 6 ft' in height and notes the UVRS 'ran all night' to accommodate them.",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-a042",
+    "type": "Anecdote",
+    "title": "18th New York Volunteer Infantry arrives homeward; \"all these soldiers were well provided for at the Refreshment Saloons\"",
+    "meta": "Philadelphia Inquirer · May 14, 1863, p. 8 (\"Military Matters\" column)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Both",
+    "note": "The Inquirer reported that when the 18th New York returned home in May 1863, having completed their two-year term, 'all these soldiers were well provided for at the Refreshment Saloons.'",
+    "interestTier": "standard",
+    "links": [
+      "recP9IJdVM5TCq9SP"
+    ]
+  },
+  {
+    "id": "anec-a043",
+    "type": "Anecdote",
+    "title": "14th New York Volunteer Infantry arrives homeward; covered by same Inquirer \"Refreshment Saloons\" passage",
+    "meta": "Philadelphia Inquirer · May 14, 1863, p. 8 (\"Military Matters\" column)",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Both",
+    "note": "The same Inquirer passage extended collective coverage to the 14th New York on May 13, 1863 — 'all these soldiers were well provided for at the Refreshment Saloons.'",
+    "interestTier": "standard",
+    "links": [
+      "recdYXWxKNcD9ueZl"
+    ]
+  },
+  {
+    "id": "anec-a044",
+    "type": "Anecdote",
+    "title": "88th New York State Volunteers (Fourth Regiment, Irish Brigade) entertained at the Volunteer Refreshment Saloons, December 17, 1861",
+    "meta": "Philadelphia Inquirer · December 18, 1861 (events of December 17, 1861)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "The 88th New York State Volunteers, Fourth Regiment of the Irish Brigade, arrived with 1,000 men in December 1861 — Thomas Francis Meagher named as brigade organizer — and 'heartily enjoyed the repast offered' at the UVRS.",
+    "interestTier": "notable",
+    "links": [
+      "recwkXQhTDSHnYMyD"
+    ]
+  },
+  {
+    "id": "anec-a045",
+    "type": "Anecdote",
+    "title": "28th Pennsylvania Infantry Regiment formally received at both saloons on homecoming, January 10, 1864",
+    "meta": "Philadelphia Inquirer · January 11, 1864 (events of January 10, 1864). Also reprinted verbatim: Philadelphia Inquirer, January 11, 1895 (\"THE GREAT REBELLION — REPRINTED FROM THE INQUIRER OF THIRTY-ONE YEARS AGO\").",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Both",
+    "note": "The 28th Pennsylvania's January 1864 homeward reception was the most elaborate civic event in the corpus: an escorted procession through the city with Birgfeld's Band playing in each saloon consecutively, four battle flags 'riddled with bullet holes' in the line of march, and approximately 300 men served at both saloons simultaneously.",
+    "interestTier": "standout",
+    "pullQuote": "The 28th Pennsylvania's January 1864 homeward reception was the most elaborate civic event in the corpus: an escorted procession through the city with Birgfeld's Band playing in each saloon consecutively, four battle flags 'riddled with bullet holes' in the line of march, and approximately 300 men served at both saloons simultaneously.",
+    "links": [
+      "recgRWiqInv4o8uE5"
+    ]
+  },
+  {
+    "id": "anec-a046",
+    "type": "Anecdote",
+    "title": "69th New York Volunteer Infantry Regiment entertained at the Volunteer Refreshment Saloons on return from service, June 8, 1865",
+    "meta": "Philadelphia Inquirer · June 9, 1865 (events of June 8, 1865)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Both",
+    "note": "On June 8, 1865, the 69th New York and three other units 'were all entertained at the Volunteer Refreshment Saloons' on their homeward passage.",
+    "interestTier": "standard",
+    "links": [
+      "recNfumchXuIsjzFw"
+    ]
+  },
+  {
+    "id": "anec-a047",
+    "type": "Anecdote",
+    "title": "69th New York Volunteer Infantry Regiment, 230 men, entertained at the Volunteer Refreshment Saloon, July 18, 1865",
+    "meta": "Philadelphia Inquirer · July 19, 1865 (events of July 18, 1865)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "A separate contingent of the 69th New York — 230 men — passed through on July 18, 1865, served at the UVRS alongside seven other units totaling more than 2,000 soldiers.",
+    "interestTier": "standard",
+    "links": [
+      "recNfumchXuIsjzFw"
+    ]
+  },
+  {
+    "id": "anec-a048",
+    "type": "Anecdote",
+    "title": "5th New York Volunteer Infantry (Duryée's Zouaves) at both saloons on homecoming, c. May 7, 1863",
+    "meta": "Unattributed Philadelphia newspaper · c. May 8, 1863 (exact date and newspaper name unknown; estimated from adjacent dated clipping in DMNA collection)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Both",
+    "note": "The newspaper writer covering Duryée's Zouaves (5th New York, 273 men) closed: 'we are glad that we have such noble institutions as the Union and Cooper Shop Refreshment Saloons to give these brave men such a warm reception as the Zouaves met with yesterday morning.'",
+    "interestTier": "standout",
+    "pullQuote": "The newspaper writer covering Duryée's Zouaves (5th New York, 273 men) closed: 'we are glad that we have such noble institutions as the Union and Cooper Shop Refreshment Saloons to give these brave men such a warm reception as the Zouaves met with yesterday morning.'",
+    "links": [
+      "recmROqg04Bur7W7i"
+    ]
+  },
+  {
+    "id": "anec-a049",
+    "type": "Anecdote",
+    "title": "2nd Regiment Massachusetts Heavy Artillery, 780 men, served at \"Volunteer Refreshment Saloons,\" January 10, 1864",
+    "meta": "The Press (Philadelphia) · January 11, 1864, Image 4 (LCCN: sn84026296)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "The Press (January 11, 1864) confirmed the 2nd Massachusetts Heavy Artillery, 780 men, served at the UVRS on January 10, 1864 — corroborated by the UVRS ledger's record of 800 men the same date.",
+    "interestTier": "standard",
+    "links": [
+      "reck6W7dZyAURXqf7"
+    ]
+  },
+  {
+    "id": "anec-a050",
+    "type": "Anecdote",
+    "title": "11th Massachusetts Battery escorted to the Union Volunteer Saloon; 10th Massachusetts Regiment at Cooper Shop Saloon, February 6, 1864",
+    "meta": "Daily Evening Bulletin (Philadelphia) · February 8, 1864, seq-1 (LCCN: sn84026016)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Both",
+    "note": "The Daily Evening Bulletin documented simultaneous CS and UVRS service on February 6, 1864: the 10th Massachusetts Regiment at the 'Cooper Shop Saloon,' the 11th Massachusetts Battery 'escorted to the Union Volunteer Saloon by Ha[s]i[i]ng's Battery' — a Philadelphia local unit performing the civic escort.",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-a051",
+    "type": "Anecdote",
+    "title": "Twenty-second Massachusetts Regiment breakfasts at the Volunteers' Refreshment Saloon, October 10, 1861",
+    "meta": "The Press (Philadelphia) · October 11, 1861, seq-2 (LCCN: sn84026296)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "The Press (October 11, 1861) reported the 22nd Massachusetts arrived at 5 AM and 'breakfasted at the Volunteers' Refreshment Saloon' — corroborated by the UVRS ledger's 1,350-man entry.",
+    "interestTier": "standard",
+    "links": [
+      "recd8JyiYVrpBmljP"
+    ]
+  },
+  {
+    "id": "anec-a052",
+    "type": "Anecdote",
+    "title": "Fourteenth Massachusetts Regiment breakfasts at the Union and Cooper Shop Refreshment Saloons, August 10, 1861",
+    "meta": "The Press (Philadelphia) · August 12, 1861, seq-2 (LCCN: sn84026296)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Both",
+    "note": "The 14th Massachusetts, 1,046 men, arrived at 2 AM and 'were furnished with breakfast by the Union and Cooper Shop Refreshment Committees' — confirmed by both the UVRS diary and CS Ledger.",
+    "interestTier": "standard",
+    "links": [
+      "recReiSpOouGRR4y2"
+    ]
+  },
+  {
+    "id": "anec-a053",
+    "type": "Anecdote",
+    "title": "Fifteenth Massachusetts Regiment breakfasts at the Union and Cooper Shop Refreshment Saloons, August 10, 1861",
+    "meta": "The Press (Philadelphia) · August 12, 1861, seq-2 (LCCN: sn84026296)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Both",
+    "note": "The 15th Massachusetts, 1,046 men, arrived in the same 2 AM period as the 14th Massachusetts and was served at both saloons simultaneously.",
+    "interestTier": "standard",
+    "links": [
+      "recMDYQxIuOtDyi18"
+    ]
+  },
+  {
+    "id": "anec-a054",
+    "type": "Anecdote",
+    "title": "Lander's Body Guard: sharpshooters with \"telescope Rifles\" escort their commander's body",
+    "meta": "HSP Fales Collection, UVRS ledger/weekly report (\"List of Regiments Passing South\") · March 13, 1862 (date of entry; manuscript)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "Twenty-five men of 'Lander's Body Guard' — sharpshooters carrying 'telescope Rifles' weighing 15–30 lbs — passed through the UVRS escorting the body of General Lander, eleven days after his death. The ledger diarist noted the rifles could let one 'see a man wink at one hundred yards.'",
+    "interestTier": "standout",
+    "pullQuote": "Twenty-five men of 'Lander's Body Guard' — sharpshooters carrying 'telescope Rifles' weighing 15–30 lbs — passed through the UVRS escorting the body of General Lander, eleven days after his death. The ledger diarist noted the rifles could let one 'see a man wink at one hundred yards.'",
+    "links": []
+  },
+  {
+    "id": "anec-a055",
+    "type": "Anecdote",
+    "title": "\"So well known that few pass this way without calling to take a bite\": self-documented reputation, with Irish Brigade stragglers",
+    "meta": "HSP Fales Collection, UVRS weekly report · ca. December 1861 (date of entry; manuscript)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "'So well known, that few pass this way without calling to take a bite' — the UVRS diarist's own words, ca. December 1861, just seven months after the saloon opened.",
+    "interestTier": "standout",
+    "pullQuote": "'So well known, that few pass this way without calling to take a bite' — the UVRS diarist's own words, ca. December 1861, just seven months after the saloon opened.",
+    "links": [
+      "rec6MOf2aHM6jOgOG",
+      "recdYXWxKNcD9ueZl",
+      "recQCPGPoH7P0FaRU"
+    ]
+  },
+  {
+    "id": "anec-a056",
+    "type": "Anecdote",
+    "title": "Chief of Police Samuel G. Ruggels personally routes troop-movement intelligence to the UVRS",
+    "meta": "HSP Fales Collection, police intelligence slips (three separate slips) · August 9, 1861 (two slips) and August 26, 1861 (one slip); manuscript",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "Philadelphia Chief of Police Samuel G. Ruggels personally dispatched three intelligence slips to the UVRS, routing troop-departure times from his Central Office — a previously unrecorded advance-notice channel alongside railroad telegraphs, state military agents, and personal contacts.",
+    "interestTier": "notable",
+    "links": [
+      "recReiSpOouGRR4y2",
+      "recMDYQxIuOtDyi18"
+    ]
+  },
+  {
+    "id": "anec-a057",
+    "type": "Anecdote",
+    "title": "Fales's private admission: fear the \"Rebel Deserters\" program could \"burst up\" the Committee",
+    "meta": "HSP Fales Collection, Committee minute extract with Fales NB · Undated; internal evidence (\"Lee's army\") places it 1862 or later; manuscript",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "Beneath a formal committee minute arranging to feed Confederate deserters, Fales wrote in his own hand: the parties 'must hold us harmless' — because feeding all of Lee's army if it chose to desert 'would clear our funds out in a week.'",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-a058",
+    "type": "Anecdote",
+    "title": "Rev. Dr. Thomas Brainerd: the Ladies' Committee \"have literally slept at the tap of the drum\"",
+    "meta": "HSP Fales Collection, copy of letter, Rev. Dr. Thomas Brainerd to Mrs. Salmons · Undated; internal evidence (\"For a year past\") suggests ca. 1862; manuscript copy",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "Rev. Dr. Thomas Brainerd wrote that for the past year the UVRS ladies 'have literally slept at the tap of the drum, ready at any time, night or day, in any weather, to any extent, to give their personal labours and to open their houses to any soldier of their country.'",
+    "interestTier": "standout",
+    "pullQuote": "Rev. Dr. Thomas Brainerd wrote that for the past year the UVRS ladies 'have literally slept at the tap of the drum, ready at any time, night or day, in any weather, to any extent, to give their personal labours and to open their houses to any soldier of their country.'",
+    "links": []
+  },
+  {
+    "id": "anec-a059",
+    "type": "Anecdote",
+    "title": "Fales to T.B. Read: Committee members as mourners at soldiers' graves; \"our ladies are not high-bred dames\"",
+    "meta": "HSP Fales Collection, letter (Union League House stationery) to Thomas Buchanan Read · ca. September–October 1865 (undated; precedes Read's October 7, 1865 reply); manuscript",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "UVRS volunteers, when a dying soldier 'had no friends or relations,' went 'as mourners to his grave & paid him the last sad rites.' The same letter stated plainly: 'Our ladies are not high-bred dames, but are much well off — the Committee have to work for their living and their time is money.'",
+    "interestTier": "standout",
+    "pullQuote": "UVRS volunteers, when a dying soldier 'had no friends or relations,' went 'as mourners to his grave & paid him the last sad rites.' The same letter stated plainly: 'Our ladies are not high-bred dames, but are much well off — the Committee have to work for their living and their time is money.'",
+    "links": []
+  },
+  {
+    "id": "anec-a060",
+    "type": "Anecdote",
+    "title": "T. Buchanan Read's \"The Descent of the Eagle,\" recited at the Academy of Music",
+    "meta": "Printed broadside, cover letter and poem, T. Buchanan Read to Samuel B. Fales · October 7, 1865 (poem recited October 6, 1865); printed",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "Thomas Buchanan Read — poet, author of 'Sheridan's Ride' — composed 'The Descent of the Eagle' after visiting the UVRS and seeing its gilt eagle, and recited it at the Philadelphia Academy of Music on October 6, 1865.",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-a061",
+    "type": "Anecdote",
+    "title": "General Meade and the Pennsylvania Reserves: 1,500 men fed at once, UVRS's peak single-event capacity",
+    "meta": "HSP Fales Collection, Barrows/Fales corrective statement (the \"Barrows letter relative to Lossing's History\") · Document compiled 1875 (Fales preface), describing a wartime event; manuscript",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Union",
+    "note": "A corrective statement to historian Bates, signed by UVRS Chairman Barrows, records that the saloon fed 1,500 men at once during General Meade's reception with the Pennsylvania Reserves — explicitly comparing this to the Cooper Shop's capacity of 225.",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-a062",
+    "type": "Anecdote",
+    "title": "Sgt. J.J. Craven's telegram to the Mayor: two starving New Jersey regiments, five days after Bull Run",
+    "meta": "HSP Fales Collection, Magnetic Telegraph Company telegram · July 26, 1861 (manuscript)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "Five days after First Bull Run, Sgt. J.J. Craven of the 1st New Jersey telegraphed the Mayor of Philadelphia: two regiments of New Jersey men had been 'without food since yesterday morning.' The telegram survives in the UVRS's own papers — the Mayor's office had forwarded it directly to the saloon.",
+    "interestTier": "standout",
+    "pullQuote": "Five days after First Bull Run, Sgt. J.J. Craven of the 1st New Jersey telegraphed the Mayor of Philadelphia: two regiments of New Jersey men had been 'without food since yesterday morning.' The telegram survives in the UVRS's own papers — the Mayor's office had forwarded it directly to the saloon.",
+    "links": []
+  },
+  {
+    "id": "anec-a063",
+    "type": "Anecdote",
+    "title": "Capt. Leverich's plea for the wounded Fire Zouaves: a three-document arc across one week",
+    "meta": "HSP Fales Collection, Magnetic Telegraph Company telegram (paired with two C&A telegrams) · August 13 and August 18, 1861 (manuscript)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "On August 13, 1861, Capt. Leverich telegraphed the Mayor requesting overnight shelter for the Fire Zouaves, explaining 'the through journey being too much for our wounded.' Three independent documents — his plea, a railroad advance notice, and an arrival telegram — triangulate the same regiment's arrival five days later.",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-a064",
+    "type": "Anecdote",
+    "title": "Walter Thomas of Pittsburgh telegraphs the UVRS hospital, searching for his missing soldier",
+    "meta": "HSP Fales Collection, National Telegraph Lines telegram · October 10, 1862 (manuscript)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "Walter Thomas of Pittsburgh telegraphed the UVRS hospital in October 1862 asking whether David Thomas of the 87th Pennsylvania was, had been, or had left — addressing it as the 'Union Volunteer Refreshment Hospital' and requesting a same-day reply.",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-a065",
+    "type": "Anecdote",
+    "title": "A. Barrows checks in with \"Mr. Corson\" on rumored rerouting, two days after Bull Run",
+    "meta": "HSP Fales Collection, handwritten committee memo · July 23, 1861 (manuscript)",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Union",
+    "note": "Two days after Bull Run, A. Barrows noted in a brief memo that his contact Mr. Corson expected two regiments that night and thought they hadn't been rerouted despite the post-battle confusion.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-a066",
+    "type": "Anecdote",
+    "title": "The 6th Massachusetts (Baltimore Riot regiment) possibly documented returning home, July 30, 1861",
+    "meta": "HSP Fales Collection, C&A Railroad telegraph form · July 30, 1861 (date partially legible; manuscript)",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Union",
+    "note": "A C&A telegram, if correctly dated July 30, 1861, documents the 6th Massachusetts Infantry — the regiment attacked in the Baltimore riot on April 19, 1861, producing the war's first Union combat deaths — returning through Philadelphia in two waves (800 men at 2 AM, 300 more at 5 AM).",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-a068",
+    "type": "Anecdote",
+    "title": "Mourning Mrs. Eliza Plummer: a cavalry regiment stops mid-transit at 2 a.m. to grieve",
+    "meta": "HSP Fales Collection, handwritten resolution (torn/damaged) · October 23, [1863 or 1864] (manuscript)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "While passing through Philadelphia at roughly 2 AM, officers and men of the 2nd New York Veteran Cavalry formally resolved their 'deepest sympathy' with the UVRS for the loss of Mrs. Eliza Plummer, closing: 'Her deeds will never die.'",
+    "interestTier": "standout",
+    "pullQuote": "While passing through Philadelphia at roughly 2 AM, officers and men of the 2nd New York Veteran Cavalry formally resolved their 'deepest sympathy' with the UVRS for the loss of Mrs. Eliza Plummer, closing: 'Her deeds will never die.'",
+    "links": []
+  },
+  {
+    "id": "anec-a069",
+    "type": "Anecdote",
+    "title": "The USS Hartford's crew, a hand-sewn flag from China, and four arrested traitors",
+    "meta": "HSP Fales Collection, Corson operational log, week ending December 8, 1861 · December 7, 1861 (manuscript, written same week)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "When the USS Hartford's crew dined at the UVRS on December 7, 1861 — returning from three years on the China station — every one of the sailors had remained loyal to the Union. Four officers who had not were arrested at the Navy Yard that same day and sent to Fort Warren. The crew had sewn a 20×40 ft flag from Chinese silk in their shipboard quarters and raised it over Independence Hall that noon.",
+    "interestTier": "standout",
+    "pullQuote": "When the USS Hartford's crew dined at the UVRS on December 7, 1861 — returning from three years on the China station — every one of the sailors had remained loyal to the Union. Four officers who had not were arrested at the Navy Yard that same day and sent to Fort Warren. The crew had sewn a 20×40 ft flag from Chinese silk in their shipboard quarters and raised it over Independence Hall that noon.",
+    "links": []
+  },
+  {
+    "id": "anec-a070",
+    "type": "Anecdote",
+    "title": "Capt. Cothram's temperance Glee Club sings \"The Soldier's Farewell\" — and everyone weeps",
+    "meta": "HSP Fales Collection, Corson operational log · Week of November 16–22, 1861 (manuscript)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "A temperance artillery company under Capt. Cothram sent its six-member Glee Club to sing 'The Soldier's Farewell.' As the singers thought of their own farewells, 'many an Eye was dimmed with tears' — moving the UVRS volunteers to weep in turn. Corson wrote this was what made the nightly work 'fully repaid.'",
+    "interestTier": "standout",
+    "pullQuote": "A temperance artillery company under Capt. Cothram sent its six-member Glee Club to sing 'The Soldier's Farewell.' As the singers thought of their own farewells, 'many an Eye was dimmed with tears' — moving the UVRS volunteers to weep in turn. Corson wrote this was what made the nightly work 'fully repaid.'",
+    "links": []
+  },
+  {
+    "id": "anec-a071",
+    "type": "Anecdote",
+    "title": "First service after Bull Run: a governor rides with his defeated regiment, four days after the battle",
+    "meta": "HSP Fales Collection, UVRS rough diary (earliest surviving unit ledger entries) · July 25–26, 1861 (manuscript)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "The earliest surviving UVRS ledger entries, July 25–26, 1861, record the 1st Rhode Island returning through Philadelphia with both its commander, Col. Ambrose Burnside, and Rhode Island's sitting Governor, William Sprague, traveling with the defeated regiment. The following day: the 69th New York with 41 wounded, commander Col. Michael Corcoran taken prisoner.",
+    "interestTier": "standout",
+    "pullQuote": "The earliest surviving UVRS ledger entries, July 25–26, 1861, record the 1st Rhode Island returning through Philadelphia with both its commander, Col. Ambrose Burnside, and Rhode Island's sitting Governor, William Sprague, traveling with the defeated regiment. The following day: the 69th New York with 41 wounded, commander Col. Michael Corcoran taken prisoner.",
+    "links": []
+  },
+  {
+    "id": "anec-a072",
+    "type": "Anecdote",
+    "title": "\"A Nephew of Jef Davis\": an ironic family connection passes through, November 1861",
+    "meta": "HSP Fales Collection, UVRS ledger (fair copy) · November 27, 1861 (manuscript)",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Union",
+    "note": "The UVRS ledger for November 27, 1861 records California Regulars (479 men, 35 women, 28 babies) passing through — with the diarist's own editorial note flagging that a nephew of Confederate President Jefferson Davis was among them, serving in the Union ranks.",
+    "interestTier": "standout",
+    "pullQuote": "The UVRS ledger for November 27, 1861 records California Regulars (479 men, 35 women, 28 babies) passing through — with the diarist's own editorial note flagging that a nephew of Confederate President Jefferson Davis was among them, serving in the Union ranks.",
+    "links": []
+  },
+  {
+    "id": "anec-a073",
+    "type": "Anecdote",
+    "title": "\"18 Contrabands & officers\" fed, a year before the Emancipation Proclamation",
+    "meta": "HSP Fales Collection, UVRS ledger (fair copy) · December 20, 1861 (manuscript)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "The UVRS ledger for December 20, 1861 records '18 Contrabands & officers' served — documenting the UVRS extending hospitality to escaped enslaved people roughly a year before the Emancipation Proclamation.",
+    "interestTier": "standout",
+    "pullQuote": "The UVRS ledger for December 20, 1861 records '18 Contrabands & officers' served — documenting the UVRS extending hospitality to escaped enslaved people roughly a year before the Emancipation Proclamation.",
+    "links": []
+  },
+  {
+    "id": "anec-a074",
+    "type": "Anecdote",
+    "title": "Prisoners of war, named one by one, freed from Richmond",
+    "meta": "HSP Fales Collection, UVRS ledger (fair copy) · January 14, 1862 (manuscript)",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Union",
+    "note": "The UVRS ledger for January 14, 1862 individually names exchanged prisoners returning from Confederate captivity in Richmond — including a 'W. Astor' of the 2nd New York, among the first Bull Run prisoner exchanges.",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-a075",
+    "type": "Anecdote",
+    "title": "Edmund Souder arranges a flag ceremony for the 6th Maine, \"Refreshment Hall,\" July 17, 1861",
+    "meta": "HSP Fales Collection, handwritten note · July 17, 1861 (manuscript)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "Among the earliest surviving UVRS documents, Edmund Souder writes to B.S. Brown on July 17, 1861 asking him to watch for the 6th Maine Regiment's arrival 'at the Refreshment Hall' and find space for a flag ceremony.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-a076",
+    "type": "Anecdote",
+    "title": "Charles H.S. Collis, future Zouaves commander, writes as a sergeant major in the war's opening weeks",
+    "meta": "HSP Fales Collection, handwritten letter · July 19, 1861 (manuscript)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "Writing from Camp Federal Hill on July 19, 1861, Sgt. Maj. Charles H.S. Collis — later commander of Collis's Zouaves — acknowledged Arad Barrows's offer of hospitality to the 18th Pennsylvania and promised the regiment would wire ahead on receiving orders.",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-a077",
+    "type": "Anecdote",
+    "title": "A Massachusetts soldier writes home asking for a UVRS souvenir card as a keepsake",
+    "meta": "HSP Fales Collection, handwritten letter (2 pages) · October 23, 1862 (manuscript)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "Writing from Virginia, Pvt. Page asked J.B. Wade for a copy of the UVRS's printed souvenir card — his parents had seen one sent home by a companymate and asked him to get one for the family.",
+    "interestTier": "standout",
+    "pullQuote": "Writing from Virginia, Pvt. Page asked J.B. Wade for a copy of the UVRS's printed souvenir card — his parents had seen one sent home by a companymate and asked him to get one for the family.",
+    "links": []
+  },
+  {
+    "id": "anec-a078",
+    "type": "Anecdote",
+    "title": "A Baltimore relief society sends a soldier to the UVRS with a letter of introduction",
+    "meta": "HSP Fales Collection, letter of introduction · December 19, 1861 (manuscript)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "A Baltimore relief society vice president sent a letter of introduction for soldier Charles Colby to the UVRS; UVRS staff annotated the margins with his actual hotel bill and rations, converting the introduction into a working intake document.",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-a079",
+    "type": "Anecdote",
+    "title": "A German immigrant soldier who \"speaks very little English\" is referred to the UVRS on a Sunday with nowhere else to go",
+    "meta": "HSP Fales Collection, official referral letter · June 27, 1863 (manuscript)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "Four days before Gettysburg, with Harrisburg under threat, a military surgeon referred newly enlisted German immigrant Wm. Dachsler to the UVRS on a Sunday — specifically noting 'he speaks very little English.'",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-a080",
+    "type": "Anecdote",
+    "title": "Gettysburg-emergency militiamen, \"nearly bowed to the earth with hunger,\" donate their own newspaper-fund surplus back to the UVRS",
+    "meta": "HSP Fales Collection, handwritten letter (2 pages) · August 8, 1863 (manuscript)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "Gettysburg-emergency militiamen who had been 'nearly bowed to the earth with hunger and fatigue' found they had a newspaper-fund surplus and sent the $10.50 back to the UVRS.",
+    "interestTier": "standout",
+    "pullQuote": "Gettysburg-emergency militiamen who had been 'nearly bowed to the earth with hunger and fatigue' found they had a newspaper-fund surplus and sent the $10.50 back to the UVRS.",
+    "links": []
+  },
+  {
+    "id": "anec-a081",
+    "type": "Anecdote",
+    "title": "Robert R. Corson liaises with Philadelphia's Black-regiment recruiters; an armed guard escorts a USCT visit",
+    "meta": "HSP Fales Collection, USCT correspondence cluster (six documents) · Circa 1863–1864 (manuscript)",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Union",
+    "note": "A cluster of six documents confirms the UVRS hosted USCT regiments, with Corson as liaison — one records a 32-man armed guard deployed specifically for a USCT visit, suggesting anticipated public hostility.",
+    "interestTier": "standout",
+    "pullQuote": "A cluster of six documents confirms the UVRS hosted USCT regiments, with Corson as liaison — one records a 32-man armed guard deployed specifically for a USCT visit, suggesting anticipated public hostility.",
+    "links": []
+  },
+  {
+    "id": "anec-a082",
+    "type": "Anecdote",
+    "title": "Capt. Geo. W. Bell writes home from his new USCT command in Nashville",
+    "meta": "HSP Fales Collection, handwritten letter (3 pages) · Undated; context suggests 1863–1864 (manuscript)",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Union",
+    "note": "Capt. Geo. W. Bell wrote from camp describing his USCT command and sending regards to 'the ladies' at the saloon where he had stayed.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-a083",
+    "type": "Anecdote",
+    "title": "\"A very pleasant Col. and fine looking officer. From Italy.\" — Col. Jardella, 101st New York",
+    "meta": "HSP Fales Collection, UVRS ledger/weekly report (\"List of Regiments Passing South\") · March 8, 1862 (date of entry; manuscript)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "When the 101st New York (1,038 men) arrived at 11 PM, the UVRS recorder added a personal aside: 'This was a very pleasant Col. and fine looking officer. From Italy.'",
+    "interestTier": "standout",
+    "pullQuote": "When the 101st New York (1,038 men) arrived at 11 PM, the UVRS recorder added a personal aside: 'This was a very pleasant Col. and fine looking officer. From Italy.'",
+    "links": [
+      "recjaTtvGbCEAOsjQ",
+      "recExm1v4wgFjNk6E"
+    ]
+  },
+  {
+    "id": "anec-a084",
+    "type": "Anecdote",
+    "title": "\"All drunk, Chap Dillin\": recorder's candid assessment of the 63d New York",
+    "meta": "HSP Fales Collection, UVRS unit ledger (rough diary) · November 29, 1861 (date of entry; manuscript)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "When the 63rd New York (800 men) arrived November 29, 1861, the rough diary recorder added beyond the standard tally: 'All drunk, Chap Dillin.'",
+    "interestTier": "standout",
+    "pullQuote": "When the 63rd New York (800 men) arrived November 29, 1861, the rough diary recorder added beyond the standard tally: 'All drunk, Chap Dillin.'",
+    "links": [
+      "recX96FuxzqRu0WfB"
+    ]
+  },
+  {
+    "id": "anec-a085",
+    "type": "Anecdote",
+    "title": "\"Very well drilled\": recorder's professional assessment of the 35th Pennsylvania and 50th New York",
+    "meta": "HSP Fales Collection, UVRS unit ledger (rough diary) · September 21, 1861 (date of entry; manuscript)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Both",
+    "note": "On September 21, 1861, the recorder gave both the 35th Pennsylvania (Col. Schimmelfenning) and the 50th New York the same rare professional endorsement: 'Very well drilled.'",
+    "interestTier": "notable",
+    "links": [
+      "rech9a2c0jshLgOQM",
+      "recKXWFiOqG7SVxrF",
+      "recaYpKoUruz4reVC",
+      "recp5F2Yi4HUNkCyK"
+    ]
+  },
+  {
+    "id": "anec-b001",
+    "type": "Anecdote",
+    "title": "Cooper Shop arson and William Attridge",
+    "meta": "Philadelphia Inquirer (date from transcription: approximately 1870) · c. 1870",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "The Cooper Shop building was set on fire in an act of arson; William Attridge was identified as responsible.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-b002",
+    "type": "Anecdote",
+    "title": "Mrs. Ellen Barlow and Elizabeth Horton: first women to feed soldiers, now in poverty",
+    "meta": "The National Tribune · 1883",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Union",
+    "note": "Mrs. Ellen Barlow and Elizabeth Horton are identified as among the very first women to feed Union soldiers — and by 1883 both were living in poverty, having received no recognition or compensation.",
+    "interestTier": "standout",
+    "pullQuote": "Mrs. Ellen Barlow and Elizabeth Horton are identified as among the very first women to feed Union soldiers — and by 1883 both were living in poverty, having received no recognition or compensation.",
+    "links": []
+  },
+  {
+    "id": "anec-b003",
+    "type": "Anecdote",
+    "title": "Mrs. Mary Lee as prime mover of the UVRS",
+    "meta": "Various (Philadelphia Inquirer and/or The National Tribune, c. 1880–1883) · c. 1880–1883",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Union",
+    "note": "Mrs. Mary Lee is named as the 'prime mover' behind the Union Volunteer Refreshment Saloon — the driving force behind its founding and operations.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-b004",
+    "type": "Anecdote",
+    "title": "The \"old captain\": unnamed merchant mariner founds the UVRS informally",
+    "meta": "Philadelphia Inquirer (or Shore Press, exact paper from transcription) · 1896",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Union",
+    "note": "An unnamed old merchant marine captain began feeding soldiers from his own home near the wharves; Mr. William Cooper donated 100 tables; a Mexican War-era signal cannon recovered from a sunken revenue schooner was mounted outside.",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-b005",
+    "type": "Anecdote",
+    "title": "Lincoln-Cooper correspondence reproduced",
+    "meta": "Philadelphia Inquirer (1893 or 1894 article) · 1893–1894",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "An 1893–94 Inquirer article reproduced correspondence between President Lincoln and William M. Cooper — Lincoln's personal letter thanking the Cooper Shop for its work.",
+    "interestTier": "standout",
+    "pullQuote": "An 1893–94 Inquirer article reproduced correspondence between President Lincoln and William M. Cooper — Lincoln's personal letter thanking the Cooper Shop for its work.",
+    "links": []
+  },
+  {
+    "id": "anec-b006",
+    "type": "Anecdote",
+    "title": "\"Squire Cooper\" gives water to Confederate prisoners",
+    "meta": "(Exact paper not recorded in transcription notes for this entry; likely 1880s–1890s) · Retrospective (approximate date TBD)",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "During an occasion when Confederate prisoners were moved through Philadelphia, 'Squire Cooper' personally gave them water.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-b007",
+    "type": "Anecdote",
+    "title": "63rd New York discipline incident / \"Aunt Sally\" coffee story",
+    "meta": "The National Tribune (exact date from transcription notes — likely 1890s) · Retrospective",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "A woman known as 'Aunt Sally' at the saloon was involved in a discipline incident with the 63rd New York related to coffee service.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-b008",
+    "type": "Anecdote",
+    "title": "\"Haversacks\" sign at the saloon",
+    "meta": "Retrospective source (exact date TBD) · Retrospective",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "A sign reading 'Haversacks' was posted at the saloon, advertising that soldiers could have their haversacks filled with food.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-b009",
+    "type": "Anecdote",
+    "title": "Boarding-house family distributes saloon leftovers",
+    "meta": "Retrospective source (exact date TBD) · Retrospective",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "A family that ran a boarding house near the saloon regularly collected leftover food and distributed it to needy neighbors.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-b010",
+    "type": "Anecdote",
+    "title": "3rd New Hampshire passes through Cooper Shop, September 1861",
+    "meta": "The National Tribune · May 11, 1899 (serial publication of regimental history)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "On September 14, 1861, the 3rd New Hampshire Volunteers were entertained at the Cooper Shop and 'entirely forgot' their orders to move on.",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-b011",
+    "type": "Anecdote",
+    "title": "3rd New Hampshire passes through UVRS on homeward journey, July 1865",
+    "meta": "The National Tribune · June 1, 1899",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "On their homeward journey in July 1865, the 3rd New Hampshire 'again enjoyed the hospitality of the Union Refreshment Saloon' before proceeding home.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-b012",
+    "type": "Anecdote",
+    "title": "Bowman Harrison, escaped POW, arrives at UVRS in 1864",
+    "meta": "The National Tribune · July 19, 1900",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "Escaped Confederate POW Bowman Harrison made his way to Philadelphia after evading capture following the Wilderness and described the UVRS as 'a noble institution.'",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-b013",
+    "type": "Anecdote",
+    "title": "UVRS token inscribed \"Instit'd May 27, 1861\"",
+    "meta": "Philadelphia Inquirer (\"Everybody's Column\" reader Q&A) · May 12, 1901",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Union",
+    "note": "A reader's 1901 token reads 'Instit'd May 27, 1861' and 'Second Annual Fair held [June] 15, 1863'; the Inquirer editor records the UVRS served 100,000+ men, with a single-day maximum of 15,000.",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-b014",
+    "type": "Anecdote",
+    "title": "William H. Rhawn named as organizer of both saloons",
+    "meta": "Philadelphia Inquirer · February 6, 1898",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Both",
+    "note": "William H. Rhawn is described as 'one of the organizers' of both the Cooper Shop and the UVRS in an 1898 political profile, with a combined 'one million' soldiers served.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-b015",
+    "type": "Anecdote",
+    "title": "Grace D. Nickles obituary: wounded overflow into her home after Gettysburg",
+    "meta": "Philadelphia Inquirer · November 2, 1899",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "Mrs. Grace Nickles, who lived next door to the Cooper Shop, received overflow wounded soldiers in her own home after Gettysburg when the saloon itself was full — and declined to apply for a pension.",
+    "interestTier": "standout",
+    "pullQuote": "Mrs. Grace Nickles, who lived next door to the Cooper Shop, received overflow wounded soldiers in her own home after Gettysburg when the saloon itself was full — and declined to apply for a pension.",
+    "links": []
+  },
+  {
+    "id": "anec-b016",
+    "type": "Anecdote",
+    "title": "Jacob Plant obituary: William Cooper named as founder; two survivors identified",
+    "meta": "Philadelphia Inquirer · February 19, 1904",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "Jacob Plant's 1904 obituary names William Cooper as founder and notes only two original committee members survive: Edward Cooper (~65) and Joseph Coward (~73).",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-b017",
+    "type": "Anecdote",
+    "title": "I. N. Albertson passes through Cooper Shop, August 1862",
+    "meta": "The National Tribune · December 21, 1905",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "Albertson writes from 1905: 'We arrived in Philadelphia in time to get a good dinner at the Cooper [Shop]; arrived in Washington next day about noon — dinner here not so good.' The regiment then heard the guns of Second Bull Run.",
+    "interestTier": "standout",
+    "pullQuote": "Albertson writes from 1905: 'We arrived in Philadelphia in time to get a good dinner at the Cooper [Shop]; arrived in Washington next day about noon — dinner here not so good.' The regiment then heard the guns of Second Bull Run.",
+    "links": []
+  },
+  {
+    "id": "anec-b018",
+    "type": "Anecdote",
+    "title": "Three survivors of Ladies' Committee honored at Memorial Day, May 1906",
+    "meta": "Philadelphia Inquirer · May 30, 1906",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "Three surviving members of the Cooper Shop Ladies' Committee of Fifteen are honored at Memorial Day 1906, including Mrs. Atkinson, daughter of founder William M. Cooper.",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-b019",
+    "type": "Anecdote",
+    "title": "\"Miss Browney\" fiction: UVRS as narrative backdrop",
+    "meta": "The National Tribune · March 29, 1906",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Union",
+    "note": "In a 1906 National Tribune short story, a fictional character mentions having spent a year 'in the hospitals and in the Volunteer Refreshment Saloon which became so famous during the war.'",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-b020",
+    "type": "Anecdote",
+    "title": "Anna R. Glading nurses at UVRS Hospital throughout the war",
+    "meta": "Gloucester County Times · March 27, 1913",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Union",
+    "note": "Anna Glading served as a volunteer nurse 'the entire war' at the UVRS Hospital while her husband fought at the front, meeting at Gloria Dei at the start of the war and celebrating their 50th anniversary in 1912.",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-b021",
+    "type": "Anecdote",
+    "title": "GAR Encampment 1899: committee resolution to honor surviving saloon workers",
+    "meta": "Philadelphia Inquirer · July 27, 1899",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Both",
+    "note": "In preparation for the 1899 GAR National Encampment, the General Committee passed a resolution to compile a list of all surviving workers of both saloons and extend them official recognition.",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-b122",
+    "type": "Anecdote",
+    "title": "Harris Light Cavalry (2nd NY Volunteer Cavalry) \"bountifully supplied with rations\" in Philadelphia, August 1861",
+    "meta": "Willard Glazier, *Three Years in the Federal Cavalry* (New York: R.H. Ferguson & Co., 1872) · 1872",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Both",
+    "note": "Willard Glazier describes the Harris Light Cavalry's August 1861 Philadelphia stop: 'we were bountifully supplied with rations by her proverbially generous and patriotic people.'",
+    "interestTier": "standard",
+    "links": [
+      "recWPUJ1jzUoNH8nc"
+    ]
+  },
+  {
+    "id": "anec-b123",
+    "type": "Anecdote",
+    "title": "187th Pennsylvania Volunteer Infantry breakfasts at both saloons on return from Petersburg, September 27 c. 1865",
+    "meta": "Gibbs, James M. (comp.). *History of the First Battalion Pennsylvania Six Months Volunteers and the 187th Regiment Pennsylvania Volunteer Infantry: Six Months and Three Years Service, Civil War, 1863–1865*. [Philadelphia, c. 1905]. · c. 1905",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Both",
+    "note": "The 187th Pennsylvania breakfasted at 'the Union Volunteer and Cooper Shop Refreshment Saloons' on return from Petersburg, welcomed by 'the ringing of bells and other demonstrations of loyal regard.'",
+    "interestTier": "standard",
+    "links": [
+      "reccyaOJpmsUdSoKI"
+    ]
+  },
+  {
+    "id": "anec-b124",
+    "type": "Anecdote",
+    "title": "57th Massachusetts Volunteer Infantry Regiment hosted at Cooper Shop on outbound transit, April 1864",
+    "meta": "Anderson, John. *The Fifty-seventh Regiment of Massachusetts Volunteers in the War of the Rebellion: Army of the Potomac.* Boston: E. B. Stillings & Co., Printers, 1896. Pp. 15–17 (approx.). · 1896",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The 57th Massachusetts never forgot 'the bountiful feast' at Cooper Refreshment Rooms in April 1864 — 'a noble exhibition of Philadelphia loyalty and patriotism shining down through the long years from 1776.'",
+    "interestTier": "notable",
+    "links": [
+      "rec41sYH2re2RAmsb"
+    ]
+  },
+  {
+    "id": "anec-b125",
+    "type": "Anecdote",
+    "title": "1st Maine Heavy Artillery Regiment welcomed at Cooper Shop on outbound transit, August 1862",
+    "meta": "Shaw, Horace H. *The First Maine Heavy Artillery, 1862–1865.* Portland, Me., 1903. P. 92 (approx.). · 1903",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "All 1st Maine Heavy Artillery survivors will remember 'the refreshing bath that many had and the excellent supper — and the younger ones will remember the lines of young ladies that they passed as the dusk closed upon us.'",
+    "interestTier": "notable",
+    "links": [
+      "rec2jeomxx1dU198r"
+    ]
+  },
+  {
+    "id": "anec-b126",
+    "type": "Anecdote",
+    "title": "19th Massachusetts Volunteer Infantry breakfasts at Cooper Shop on outbound transit; signal-gun alert system described, August 1861",
+    "meta": "Adams, John G. B. *Reminiscences of the Nineteenth Massachusetts Regiment.* Boston: Wright & Potter Printing Co., 1899. Ch. I–II, pp. 6–7 (approx.). · 1899",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "Upon the 19th Massachusetts' arrival, 'we heard a signal gun and learned that it was to inform the people connected with the cooper's shop that we were coming' — then sat down to 'the only home-like meal we had received since leaving Massachusetts.'",
+    "interestTier": "standout",
+    "pullQuote": "Upon the 19th Massachusetts' arrival, 'we heard a signal gun and learned that it was to inform the people connected with the cooper's shop that we were coming' — then sat down to 'the only home-like meal we had received since leaving Massachusetts.'",
+    "links": [
+      "recfxYiwgEiVufMPT",
+      "rec46aPw5gBnuLxoI"
+    ]
+  },
+  {
+    "id": "anec-b127",
+    "type": "Anecdote",
+    "title": "18th New Hampshire Volunteer Infantry lunched at UVRS on outbound transit; substitutes-vs.-volunteers moral contrast, October 1864",
+    "meta": "Livermore, Thomas Leonard. *History of the Eighteenth New Hampshire Volunteers, 1864-5.* Boston: The Fort Hill Press, 1904. P. 27. · 1904",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "At Jersey City, 150 army substitutes marched handcuffed in pairs under armed guard. The 18th New Hampshire volunteers, who marched freely and were lunched at 'the then famous Union Volunteer Refreshment Station,' had every man report at City Point.",
+    "interestTier": "standout",
+    "pullQuote": "At Jersey City, 150 army substitutes marched handcuffed in pairs under armed guard. The 18th New Hampshire volunteers, who marched freely and were lunched at 'the then famous Union Volunteer Refreshment Station,' had every man report at City Point.",
+    "links": [
+      "reccG5JIESF4PO0RK",
+      "recDtjcAoHm5evTpb"
+    ]
+  },
+  {
+    "id": "anec-b128",
+    "type": "Anecdote",
+    "title": "36th Massachusetts Volunteer Infantry \"enjoyed the hospitality of the city\" at the Cooper Shop on homeward transit, June 1865",
+    "meta": "Bates, Samuel P. *History of the Thirty-sixth Regiment Massachusetts Volunteers. 1862-1865.* [Worcester, 1884]. P. 307. · 1884",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The 36th Massachusetts 'enjoyed the hospitality of the city at the famous Cooper Shop refreshment-rooms, receiving a warm greeting, and obtaining abundant cheer, and much-needed rest.'",
+    "interestTier": "standard",
+    "links": [
+      "recMHbAYq0v2i4waW"
+    ]
+  },
+  {
+    "id": "anec-b129",
+    "type": "Anecdote",
+    "title": "4th Rhode Island Infantry dines at Cooper Shop on homeward transit, July 15, 1865",
+    "meta": "Allen, George H. *Forty-Six Months with the Fourth R.I. Volunteers, in the War of 1861 to 1865.* Providence: J. A. & R. A. Reid, Printers, 1887. P. 365. · 1887",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The 4th Rhode Island 'marched over to the old Cooper Shop Refreshment Saloon' on July 15, 1865, partook of 'a substantial dinner,' then crossed the ferry to Camden.",
+    "interestTier": "standard",
+    "links": [
+      "recbSGFvZWkuxDc0W"
+    ]
+  },
+  {
+    "id": "anec-b130",
+    "type": "Anecdote",
+    "title": "80th New York Volunteer Infantry (Ulster Guard) visits Cooper Shop in Philadelphia, October 27, 1861",
+    "meta": "Gates, Theodore B. *The \"Ulster Guard\" (20th N.Y. State Militia) and the War of the Rebellion.* New York, 1879. · 1879",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The chaplain of the 80th NY found 'excellent bread and delicious butter, superb cold beef and ham... urged upon us with a persistent hospitality that seemed to receive rather than to confer a favor' — then the assembled soldiers 'broke forth into spontaneous cheers... which made the rafters of the building fairly ring again.'",
+    "interestTier": "standout",
+    "pullQuote": "The chaplain of the 80th NY found 'excellent bread and delicious butter, superb cold beef and ham... urged upon us with a persistent hospitality that seemed to receive rather than to confer a favor' — then the assembled soldiers 'broke forth into spontaneous cheers... which made the rafters of the building fairly ring again.'",
+    "links": [
+      "rec7eWRVJjce9qDQR"
+    ]
+  },
+  {
+    "id": "anec-b131",
+    "type": "Anecdote",
+    "title": "118th Pennsylvania Infantry (Corn Exchange Regiment) recalls \"Volunteer and Cooper-Shop Refreshment Saloons\" in contrast to Washington's Soldier's Retreat, September 1, 1862",
+    "meta": "[Survivors' Association.] *History of the Corn Exchange Regiment, 118th Pennsylvania Volunteers.* Philadelphia: J. L. Smith, 1888. P. 22. (Reissued as *History of the 118th Pennsylvania Volunteers Corn Exchange Regiment.* Philadelphia: J. L. Smith, 1905. P. 22 — text identical in both editions.) · 1888 (first edition)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Both",
+    "note": "Arriving in Washington after the Cooper Shop and UVRS, the 118th Pennsylvania found 'sour bread, coffee-colored water, decomposed potatoes, decayed beef' — 'in such striking contrast with the comforting, well-served supplies furnished by the Volunteer and Cooper-Shop Refreshment Saloons in Philadelphia, that the soldiers howled a unanimous dissatisfaction.'",
+    "interestTier": "standout",
+    "pullQuote": "Arriving in Washington after the Cooper Shop and UVRS, the 118th Pennsylvania found 'sour bread, coffee-colored water, decomposed potatoes, decayed beef' — 'in such striking contrast with the comforting, well-served supplies furnished by the Volunteer and Cooper-Shop Refreshment Saloons in Philadelphia, that the soldiers howled a unanimous dissatisfaction.'",
+    "links": [
+      "recu40UXeB7s0CuFT"
+    ]
+  },
+  {
+    "id": "anec-b132",
+    "type": "Anecdote",
+    "title": "118th Pennsylvania Infantry (Corn Exchange Regiment) breakfasts and then disbands at the Cooper Shop, June 3 and June 10, 1865",
+    "meta": "[Survivors' Association.] *Antietam to Appomattox with 118th Penna. Vols., Corn Exchange Regiment.* Philadelphia: J. L. Smith, 1892. Pp. 607–608. · 1892",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "On June 10, 1865, the 118th Pennsylvania participated in the mass return parade, then marched to the Cooper Shop — 'where the regiment was finally disbanded.'",
+    "interestTier": "notable",
+    "links": [
+      "recu40UXeB7s0CuFT"
+    ]
+  },
+  {
+    "id": "anec-b133",
+    "type": "Anecdote",
+    "title": "88th Pennsylvania Volunteer Infantry blesses the \"Union and Cooper Shop Refreshment Saloons\" on outbound transit, October 5, 1861",
+    "meta": "Vautier, John D. *History of the 88th Pennsylvania Volunteers in the War for the Union, 1861–1865.* Philadelphia: J. B. Lippincott Co., 1894. Pp. 16–17. · 1894",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Both",
+    "note": "The 88th Pennsylvania wished 'the blessings of God on the noble men and women of the Union and Cooper Shop Refreshment Saloons who so promptly and generously ministered to the wants of the soldiers.'",
+    "interestTier": "standard",
+    "links": [
+      "recFy7vpDG4xCp1ps"
+    ]
+  },
+  {
+    "id": "anec-b134",
+    "type": "Anecdote",
+    "title": "49th New York Volunteer Infantry breakfasts at \"the Old Cooper Shop\" on outbound transit, September 22, 1861",
+    "meta": "Bidwell, Frederick David. *History of the Forty-ninth New York Volunteers.* Albany: J. B. Lyon Company, Printers, 1916. · 1916",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The 49th New York arrived at four o'clock Sunday morning after 'an all night ride of ninety miles' and marched to 'the Old Cooper Shop, where a splendid breakfast was served by the patriotic ladies.'",
+    "interestTier": "standard",
+    "links": [
+      "recUKsdEtZUraWTN3"
+    ]
+  },
+  {
+    "id": "anec-b135",
+    "type": "Anecdote",
+    "title": "19th Massachusetts Volunteer Infantry quartered and fed at \"The Cooper Shop\" refreshment saloon on outbound transit, c. August 30, 1861 — second independent source",
+    "meta": "Waitt, Ernest Linden. *History of the Nineteenth Regiment, Massachusetts Volunteer Infantry, 1861-1865.* [Publisher not recorded in source.] 1906. · 1906",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "A second source for the 19th Massachusetts' 1861 transit: 'The coming into the city had been signalled to the people at The Cooper Shop by the firing of a cannon, as was the custom when a regiment arrived, en route to the seat of war.'",
+    "interestTier": "notable",
+    "links": [
+      "recfxYiwgEiVufMPT",
+      "rec46aPw5gBnuLxoI"
+    ]
+  },
+  {
+    "id": "anec-b136",
+    "type": "Anecdote",
+    "title": "95th Pennsylvania Volunteer Infantry dines at the Union Volunteer Refreshment Saloon on outbound transit, October 12, 1861 — second independent source for B-121",
+    "meta": "Taylor, Frank H. *Philadelphia in the Civil War 1861–1865.* Philadelphia: Dunlap Printing Company [Published by the City of Philadelphia], 1913. · 1913",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "The 95th Pennsylvania 'paraded through the city on October 12th, dined at the Union Volunteer Refreshment Saloon and at 7 P.M. entrained for Washington.'",
+    "interestTier": "standard",
+    "links": [
+      "recHPMZ34Onc5PmSQ"
+    ]
+  },
+  {
+    "id": "anec-b137",
+    "type": "Anecdote",
+    "title": "6th United States Colored Troops and four companies of the 8th United States Colored Troops dine at the Union Volunteer Refreshment Saloon after a city parade, October 3, 1863",
+    "meta": "Taylor, Frank H. *Philadelphia in the Civil War 1861–1865.* Philadelphia: Dunlap Printing Company [Published by the City of Philadelphia], 1913. · 1913",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "On October 3, 1863, the 6th and four companies of the 8th U.S. Colored Troops were reviewed at the Union League and provided dinner at the Union Volunteer Refreshment Saloon — 'the soldierly bearing of these troops won them great praise from the newspapers and the public.'",
+    "interestTier": "standout",
+    "pullQuote": "On October 3, 1863, the 6th and four companies of the 8th U.S. Colored Troops were reviewed at the Union League and provided dinner at the Union Volunteer Refreshment Saloon — 'the soldierly bearing of these troops won them great praise from the newspapers and the public.'",
+    "links": [
+      "recIT0UO0oPc3Z8UJ",
+      "recyRFVlHVROIrTyH"
+    ]
+  },
+  {
+    "id": "anec-b138",
+    "type": "Anecdote",
+    "title": "Three unnamed Maine regiments dine at the Union Volunteer Refreshment Saloon on homeward transit, July 1, 1863",
+    "meta": "Taylor, Frank H. *Philadelphia in the Civil War 1861–1865.* Philadelphia: Dunlap Printing Company [Published by the City of Philadelphia], 1913. (Footnote.) · 1913",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "On July 1, 1863 — the opening day of Gettysburg — three Maine regiments dining at the UVRS were appealed to by Rev. Brainerd to stay and defend Philadelphia, offered $50 each for ten days; a majority refused and all departed northward.",
+    "interestTier": "standout",
+    "pullQuote": "On July 1, 1863 — the opening day of Gettysburg — three Maine regiments dining at the UVRS were appealed to by Rev. Brainerd to stay and defend Philadelphia, offered $50 each for ten days; a majority refused and all departed northward.",
+    "links": []
+  },
+  {
+    "id": "anec-b139",
+    "type": "Anecdote",
+    "title": "35th Massachusetts Volunteer Infantry supplied with a meal at the Union Volunteer Refreshment Saloon on outbound transit, c. August–September 1862",
+    "meta": "King, William C. *A Memoir of Gen. Edward Augustus Wild.* [Boston?], 1895. Reproducing Col. Wild's 1862 report to the Governor of Massachusetts. · 1895",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "Col. Wild of the 35th Massachusetts reported: 'In the immediate neighborhood of the Union Volunteer Refreshment Saloon, there are a large number of drinking shops, which have been a pest to every regiment passing through.'",
+    "interestTier": "notable",
+    "links": [
+      "recu3qmYHjNPfXkMP"
+    ]
+  },
+  {
+    "id": "anec-b140",
+    "type": "Anecdote",
+    "title": "121st Pennsylvania Infantry arrives at the Cooper Shop Refreshment Saloon on homeward transit, June 4, 1865",
+    "meta": "Strong, William W. (ed.). *History of the 121st Regiment Pennsylvania Volunteers.* Philadelphia, 1906 (also 1893 edition). Archive.org: historyof121stre03penn. · 1906 (or 1893)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The 121st Pennsylvania, returning after nearly three years, were given 'quite an ovation' — 'some of the men on being recognized by their friends were seized and pulled from the ranks, and immediately surrounded and pressed with all sorts of questions.'",
+    "interestTier": "notable",
+    "links": [
+      "receS8QQjfqdmn6wE"
+    ]
+  },
+  {
+    "id": "anec-b141",
+    "type": "Anecdote",
+    "title": "97th Pennsylvania Volunteer Infantry rhetorically evoked at the Cooper Shop Refreshment Saloon in a reunion address, c. November 1861 — second independent source for B-033",
+    "meta": "*Reunion of the Ninety-Seventh Regiment Pennsylvania Volunteers at Doylestown, Pa., July 4, 1884.* [Philadelphia?: s.n., 1884]. Archive.org: reunionofninetys00penn. (LOC item 04012527.) · 1884",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "A 97th Pennsylvania reunion speaker recalled: 'I ask you to follow me along the line of march from West Philadelphia to the Cooper Shop Refreshment Saloon.'",
+    "interestTier": "standard",
+    "links": [
+      "recwd713RZ3lw5ZGf"
+    ]
+  },
+  {
+    "id": "anec-b142",
+    "type": "Anecdote",
+    "title": "116th Pennsylvania Volunteer Infantry marches to the Cooper Shop Refreshment Saloon on outbound transit, September 2, 1862",
+    "meta": "Mulholland, St. Clair A. *The Story of the 116th Regiment, Pennsylvania Infantry.* Philadelphia: F. McManus, Jr. & Co., 1899. [Text prepared c. 1896–1899.] Archive.org / LOC: storyof116thregi03mulh (LOC item 21012466). · 1899",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The 116th Pennsylvania, 'preceded by martial music, marched through the principal streets... to the Cooper Shop Refreshment Saloon, and after enjoying an excellent meal... marched to the depot.'",
+    "interestTier": "standard",
+    "links": [
+      "recvrNhmTnnIM1Q0r"
+    ]
+  },
+  {
+    "id": "anec-b143",
+    "type": "Anecdote",
+    "title": "6th New Hampshire Volunteer Infantry at the Cooper Shop Refreshment Saloon on outbound transit, December 26–27, 1861 — names founder \"Cooper\" by name",
+    "meta": "Jackman, Lyman (with Amos Hadley, ed.). *History of the Sixth New Hampshire Regiment in the War for the Union.* Concord, NH: Republican Press Association, 1891. · 1891",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The 6th New Hampshire regimental historian wrote: 'A full history of that Soldiers' Home should be written... Cooper, the patriotic originator of that Retreat, should have been pensioned by the government.'",
+    "interestTier": "notable",
+    "links": [
+      "recq399oj38Uh9FhV"
+    ]
+  },
+  {
+    "id": "anec-b144",
+    "type": "Anecdote",
+    "title": "9th New Jersey Volunteer Infantry at the Cooper refreshment saloon, three separate visits: December 4, 1861 (outbound); March 15, 1864 (vet furlough return); July 17, 1865 (homeward)",
+    "meta": "Drake, J. Madison. *History of the Ninth New Jersey Veteran Vols.: A Record of Its Service from Sept. 15th, 1861, to July 12th, 1865.* Elizabeth, NJ: Journal Printing House, 1889. · 1889",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The 9th New Jersey visited the Cooper Shop three separate times: December 4, 1861 (outbound), March 15, 1864 (veteran furlough return), and July 17, 1865 (homeward muster-out).",
+    "interestTier": "notable",
+    "links": [
+      "recGsukhbuI2LNEvz",
+      "recSePykEvATp0lob"
+    ]
+  },
+  {
+    "id": "anec-b145",
+    "type": "Anecdote",
+    "title": "93rd New York Volunteer Infantry at the \"Cooper Shop\" Volunteer Refreshment Saloon on outbound transit, March 6–7, 1862 — midnight arrival, \"fifth regiment fed that night\"",
+    "meta": "Roberts, Charles W. *Personal Recollections of the 93rd New York Vol. Infantry, from August 1861 to August 1865.* [Publisher details to be confirmed from title page.] 1895. · 1895",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The 93rd New York, arriving at 1 AM, were 'the fifth regiment fed by them that night' — served by 'the Philadelphia Ladies' Volunteer Relief Corps,' who were 'divided into regular reliefs for duty when occasion required.'",
+    "interestTier": "standout",
+    "pullQuote": "The 93rd New York, arriving at 1 AM, were 'the fifth regiment fed by them that night' — served by 'the Philadelphia Ladies' Volunteer Relief Corps,' who were 'divided into regular reliefs for duty when occasion required.'",
+    "links": [
+      "rec89cGWINRlN0TQQ"
+    ]
+  },
+  {
+    "id": "anec-b146",
+    "type": "Anecdote",
+    "title": "17th Maine Volunteer Infantry dines at the \"Cooper Volunteer Refreshment Rooms\" on outbound transit, August 22, 1862",
+    "meta": "Houghton, Edwin B. *The Campaigns of the Seventeenth Maine.* Portland, ME: Short & Loring, 1866. · 1866",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The 17th Maine (1,030 men) partook of 'a generous collation' at the Cooper Shop, then waited in the streets until 11 PM in a severe rainstorm before their transportation arrived.",
+    "interestTier": "standard",
+    "links": [
+      "rec0QDrLFNYmTdDYJ"
+    ]
+  },
+  {
+    "id": "anec-b147",
+    "type": "Anecdote",
+    "title": "79th New York Volunteer Infantry (Highlanders) dines at the \"Union Refreshment Saloon\" on homeward transit, May 17, 1864",
+    "meta": "Todd, William. *The Seventy-ninth Highlanders, New York Volunteers in the War of Rebellion, 1861–1865.* Albany, NY: Brandow, Barton & Co., 1886. · 1886",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "The 79th New York Highlanders, homeward in May 1864 with two-year enlistments expiring, were 'treated to a fine supper' at the Union Refreshment Saloon.",
+    "interestTier": "standard",
+    "links": [
+      "recRmzURzDyCS0c3c"
+    ]
+  },
+  {
+    "id": "anec-b148",
+    "type": "Anecdote",
+    "title": "32nd Massachusetts Infantry (Companies H, I, K battalion) dines at the \"Cooper Refreshment Rooms\" on outbound transit, August 21, 1862 — second independent source for 32nd MA CS visit (different transit from B-077)",
+    "meta": "Spaulding, S.C. \"Reminiscences of Army Life: From Antietam to Spot[sylvania].\" In *[Clippings pertaining to the history and reminiscences of the 32nd Massachusetts Infantry]*. Newton Free Library, Newton, MA. Archive.org: clippingspertain00unit. · c. 1885 (Newton, MA newspaper publication; context places it alongside a January 29, 1885 monument committee letter in the same clippings collection)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The 32nd Massachusetts marched 'of course... directly to the Cooper Refreshment Rooms for sandwiches and coffee, at which place all of Uncle Sam's boys were made welcome.'",
+    "interestTier": "notable",
+    "links": [
+      "reciNr6as7MNDm1iD"
+    ]
+  },
+  {
+    "id": "anec-b149",
+    "type": "Anecdote",
+    "title": "12th New Jersey Volunteer Infantry, Company F dines at the \"Cooper Shop\" on outbound transit, September 7, 1862",
+    "meta": "Muxes, Wm. P. *History of the men of Co. F, with description of the marches and battles of the 12th New Jersey Vols., Dedicated to \"Our Dead.\"* Mickleton, NJ, 1897. · 1897",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The 12th New Jersey crossed 'from Federal to Washington street' — the exact Camden ferry route — where they found 'fair ladies and pretty girls' waiting with 'long to be remembered kindness,' then marched to Broad and Prime amid 'a continuous throng of shouting men, waving flags.'",
+    "interestTier": "notable",
+    "links": [
+      "recOA9FAiY43fVKBC"
+    ]
+  },
+  {
+    "id": "anec-b150",
+    "type": "Anecdote",
+    "title": "7th Connecticut Volunteer Infantry dines at the \"Cooper Shop Volunteer Refreshment Saloon\" on outbound transit, September 19, 1861 — upgrades B-023 from \"Unclear\" to CS confirmed",
+    "meta": "Walkley, Stephen W. Jr. *History of the Seventh Connecticut Volunteer Infantry, Hawley's Brigade, Terry's Division, Tenth Army Corps, 1861–1865.* [Southington, CT?], 1905 (copyright); 1907 (publication date noted elsewhere). · 1905/1907",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "Walkley's 1905 appendix gives the founding narrative: William M. Cooper's fireplace, the first regiment fed (8th New York, May 27, 1861), 'more than six hundred thousand men' total, and the UVRS 'located on Washington street near the steamboat landing.'",
+    "interestTier": "standout",
+    "pullQuote": "Walkley's 1905 appendix gives the founding narrative: William M. Cooper's fireplace, the first regiment fed (8th New York, May 27, 1861), 'more than six hundred thousand men' total, and the UVRS 'located on Washington street near the steamboat landing.'",
+    "links": [
+      "receaE9dUq9nH8SiI"
+    ]
+  },
+  {
+    "id": "anec-b151",
+    "type": "Anecdote",
+    "title": "1st Massachusetts Volunteer Infantry at the \"Cooper-Shop and Union-Refreshment Saloons\" on outbound transit, June 17, 1861, and homeward transit, [August] 1861 — two visits; both saloons named explicitly (Cudworth 1866)",
+    "meta": "Cudworth, Warren Handel. *History of the First Regiment (Massachusetts Infantry).* Boston: Walker, Fuller & Co., 1866. · 1866",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Both",
+    "note": "The 1st Massachusetts chaplain described both saloons in June 1861, and on the homeward noted they were visited 'as usual.' A footnote records 1,200,000 volunteers entertained at the combined saloons. On the way out, the ferries got stuck in the mud.",
+    "interestTier": "standout",
+    "pullQuote": "The 1st Massachusetts chaplain described both saloons in June 1861, and on the homeward noted they were visited 'as usual.' A footnote records 1,200,000 volunteers entertained at the combined saloons. On the way out, the ferries got stuck in the mud.",
+    "links": [
+      "recu2aaHStIq2VdJU"
+    ]
+  },
+  {
+    "id": "anec-b152",
+    "type": "Anecdote",
+    "title": "15th Connecticut Volunteer Infantry at the \"Union Volunteer Refreshment Committee\" (UVRS) on outbound transit, August 29, 1862 (Thorpe 1893)",
+    "meta": "Thorpe, Sheldon B. *The History of the Fifteenth Connecticut Volunteers in the War for the Defense of the Union, 1861–1865.* New Haven: Price, Lee & Adkins Co., 1893. · 1893",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "The 15th Connecticut received 'a most generous breakfast' from 'The Union Volunteer Refreshment Committee' — the only source naming the saloon by its committee title rather than its building name.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-b153",
+    "type": "Anecdote",
+    "title": "21st Massachusetts Volunteer Infantry at the \"Cooper Shop Saloon\" on outbound transit, August 24, 1861, and at the \"Cooper Shop Refreshment Saloon\" on re-enlistment return transit, March 19, 1864 — two visits (Walcott 1882)",
+    "meta": "Walcott, Charles F. *History of the Twenty-first Regiment, Massachusetts Volunteers, in the War for the Preservation of the Union, 1861–1865: With Statistics of the War and of Rebel Prisons.* Boston: Houghton, Mifflin, 1882. · 1882",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The 21st Massachusetts visited the Cooper Shop in August 1861 ('None of us will ever forget the whole-hearted generous kindness') and again in March 1864 ('as two and a half years before, found an excellent supper and a kind welcome').",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-b154",
+    "type": "Anecdote",
+    "title": "10th Massachusetts Volunteer Infantry at the \"Cooper-Shop\" on homeward transit, [June 23, 1864] (Roe 1909)",
+    "meta": "Roe, Alfred S. *The Tenth Regiment, Massachusetts Volunteer Infantry, 1861–1864: A Western Massachusetts Regiment.* Springfield, MA: Tenth Regiment Veteran Association, 1909. · 1909",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The 10th Massachusetts' homeward memoir wrote: 'Cooper-Shop hospitality wrote the City of Brotherly Love deep in each loyal heart.'",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-b155",
+    "type": "Anecdote",
+    "title": "13th Maine Volunteer Infantry at the \"Union Volunteer Refreshment Rooms\" on homeward transit, December 28, 1864 (midnight) — UVRS named explicitly (Lufkin 1898)",
+    "meta": "Lufkin, Edwin B. *History of the Thirteenth Maine Regiment from its Organization in 1861 to its Muster-Out in 1865.* [Augusta, ME?], 1898. · 1898",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "The 13th Maine's chapter heading listed 'A midnight dinner in Philadelphia' as a headline event — 'at midnight, we enjoyed a most welcome surprise party, in the shape of a nice supper' at the Union Volunteer Refreshment Rooms.",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-b156",
+    "type": "Anecdote",
+    "title": "1st Maine Volunteer Infantry (3-month) at \"the Cooper shop\" on homeward transit, August 1, 1861 — CS named explicitly (Gould 1871)",
+    "meta": "Gould, John Mead. *History of the First - Tenth - Twenty-ninth Maine Regiment.* Portland, ME: [publisher not identified in archive.org metadata], 1871. · 1871",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The 1st Maine (3-month) had 'a good breakfast at the Cooper shop in Philadelphia, crossed the river, and hurrahed from one end of Jersey to the other.'",
+    "interestTier": "notable",
+    "links": [
+      "reckIWODsaQ617j4m",
+      "recbRTBNCwmj6lyjo"
+    ]
+  },
+  {
+    "id": "anec-b157",
+    "type": "Anecdote",
+    "title": "10th Maine Volunteer Infantry at \"Wm. Cooper's cooper-shop\" and \"the other refreshment rooms\" on outbound transit, October [8], 1861 — CS named explicitly; both saloons visited (Gould 1871; second independent source confirming CS for B-089)",
+    "meta": "Gould, John Mead. *History of the First - Tenth - Twenty-ninth Maine Regiment.* Portland, ME: [publisher not identified], 1871. Archive.org: historyfirstten00jordgoog. · 1871",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The 10th Maine received 'a bountiful meal at Wm. Cooper's cooper-shop, and the other refreshment rooms, which made Philadelphia the synonym of hospitality.'",
+    "interestTier": "notable",
+    "links": [
+      "recWbx3gKWUk2ack3"
+    ]
+  },
+  {
+    "id": "anec-b158",
+    "type": "Anecdote",
+    "title": "10th Maine Volunteer Infantry at \"the Cooper Shop and Soldiers' Rest\" on homeward transit, April 29, 1863 — CS named explicitly (Gould 1871; second independent source for B-090)",
+    "meta": "Gould, John Mead. *History of the First - Tenth - Twenty-ninth Maine Regiment.* Portland, ME: [publisher not identified], 1871. Archive.org: historyfirstten00jordgoog. · 1871",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The 10th Maine dined at 'the Cooper Shop and Soldiers' Rest' on the homeward, crossing the ferry 'as we had done in the 1st Maine' two years earlier.",
+    "interestTier": "standard",
+    "links": [
+      "recWbx3gKWUk2ack3"
+    ]
+  },
+  {
+    "id": "anec-b159",
+    "type": "Anecdote",
+    "title": "4th New York Heavy Artillery at the \"Cooper Shop Volunteer Refreshment Saloon\" on outbound transit, February 10, 1862 — CS named explicitly; includes Bemis description of CS interior (*Heavy Guns and Light*, 1890)",
+    "meta": "[Author not identified in book; probable editor: John T. Kirk or regimental committee]. *Heavy Guns and Light: A History of the 4th New York Heavy Artillery.* [New York?], 1890. · 1890",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "Lt. Bemis of the 4th NY Heavy Artillery described the CS interior: whitewashed brick walls hung with portraits, ceilings 'fancifully decorated with tissue-paper devices and pendent memorials of former battles,' 200,000 men fed, eight regiments in one night. After supper, the regiment paraded Philadelphia streets, the men calling 'Good-by, gals.'",
+    "interestTier": "standout",
+    "pullQuote": "Lt. Bemis of the 4th NY Heavy Artillery described the CS interior: whitewashed brick walls hung with portraits, ceilings 'fancifully decorated with tissue-paper devices and pendent memorials of former battles,' 200,000 men fed, eight regiments in one night. After supper, the regiment paraded Philadelphia streets, the men calling 'Good-by, gals.'",
+    "links": [
+      "recgCqKOGPLjyEKry",
+      "recQzK8f164GuBNf2"
+    ]
+  },
+  {
+    "id": "anec-b160",
+    "type": "Anecdote",
+    "title": "9th New York Heavy Artillery at the \"Cooper Shop and Union\" on outbound transit, September 15–16, 1863, and at \"Cooper Shop\" on homeward transit, early October 1865 — both saloons named explicitly on outbound; CS only on homeward (Roe 1899)",
+    "meta": "Roe, Alfred S. *History of the Ninth New York Heavy Artillery.* [Worcester, MA?], 1899. · 1899",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Both",
+    "note": "The 9th NY Heavy Artillery's account quotes the menu: 'bread and butter, ham and cold beef' — and notes 'nearly 1,200,000 men, first and last, had occasion to call down blessings on the heads of these women and men who fed in their Cooper Shop and Union.'",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-b161",
+    "type": "Anecdote",
+    "title": "72nd Pennsylvania Infantry (Baxter's Fire Zouaves) at the \"Volunteer Refreshment Saloon at Prime Street Wharf\" on outbound transit, September 15, 1861 (Sunday evening) — UVRS confirmed by location; \"Volunteer Refreshment Saloon\" without \"Union\" qualifier (Banes 1876)",
+    "meta": "Banes, Charles H. *History of the Philadelphia Brigade: Sixty-ninth, Seventy-first, Seventy-second, and One Hundred and Sixth Pennsylvania Volunteers.* Philadelphia: J.B. Lippincott & Co., 1876. · 1876",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "The 72nd Pennsylvania Fire Zouaves were recalled from the city by fire-alarm bells, departing to 'bonfires... lighted, fire-bells... rung' before their UVRS stop — Colonel Edward Baker, who issued the march order, would be killed at Ball's Bluff 36 days later.",
+    "interestTier": "notable",
+    "links": [
+      "reciqVyIE8hFjfzdM"
+    ]
+  },
+  {
+    "id": "anec-b162",
+    "type": "Anecdote",
+    "title": "38th Massachusetts Volunteer Infantry at the \"Cooper Shop Refreshment Saloon\" on outbound transit, August 26, 1862 (evening) — CS confirmed by name; \"Cooper Shop Refreshment Saloon\" (explicit) (Powers 1866)",
+    "meta": "Powers, George Whitefield. *The Story of the Thirty-Eighth Regiment of Massachusetts Volunteers.* Boston, 1866. · 1866",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The 38th Massachusetts arrived at the Cooper Shop and found that 'although the passing of troops was now a daily occurrence, the enthusiasm of the people did not abate.'",
+    "interestTier": "standout",
+    "pullQuote": "conducted to a long row of wash-basins provided for the purpose. After the hot and dusty ride, the ablution was peculiarly refreshing, and was greatly enjoyed.",
+    "links": [
+      "recKOzBSqAqjn15ob"
+    ]
+  },
+  {
+    "id": "anec-b163",
+    "type": "Anecdote",
+    "title": "27th Connecticut Regiment Infantry at the \"Volunteer Refreshment Saloon\" on homeward transit, July 20, 1863 — contextually strong; \"Volunteer Refreshment Saloon\" without \"Union\" or \"Cooper Shop\" qualifier; \"once more\" implies prior outbound visit (Sheldon 1866)",
+    "meta": "Sheldon, Winthrop Dudley. *The \"Twenty-Seventh\": A Regimental History.* New Haven, 1866. · 1866",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Union",
+    "note": "The 27th Connecticut noted: 'Once more we were entertained at the Volunteer Refreshment Saloon' on their homeward transit — nine months from departure, now 'mustering about half the original number.'",
+    "interestTier": "standard",
+    "links": [
+      "recxWCKikGRabxzS3"
+    ]
+  },
+  {
+    "id": "anec-b164",
+    "type": "Anecdote",
+    "title": "104th Pennsylvania Infantry at the \"Volunteer Refreshment Saloon\" on outbound transit (November 6, 1861) and at muster-out (September 25, 1864) — contextually strong; both events corroborated by A-series newspaper sources; account by commanding colonel (Davis 1866)",
+    "meta": "Davis, W. W. H. (William Watts Hart). *History of the 104th Pennsylvania Regiment, from August 22nd, 1861, to September 30th, 1864.* Philadelphia, 1866. · 1866",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "The 104th Pennsylvania's commanding colonel described marching through the city while 'ladies waved their handkerchiefs and smiled down from windows' — and three years later the regiment was 'quartered' at the UVRS for an entire week awaiting formal muster-out.",
+    "interestTier": "notable",
+    "links": [
+      "reco8eCOGoZFcfSS9"
+    ]
+  },
+  {
+    "id": "anec-b165",
+    "type": "Anecdote",
+    "title": "13th Connecticut Infantry Regiment at the \"Union Volunteer Refreshment Rooms\" on veteran-furlough return transit, August 30, 1864 (10:30 PM) — UVRS confirmed by name; \"Union Volunteer Refreshment Rooms\" (explicit) (Sprague 1867)",
+    "meta": "Sprague, Homer B. *History of the 13th Infantry Regiment of Connecticut Volunteers, during the Great Rebellion.* Hartford: Case, Lockwood, & Company, 1867. · 1867",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Union",
+    "note": "The 13th Connecticut received 'a good collation at that model establishment of its kind, The Union Volunteer Refreshment Rooms' at 10:30 PM on August 30, 1864.",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-b166",
+    "type": "Anecdote",
+    "title": "16th Maine Infantry Regiment at the \"Cooper Shop\" refreshment rooms on outbound transit, August 21, 1862 (1 AM) — CS confirmed by name; diary-format source (Small 1886)",
+    "meta": "Small, Abner R. (Major A. R. Small). *The Sixteenth Maine Regiment in the War of the Rebellion, 1861-1865.* Portland: B. Thurston & Co., 1886. · 1886",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "'Left Jersey City at half-past four p.m., arriving in Philadelphia at one a.m., 21st, marched to Cooper Shop refreshment rooms and partook of a splendid collation.'",
+    "interestTier": "standard",
+    "links": []
+  },
+  {
+    "id": "anec-b167",
+    "type": "Anecdote",
+    "title": "19th Maine Infantry Regiment at the \"Cooper Shop\" refreshment saloon on outbound transit, August 28, 1862 (~10–11 PM) — CS confirmed by name; includes operational detail about signal notification system (Smith 1909)",
+    "meta": "Smith, John Day. *The History of the Nineteenth Regiment of Maine Volunteer Infantry, 1862-1865.* Minneapolis: Great Western Printing Co., 1909. · 1909",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The 19th Maine regimental history recorded: 'The Cooper Shop was notified by signal whenever a regiment arrived en route to the city of Washington. It was a place of bountiful refreshment, maintained throughout the war by the patriotic people of that city.'",
+    "interestTier": "notable",
+    "links": [
+      "recJGUGMmemDHxXcK"
+    ]
+  },
+  {
+    "id": "anec-b168",
+    "type": "Anecdote",
+    "title": "6th New Hampshire Infantry Regiment at the \"old Cooper shop retreat\" on homeward transit, July 20, 1865 (early morning) — CS confirmed by name; \"old Cooper shop retreat\" [CS explicit]; second saloon event for this regiment, complements B-143 outbound (Jackman 1891)",
+    "meta": "Jackman, Lyman. *History of the Sixth New Hampshire Regiment in the War for the Union.* Concord, NH: Republican Press Association, 1891. · 1891",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The 6th New Hampshire, 'the last regiment of the Second Division of the Ninth Corps to be mustered out,' breakfasted at 'the old Cooper shop retreat' on July 20, 1865 — with an explicit callback to their December 1861 visit (B-143).",
+    "interestTier": "notable",
+    "links": [
+      "recq399oj38Uh9FhV"
+    ]
+  },
+  {
+    "id": "anec-b169",
+    "type": "Anecdote",
+    "title": "32nd Maine Infantry Regiment at the \"Volunteer Saloon\" on outbound transit, May 12, 1864 (7:30 PM) — contextually strong UVRS identifier; \"Volunteer Saloon\" = abbreviated \"Volunteer Refreshment Saloon\"; includes companion general narrative passage about Philadelphia hospitality (Houston 1903)",
+    "meta": "Houston, Henry C. *An Historical Sketch of the Thirty-Second Maine Regiment of Infantry Volunteers.* Portland, ME: Press of Southworth Brothers, 1903. · 1903",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Union",
+    "note": "The 32nd Maine historian contrasted Philadelphia's welcome with what came before: 'there were no shouting crowds, no waving banners... but the bountiful feast which we found awaiting us was worth far more than any of these empty demonstrations.'",
+    "interestTier": "notable",
+    "links": [
+      "rec2bNIgQut6RUD7x"
+    ]
+  },
+  {
+    "id": "anec-b170",
+    "type": "Anecdote",
+    "title": "19th Massachusetts Infantry Regiment at the Cooper Shop (unnamed) on outbound veteran-furlough transit, February 6, 1864 — CS confirmed by CS Ledger; no saloon name in diary text; per expanded qualification rules, diary + Ledger corroboration qualifies (Waitt 1906)",
+    "meta": "Waitt, Ernest Linden. *History of the Nineteenth Regiment, Massachusetts Volunteer Infantry, 1861-1865.* Salem, MA: Salem Press Co., 1906. · 1906",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "19th Massachusetts diary entry: 'Feb. 6, 1864. Started for Philadelphia this morning, arriving a little before dark, got supper and rested awhile, then started for New York, riding all night.'",
+    "interestTier": "standard",
+    "links": [
+      "rec46aPw5gBnuLxoI"
+    ]
+  },
+  {
+    "id": "anec-b171",
+    "type": "Anecdote",
+    "title": "19th Massachusetts Infantry Regiment at the \"old Cooper Shop\" on furlough-return transit, March 16–17, 1864 (24-hour stop) — CS confirmed by name; \"the old Cooper Shop\" [CS explicit]; includes unique signal-gun mobilization detail (Waitt 1906)",
+    "meta": "Waitt, Ernest Linden. *History of the Nineteenth Regiment, Massachusetts Volunteer Infantry, 1861-1865.* Salem, MA: Salem Press Co., 1906. · 1906",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "During the 19th Massachusetts' March 1864 Philadelphia stop: 'The single gun which always saluted the arriving regiments gathered at once from their homes the noblest of her citizens to give aid to the tired soldiers.'",
+    "interestTier": "standout",
+    "pullQuote": "During the 19th Massachusetts' March 1864 Philadelphia stop: 'The single gun which always saluted the arriving regiments gathered at once from their homes the noblest of her citizens to give aid to the tired soldiers.'",
+    "links": []
+  },
+  {
+    "id": "anec-b172",
+    "type": "Anecdote",
+    "title": "19th Massachusetts Infantry Regiment at the \"Old Cooper Shop\" on homeward muster-out transit, July 1, 1865 — CS confirmed by name; \"Old Cooper Shop\" [CS explicit]; CS Ledger confirmed (Waitt 1906)",
+    "meta": "Waitt, Ernest Linden. *History of the Nineteenth Regiment, Massachusetts Volunteer Infantry, 1861-1865.* Salem, MA: Salem Press Co., 1906. · 1906",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The 19th Massachusetts' homeward July 1, 1865: 'It is needless to say that from the Philadelphians the regiment experienced a cordial and substantial welcome at the Old Cooper Shop.'",
+    "interestTier": "notable",
+    "links": [
+      "rec46aPw5gBnuLxoI"
+    ]
+  },
+  {
+    "id": "anec-b173",
+    "type": "Anecdote",
+    "title": "15th Maine Infantry Regiment at the \"famous Union restaurant\" on veteran-furlough outbound transit, approximately August 4–6, 1864 — contextually strong UVRS; \"Union restaurant\" is unusual nomenclature but \"Union\" prefix + \"war-period\" institutional language = UVRS probable (Shorey 1890)",
+    "meta": "Shorey, Henry A. *The Story of the Maine Fifteenth; Being a Brief Narrative of the More Important Events in the History of the Fifteenth Maine Regiment.* Bridgton, ME: Press of the Bridgton News, 1890. · 1890",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Union",
+    "note": "The 15th Maine called the UVRS 'the famous Union restaurant, which was the crowning-glory of the City of Brotherly Love during the war-period.'",
+    "interestTier": "standard",
+    "links": [
+      "rece7LoKIm4qrGdLa"
+    ]
+  },
+  {
+    "id": "anec-b174",
+    "type": "Anecdote",
+    "title": "26th Maine Infantry Regiment, \"refreshments were served by the ladies\" on outbound transit, October 25, 1862 (~2:30 PM) — saloon not named; qualifies under expanded rules (unit in Airtable, Philadelphia hospitality documented) (Maddocks 1899)",
+    "meta": "Maddocks, Elden B. *History of the Twenty-sixth Maine Regiment.* Bangor, ME: Chas. H. Glass & Co., 1899. · 1899 (published under vote of the Twenty-sixth Maine Association, passed August 26, 1898)",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Both",
+    "note": "The 26th Maine arrived at Philadelphia at 2:30 PM on October 25, 1862, 'where refreshments were served by the ladies' — having lost a soldier run over by a train at Jersey City earlier that morning.",
+    "interestTier": "standard",
+    "links": [
+      "rec5sojClpJutvBTF"
+    ]
+  },
+  {
+    "id": "anec-b175",
+    "type": "Anecdote",
+    "title": "2nd New Hampshire Infantry Regiment, \"furnished with dinner at the 'Soldier's Refreshment Saloon'\" on homeward furlough transit, March 1, 1863 (Sunday morning) — saloon unidentified; qualifies under expanded rules (unit in Airtable, Philadelphia hospitality documented) (Haynes 1865)",
+    "meta": "Haynes, Martin A. (Martin Alonzo). *History of the Second Regiment New Hampshire Volunteers: Its Camps, Marches and Battles.* Manchester, N.H.: C. F. Livingston, 1865. · 1865 (wartime publication; event from March 1, 1863; ~2-year lag — essentially near-contemporary)",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Both",
+    "note": "The 2nd New Hampshire arrived Sunday morning, March 1, 1863, 'and were furnished with dinner at the Soldier's Refreshment Saloon.'",
+    "interestTier": "standard",
+    "links": [
+      "recZyIC09BcYNSfM1"
+    ]
+  },
+  {
+    "id": "anec-b176",
+    "type": "Anecdote",
+    "title": "76th New York Volunteer Infantry Regiment at \"each of two benevolent associations\" on outbound transit, midnight January 30, 1862 — both CS and UVRS implied by \"two benevolent associations\" at the Philadelphia wharf (Smith 1867)",
+    "meta": "Smith, Abram P. (1st Lieutenant, 76th NY Infantry). *History of the Seventy-sixth Regiment New York Volunteers; What It Endured and Accomplished; Containing Descriptions of Its Twenty-five Battles; Its Marches; Its Camp and Bivouac Scenes; With Biographical Sketches of Fifty-three Officers and a Complete Record of the Enlisted Men.* Cortland, N.Y.: Truair, Smith and Miles, printers, Syracuse, 1867. · 1867 (event from January 30, 1862; ~5-year lag)",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Both",
+    "note": "The 76th New York, arriving at midnight January 30, 1862, were 'met by an escort from each of two benevolent associations, which conducted the Regiment to their headquarters' — 'the first act of hospitality which, during the war, made the women of the North so enviably conspicuous.'",
+    "interestTier": "notable",
+    "links": []
+  },
+  {
+    "id": "anec-b177",
+    "type": "Anecdote",
+    "title": "9th New York Volunteer Cavalry at \"famous Cooper Shop\" (sign: \"Soldiers' Eating Committee Saloon\"), excellent supper at 1:30 AM, November 27–28, 1861, outbound — CS named explicitly (Cheney 1901)",
+    "meta": "Newel Cheney, *History of the Ninth Regiment, New York Volunteer Cavalry, War of 1861 to 1865* (Poland Center, N.Y.: [n.p.], 1901). · 1901",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The 9th New York Cavalry marched to the 'famous Cooper Shop, which bore the sign Soldiers' Eating Committee Saloon, and were served with an excellent supper at 1:30 a.m. Up to this date they had fed 140,000.'",
+    "interestTier": "standout",
+    "pullQuote": "The 9th New York Cavalry marched to the 'famous Cooper Shop, which bore the sign Soldiers' Eating Committee Saloon, and were served with an excellent supper at 1:30 a.m. Up to this date they had fed 140,000.'",
+    "links": [
+      "recx1pv2l4NT2ZFNA"
+    ]
+  },
+  {
+    "id": "anec-b178",
+    "type": "Anecdote",
+    "title": "100th New York Volunteer Infantry at \"refreshment saloon\" (\"one of the proud enterprises of the Quaker city\"), evening of March 10, 1862, outbound — saloon unidentified (Stowits 1870)",
+    "meta": "Geo. H. Stowits (Late Major, 100th New York Volunteers), *History of One Hundredth Regiment New York State Volunteers* (Buffalo, N.Y.: Matthews & Warren, 1870). · 1870",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Both",
+    "note": "The 100th New York visited 'the refreshment saloon, one of the proud enterprises of the Quaker city, where it is said every regiment passing through had been fed during the war.'",
+    "interestTier": "standard",
+    "links": [
+      "recTMqffBErYtENF4"
+    ]
+  },
+  {
+    "id": "anec-b179",
+    "type": "Anecdote",
+    "title": "44th New York Volunteer Infantry, \"patriotic ladies of the City of Brotherly Love had a surprise in store in the form of a warm, substantial breakfast,\" 3 AM October 24, 1861, outbound — saloon unidentified (Nash 1911)",
+    "meta": "Captain Eugene Arus Nash, *A History of the Forty-fourth Regiment, New York Volunteer Infantry in the Civil War, 1861–1865* (Chicago: R. R. Donnelley & Sons Company, 1911). · 1911",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Both",
+    "note": "At 3 AM October 24, 1861, the 44th New York found 'patriotic ladies of the City of Brotherly Love had a surprise in store in the form of a warm, substantial breakfast' — while Baltimore received them with open hostility, calling their NY insignia 'snotty nosed Yankees.'",
+    "interestTier": "notable",
+    "links": [
+      "recDJoqxr8MxBmOG8"
+    ]
+  },
+  {
+    "id": "anec-b180",
+    "type": "Anecdote",
+    "title": "56th New York Veteran Volunteer Infantry (10th Legion), \"furnished with a good, substantial meal, in a large hall, by the benevolent ladies of the Quaker City,\" November 7–8, 1861, outbound — saloon unidentified (Fisk and Blake 1906)",
+    "meta": "Joel C. Fisk and William H. D. Blake, *A Condensed History of the 56th Regiment New York Veteran Volunteer Infantry* ([n.p.], 1906). · 1906",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Both",
+    "note": "The 56th New York found 'a good, substantial meal, in a large hall, by the benevolent ladies of the Quaker City, who furnished the same to all the troops passing through that city.'",
+    "interestTier": "standard",
+    "links": [
+      "recHRo40VxrbAm56d"
+    ]
+  },
+  {
+    "id": "anec-b181",
+    "type": "Anecdote",
+    "title": "123rd New York Volunteer Infantry at \"Cooper Shop Volunteer Refreshment Saloon,\" breakfast, early morning September 8, 1862, outbound — CS named explicitly (Morhous 1879)",
+    "meta": "Henry C. Morhous, *Reminiscences of the 123d Regiment, N.Y.S.V., giving a complete history of its three years service in the war* (Greenwich, N.Y.: People's Journal Book and Job Office, 1879). · 1879",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The 123rd New York found breakfast at the Cooper Shop, 'established on Otsego street, below Washington Avenue, in May, 1861,' which had 'in one year furnished meals free to 87,513 soldiers.' The building was 'large enough to admit of a whole regiment eating at once.'",
+    "interestTier": "standout",
+    "pullQuote": "The 123rd New York found breakfast at the Cooper Shop, 'established on Otsego street, below Washington Avenue, in May, 1861,' which had 'in one year furnished meals free to 87,513 soldiers.' The building was 'large enough to admit of a whole regiment eating at once.'",
+    "links": [
+      "rech0SZnpu9zNxXvb"
+    ]
+  },
+  {
+    "id": "anec-b182",
+    "type": "Anecdote",
+    "title": "123rd New York Volunteer Infantry at \"Cooper Shop Volunteer Refreshment Saloon,\" breakfast \"the best meal...since they were there nearly three years before,\" June 10, 1865, homeward — CS named explicitly (Morhous 1879)",
+    "meta": "Henry C. Morhous, *Reminiscences of the 123d Regiment, N.Y.S.V., giving a complete history of its three years service in the war* (Greenwich, N.Y.: People's Journal Book and Job Office, 1879). · 1879",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "Returning home on June 10, 1865, the 123rd New York 'partook of the best meal that they had had since they were there nearly three years before.' In New York they received 'rice soup in a washtub.' Chapter heading: 'BREAKFAST AT THE COOPER SHOP VOLUNTEER REFRESHMENT SALOON — REACH NEW YORK — RICE SOUP IN A WASHTUB.'",
+    "interestTier": "standout",
+    "pullQuote": "Returning home on June 10, 1865, the 123rd New York 'partook of the best meal that they had had since they were there nearly three years before.' In New York they received 'rice soup in a washtub.' Chapter heading: 'BREAKFAST AT THE COOPER SHOP VOLUNTEER REFRESHMENT SALOON — REACH NEW YORK — RICE SOUP IN A WASHTUB.'",
+    "links": [
+      "rech0SZnpu9zNxXvb"
+    ]
+  },
+  {
+    "id": "anec-b183",
+    "type": "Anecdote",
+    "title": "125th New York Volunteer Infantry at \"a substantial meal\" (midnight), August 31 – September 1, 1862, outbound — saloon unidentified, both CS and UVRS mentioned in editorial aside (Simons 1888)",
+    "meta": "Ezra de Freest Simons, *A regimental history: the One Hundred and Twenty-fifth New York State Volunteers* (New York: E.D. Simons, 1888). · 1888",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Both",
+    "note": "The 125th New York received 'a substantial meal' at midnight August 31, 1862; the colonel later noted no place matched 'the old cooper shop and the Union Refreshment Saloon, Philadelphia.'",
+    "interestTier": "standard",
+    "links": [
+      "recgPOy612qM8EUiq"
+    ]
+  },
+  {
+    "id": "anec-b184",
+    "type": "Anecdote",
+    "title": "124th New York Volunteer Infantry (Orange Blossoms) at \"a building devoted to the purpose,\" \"scrupulously clean tables\" laden with \"luxuries,\" 3 AM Monday (approximately September 1, 1862), outbound — saloon unidentified (Weygant 1877)",
+    "meta": "Charles H. Weygant, *History of the One Hundred and Twenty-fourth Regiment, N.Y.S.V.* (Newburgh, N.Y.: Journal printing house, 1877). · 1877",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Both",
+    "note": "At 3 AM, the 124th New York found 'ladies whose carriages awaited them at the door' supervising tables loaded with 'luxuries, as well as substantial and well-cooked food.' Offered government soup in Washington, 'hardly a score of them entered' — 'the recollections of that superb meal at Philadelphia so fresh in their memory.'",
+    "interestTier": "notable",
+    "links": [
+      "recV76EceRuFb72Mx"
+    ]
+  },
+  {
+    "id": "anec-b185",
+    "type": "Anecdote",
+    "title": "120th New York Volunteer Infantry at \"an ample hall,\" \"sumptuous breakfast,\" 6:30 AM (approximately September 1862), outbound — saloon unidentified; embedded 20th NYSM account (Van Santvoord 1894)",
+    "meta": "C. (Cornelius) Van Santvoord, *The One Hundred and Twentieth Regiment New York State Volunteers: A narrative of its services in the war for the Union* (Rondout, N.Y.: Press of the Kingston Freeman, 1894). · 1894",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Union",
+    "note": "An embedded 1861 letter describes the UVRS at 2 AM: 'Six tables, stretching the whole length of the apartment... excellent bread and delicious butter, superb cold beef and ham... Here the sick soldiers are furnished with comfortable quarters... in a room overhead, writing materials are furnished... they refused even to let the writer pay for the stamp.'",
+    "interestTier": "standout",
+    "pullQuote": "An embedded 1861 letter describes the UVRS at 2 AM: 'Six tables, stretching the whole length of the apartment... excellent bread and delicious butter, superb cold beef and ham... Here the sick soldiers are furnished with comfortable quarters... in a room overhead, writing materials are furnished... they refused even to let the writer pay for the stamp.'",
+    "links": [
+      "recrfoJLNM6hOU4H0"
+    ]
+  },
+  {
+    "id": "anec-b186",
+    "type": "Anecdote",
+    "title": "120th New York Volunteer Infantry at \"Union Soldiers' House of Entertainment,\" breakfast, morning June 5, 1865, homeward — contextually UVRS (Union prefix; non-standard name) (Van Santvoord 1894)",
+    "meta": "C. (Cornelius) Van Santvoord, *The One Hundred and Twentieth Regiment New York State Volunteers: A narrative of its services in the war for the Union* (Rondout, N.Y.: Press of the Kingston Freeman, 1894). · 1894",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Union",
+    "note": "The 120th New York found 'a repetition of the old hospitality' at 'the Union Soldiers' House of Entertainment, known and extolled through all the land' on the morning of June 5, 1865.",
+    "interestTier": "standard",
+    "links": [
+      "recrfoJLNM6hOU4H0"
+    ]
+  },
+  {
+    "id": "anec-b187",
+    "type": "Anecdote",
+    "title": "108th New York Volunteer Infantry at \"Cooper Retreat,\" sumptuous breakfast, morning of August 22, 1862, outbound — CS named explicitly (Washburn 1894)",
+    "meta": "Private Geo. H. Washburn, *A Complete Military History and Record of the 108th Regiment N.Y. Vols., from 1862 to 1894* (Rochester, N.Y., 1894). · 1894",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The 108th New York arrived at the \"Cooper Retreat\" on the morning of August 22, 1862, for \"a sumptuous breakfast — a greatly realized and appreciable providential blessing to appease the cravings of nature.\"",
+    "interestTier": "notable",
+    "links": [
+      "recTaOyNh4DJiZhFY"
+    ]
+  },
+  {
+    "id": "anec-b188",
+    "type": "Anecdote",
+    "title": "19th Maine Volunteer Infantry Regiment, \"warm supper awaiting us at the blessed old Cooper Shop restaurant,\" midnight June 1–2, 1865, homeward — CS named explicitly (Smith 1909)",
+    "meta": "John D. Smith, *The History of the Nineteenth Regiment of Maine Volunteer Infantry, 1862–1865* (Minneapolis: Great Western Printing Co., 1909). · 1909",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The 19th Maine paused at \"the blessed old Cooper Shop restaurant\" for a warm supper on their homeward journey, June 1, 1865 — the affectionate phrasing confirming a prior outbound visit.",
+    "interestTier": "notable",
+    "links": [
+      "rec1a2MlZYLY9Ksqv"
+    ]
+  },
+  {
+    "id": "anec-b189",
+    "type": "Anecdote",
+    "title": "13th Vermont Infantry, \"commodious building at the foot of Washington Street,\" \"banquet dinner,\" approximately 2 PM October 8, 1862, outbound — CS probable based on location (Sturtevant 1910)",
+    "meta": "Ralph Orson Sturtevant, Historian, *Pictorial History Thirteenth Regiment Vermont Volunteers, War of 1861–1865* ([n.p.], 1910). · 1910",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Cooper",
+    "note": "The 13th Vermont (Sturtevant 1910) sat down to a \"banquet dinner\" at a \"commodious building at the foot of Washington Street\" on October 8, 1862, served by \"beautiful and fine appearing ladies.\" Sturtevant contrasts this explicitly with the \"Jersey soup at Jersey City\" — \"a combination of vegetable and animal, so blended, cooked and mixed that none of us could make out what to call it.\"",
+    "interestTier": "standout",
+    "pullQuote": "a combination of vegetable and animal, so blended, cooked and mixed that none of us could make out what to call it",
+    "links": [
+      "reczjlAgJgqPCCEXm"
+    ]
+  },
+  {
+    "id": "anec-b190",
+    "type": "Anecdote",
+    "title": "18th Connecticut Infantry, \"Cooper Relief Association rooms,\" bounteous supper, approximately 5 PM March 29, 1864, special homeward transit for Connecticut election — CS named explicitly (Walker et al. 1885)",
+    "meta": "W.C. Walker, Geo. C. Setchel, James McKee, and H. Caruthers (Committee), *History of the Eighteenth Regiment Connecticut Volunteers in the War for the Union* (Norwich, Conn.: Published by the Committee, 1885). · 1885",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The 18th Connecticut arrived in Philadelphia about 5 PM on March 29, 1864, and were received at \"the Cooper Relief Association rooms\" for a bounteous supper after a thirteen-hour journey.",
+    "interestTier": "notable",
+    "links": [
+      "recswH97s0k152Bin"
+    ]
+  },
+  {
+    "id": "anec-b191",
+    "type": "Anecdote",
+    "title": "14th Vermont Infantry, \"kind people of this noble and generous city... furnishing us with everything that heart could wish,\" two visits (Oct 24, 1862 outbound; July 19, 1863 homeward) — saloon unidentified (Williams 1864)",
+    "meta": "John C. Williams, *Life in Camp: A History of the Nine Months' Service of the Fourteenth Vermont Regiment* (Claremont, N.H.: Claremont Manufacturing Company, 1864). · 1864 (NB: published during the war, making this one of the earliest retrospective accounts in the corpus — within ~18 months of the outbound event and ~12 months of the homeward event)",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Both",
+    "note": "John C. Williams of the 14th Vermont recorded two Philadelphia hospitality stops — outbound in October 1862 (\"God bless the kind people of this noble and generous city\") and homeward in July 1863 (\"again hospitably entertained\"), the latter framed against a backdrop of \"cannon at every street corner\" during the New York draft riots.",
+    "interestTier": "standout",
+    "pullQuote": "God bless the kind people of this noble and generous city... again hospitably entertained",
+    "links": [
+      "recpIVb9eSAWn9ppU"
+    ]
+  },
+  {
+    "id": "anec-b192",
+    "type": "Anecdote",
+    "title": "12th Vermont Infantry, \"substantial welcome, in the shape of hot coffee, good bread and butter, and other substantials, served by the kind hands of the ladies and gentlemen of the Union Relief Association, in Philadelphia,\" October 8, 1862, outbound — saloon unidentified (Benedict 1895)",
+    "meta": "G. G. Benedict, *Army Life in Virginia. Letters from the Twelfth Vermont Regiment* (Burlington, VT: Free Press Association, 1895). · 1895",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Both",
+    "note": "George Benedict (12th Vermont, October 1862) quoted the saloon manager: \"We have a good many regiments through here — thirteen this week, and on an average two regiments a day... I think I have never seen a regiment more universally well-behaved, orderly and gentlemanly men.\"",
+    "interestTier": "standout",
+    "pullQuote": "We have a good many regiments through here — thirteen this week... I think I have never seen a regiment more universally well-behaved, orderly and gentlemanly men.",
+    "links": [
+      "rec4hdSCAChatAAUL"
+    ]
+  },
+  {
+    "id": "anec-b193",
+    "type": "Anecdote",
+    "title": "11th New Jersey Volunteer Infantry, two visits: (1) \"abundant dinner at the Cooper refreshment saloon\" August 25, 1862, outbound (CS explicit); (2) \"breakfasted at the Volunteer refreshment saloon\" on Otsego Street, June 8, 1865, homeward, with flag motto \"The City of Brotherly Love Welcomes with Hearty Cheer the Returning Braves\" — (Marbaker 1898)",
+    "meta": "Thomas D. Marbaker, *History of the Eleventh New Jersey Volunteers from its Organization to Appomattox to the Final Muster-Out* (Trenton, N.J.: MacCrellish & Quigley, 1898). [Confirm title page details against archive.org scan.] · 1898",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The 11th New Jersey made two documented Philadelphia stops — an \"abundant dinner at the Cooper refreshment saloon\" outbound in August 1862, and a homeward reception in 1865 beneath a banner reading \"The City of Brotherly Love Welcomes with Hearty Cheer the Returning Braves.\"",
+    "interestTier": "standout",
+    "pullQuote": "The City of Brotherly Love Welcomes with Hearty Cheer the Returning Braves",
+    "links": [
+      "reckNcKcWOkaNDTdj"
+    ]
+  },
+  {
+    "id": "anec-b194",
+    "type": "Anecdote",
+    "title": "14th Vermont Infantry, \"(No 'bean soup' in Phila. Boys hungrier than in N.Y.; increased their avoirdupois.)\" and reunion speech \"excellent repast furnished them on the following morning in Philadelphia,\" October 24, 1862, outbound — saloon unidentified; supplementary source for B-191 (Benedict 1887)",
+    "meta": "G. G. Benedict, *A Short History of the 14th Vermont Reg't* (Bennington, VT: Co. F, 14th Vermont Regiment, 1887). · 1887",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Both",
+    "note": "Three narrative voices from the 14th Vermont converge on the same Philadelphia stop in October 1862. The driest account — a diary entry — reads: \"(No 'bean soup' in Phila. Boys hungrier than in N.Y.; increased their avoirdupois.)\" A reunion speech decades later remembered the same stop as a feast.",
+    "interestTier": "standout",
+    "pullQuote": "(No 'bean soup' in Phila. Boys hungrier than in N.Y.; increased their avoirdupois.)",
+    "links": [
+      "recpIVb9eSAWn9ppU"
+    ]
+  },
+  {
+    "id": "anec-b195",
+    "type": "Anecdote",
+    "title": "2nd New Hampshire Volunteer Infantry, \"dinner at the Soldiers' Refreshment Saloon,\" May 26, 1863, re-deployment transit southward — saloon unidentified; supplementary source adds May 26 event and corroborates B-175 (Haynes 1896)",
+    "meta": "Martin A. Haynes, *A History of the Second Regiment, New Hampshire Volunteer Infantry, in the War of the Rebellion* (Lakeport, N.H.: [publisher not identified], 1896). · 1896",
+    "status": "unchecked",
+    "statusLabel": "Unchecked",
+    "saloon": "Both",
+    "note": "The 2nd New Hampshire passed through Philadelphia twice — May 1863 and March 1864 — each time receiving \"dinner at the Soldiers' Refreshment Saloon.\" The generic name means this could document either institution.",
+    "interestTier": "standard",
+    "links": [
+      "recZyIC09BcYNSfM1"
+    ]
+  },
+  {
+    "id": "anec-b196",
+    "type": "Anecdote",
+    "title": "18th Connecticut Infantry Regiment, \"refreshments were furnished at the Cooper Relief Association. 'We never had a better dinner,' was the comment of all,\" April 7, 1864, re-deployment transit (returning to front after Connecticut state election April 4, 1864) — CS explicit (Walker et al. 1885); supplements B-045 and B-190",
+    "meta": "William Carey Walker et al., *History of the Eighteenth Regiment Conn. Volunteers in the War for the Union* (1885). · 1885",
+    "status": "verified",
+    "statusLabel": "Verified",
+    "saloon": "Cooper",
+    "note": "The 18th Connecticut arrived in Philadelphia at noon on April 4, 1865 (election day) and received refreshments at \"the Cooper Relief Association.\" The regimental historian noted that the men \"declared they never had a better dinner.\"",
+    "interestTier": "notable",
+    "links": [
+      "recswH97s0k152Bin",
+      "reccG5JIESF4PO0RK",
+      "recZyIC09BcYNSfM1",
+      "rec46aPw5gBnuLxoI",
+      "recGsukhbuI2LNEvz",
+      "recSePykEvATp0lob"
+    ]
   }
 ]

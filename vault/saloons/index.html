@@ -161,6 +161,23 @@
     padding-top:8px;
     margin-top:4px;
   }
+  .pull-quote{
+    font-size:13px;
+    font-style:italic;
+    color:var(--oxblood);
+    border-left:2px solid var(--oxblood);
+    padding:4px 0 4px 10px;
+    margin:6px 0 8px;
+    line-height:1.45;
+  }
+  .pull-quote:before{content:'“';}
+  .pull-quote:after{content:'”';}
+  .modal .pull-quote{
+    font-size:15px;
+    border-left-width:3px;
+    padding:8px 0 8px 14px;
+    margin:0 0 16px;
+  }
   .stamp{
     display:block;
     font-family:'Courier New', ui-monospace, monospace;
@@ -679,12 +696,15 @@ function cardHTML(r){
   const frame = r.type==='Image'
     ? `<div class="img-frame"><span class="img-frame-caption">${r.caption||r.title}</span><span class="img-frame-note">No digital scan on file yet</span></div>`
     : '';
+  const pullQ = (r.type==='Anecdote' && r.interestTier==='standout' && r.pullQuote)
+    ? `<div class="pull-quote">${r.pullQuote}</div>` : '';
   return `
     <div class="card" data-id="${r.id}">
       ${frame}
       <div class="cat">${r.type}${r.saloon ? ' · '+r.saloon : ''}</div>
       <h3>${r.title}</h3>
       <div class="meta">${r.meta}</div>
+      ${pullQ}
       <div class="source">${r.source||''}<span class="stamp">${r.statusLabel}</span></div>
       ${r.image ? `<a class="img-link" href="${r.image}" target="_blank" rel="noopener" onclick="event.stopPropagation()">View original scan</a>` : ''}
     </div>`;
@@ -826,12 +846,15 @@ function openModal(id){
   const frame = r.type==='Image'
     ? `<div class="img-frame"><span class="img-frame-caption">${r.caption||r.title}</span><span class="img-frame-note">No digital scan on file yet</span></div>`
     : '';
+  const pullQ = (r.type==='Anecdote' && r.interestTier==='standout' && r.pullQuote)
+    ? `<div class="pull-quote">${r.pullQuote}</div>` : '';
   modal.innerHTML = `
     <button class="close" id="closeBtn">CLOSE ✕</button>
     ${frame}
     <div class="cat">${r.type}${r.saloon ? ' · '+r.saloon : ''}</div>
     <h2>${r.title}</h2>
     <div class="meta">${r.meta}</div>
+    ${pullQ}
     <p class="note">${r.note||''}</p>
     <div class="source-block">Source: ${r.source||'—'}<span class="stamp">${r.statusLabel}</span></div>
     ${r.image ? `<a class="img-link" href="${r.image}" target="_blank" rel="noopener">View original scan</a><br>` : ''}
