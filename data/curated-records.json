@@ -9,7 +9,9 @@
     "saloon": "Union",
     "note": "Writing six weeks after Ball's Bluff, Hallowell called the UVRS's humanitarian work \"the great apology for war,\" reflecting that war \"intensifies the brutal passions of men\" but also \"developes to an unwonted degree all that is noble and Good in our nature.\" He mentions his sister Anna Hallowell as an active UVRS volunteer.",
     "source": "HSP Fales Collection letter, IMG_4661–4677 range",
-    "links": ["person-corson"]
+    "links": [
+      "recuiURYKHmrKHwNW"
+    ]
   },
   {
     "id": "anec-corcoran",
@@ -22,7 +24,9 @@
     "note": "On his release from Confederate imprisonment, Col. Michael Corcoran of the 69th NY was received and entertained at the Cooper Shop — an event the Committee later singled out in its own closing address as one of its most memorable moments of service.",
     "source": "Philadelphia Inquirer, Nov. 8, 1865",
     "image": "https://drive.google.com/file/d/1BbXjJh69uWjWmT0enQfLze7Qmfr30Eqg/view",
-    "links": ["unit-69ny"]
+    "links": [
+      "recNfumchXuIsjzFw"
+    ]
   },
   {
     "id": "open-founding-date",
@@ -34,7 +38,9 @@
     "saloon": "Union",
     "note": "A commemorative 1901 token inscribes May 27, 1861 as the founding date. Rebellion Record Vol. 4 independently yields the same May 27 date plus a December 1861 committee roster, while other sources point to June 1. Current working theory: two saloons opened on consecutive days, not one date recorded two ways — but this is not yet confirmed by a single contemporaneous document naming both dates together.",
     "source": "Cross-referenced: 1901 token; Rebellion Record Vol. 4",
-    "links": ["person-cooper"]
+    "links": [
+      "recNSvgEfAXXdtnpt"
+    ]
   },
   {
     "id": "img-cooper-exterior-1862",
@@ -48,7 +54,10 @@
     "caption": "\"EXTERIOR OF THE COOPER SHOP REFRESHMENT SALOON, FOR THE ENTERTAINMENT OF THE UNION VOLUNTEERS ON THEIR WAY TO WASHINGTON.\"",
     "note": "The earliest confirmed dated engraving of the Cooper Shop building, published the same week as a companion interior view of the Union saloon. \"WM. M. COOPER\" is legible on the facade, with a flag reading \"WILLIAM M. COOPER\" flying above stacked rifles and a crowd of soldiers.",
     "source": "Frank Leslie's Illustrated Newspaper, Sept. 27, 1862",
-    "links": ["img-union-interior-1862", "person-cooper"]
+    "links": [
+      "img-union-interior-1862",
+      "recNSvgEfAXXdtnpt"
+    ]
   },
   {
     "id": "img-union-interior-1862",
@@ -62,7 +71,9 @@
     "caption": "\"INTERIOR OF THE UNION REFRESHMENT SALOON, CORNER OF WASHINGTON AND SWANSON STREETS, PHILADELPHIA.\"",
     "note": "Published the same week as the Cooper Shop exterior view, under the joint headline \"National Refreshment Saloons in Philadelphia\" — a rare look inside the dining hall itself, sketched on site by staff artist F. H. Schell.",
     "source": "Frank Leslie's Illustrated Newspaper, Sept. 27, 1862",
-    "links": ["img-cooper-exterior-1862"]
+    "links": [
+      "img-cooper-exterior-1862"
+    ]
   },
   {
     "id": "img-cooper-eldredge",
@@ -75,7 +86,9 @@
     "caption": "\"THE COOPER SHOP.\"",
     "note": "The clearest known exterior view of the building: a canvas banner reading \"Cooper Shop Volunteer Refreshment Saloon Free,\" Cooper's own cooperage business legible on the adjacent structure, masts and a steamboat smokestack from the Washington Avenue wharf behind it, and a crowd filling the street.",
     "source": "Enclosure to a 3rd New Hampshire veteran's letter, 1893",
-    "links": ["person-cooper"]
+    "links": [
+      "recNSvgEfAXXdtnpt"
+    ]
   },
   {
     "id": "img-cooper-1864-combined",
@@ -88,7 +101,9 @@
     "caption": "\"THE COOPER-SHOP VOLUNTEER REFRESHMENT SALOON AND HOSPITAL IN 1864.\"",
     "note": "Shows the Soldiers Hospital and the Cooper Shop side by side. The facade also reads \"Baptist Bethel\" above Cooper's name — an unresolved question about whether the saloon occupied a former church building.",
     "source": "Engraving, 1864 (LOC scrapbook, MMC-2446)",
-    "links": ["person-cooper"]
+    "links": [
+      "recNSvgEfAXXdtnpt"
+    ]
   },
   {
     "id": "img-union-exterior-photo",
@@ -125,7 +140,9 @@
     "caption": "\"WELCOME TO THE BRAVE VOLUNTEERS!\"",
     "note": "A painting by Edward Moran shows the saloon in snow, with the patriotic mottoes painted on its walls — \"Your country calls,\" \"Brave, your deeds for liberty will never die!\" — text that survives nowhere else, since it doesn't appear in any photograph.",
     "source": "Edward Moran, oil painting, 1865",
-    "links": ["anec-hallowell"]
+    "links": [
+      "anec-hallowell"
+    ]
   },
   {
     "id": "img-union-birdseye-roster",
@@ -138,6 +155,9 @@
     "caption": "\"VIEW OF THE UNION VOLUNTEER REFRESHMENT SALOON, PHILADELPHIA, WHERE OVER 300,000 UNION SOLDIERS HAVE BEEN FED.\"",
     "note": "Pairs an engraved bird's-eye view with the fullest known list of officers and committee members — including both Robert R. Corson and \"E. W. Cooper,\" a figure distinct from the Cooper Shop's William M. Cooper.",
     "source": "Bradley & Co., Philadelphia",
-    "links": ["person-corson", "person-cooper"]
+    "links": [
+      "recuiURYKHmrKHwNW",
+      "recNSvgEfAXXdtnpt"
+    ]
   }
 ]
