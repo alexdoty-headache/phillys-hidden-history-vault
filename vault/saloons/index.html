@@ -1003,7 +1003,7 @@ function buildScrubber(){
       const isYearStart=m===1;
       const tick=isYearStart ? y : (m===4?'Ap':m===7?'Jl':m===10?'Oc':'');
       html+=
-        `<div class="month-cell${isYearStart?' year-start':''}" data-year="${y}" data-month="${m}">` +
+        `<div class="month-cell${isYearStart?' year-start':''}" data-year="${y}" data-month="${m}" tabindex="0" role="option" aria-label="${MONTH_NAMES[m-1]} ${y}">` +
         `<div class="month-bar-stack" style="height:${Math.max(totalH,2)}px">` +
         (hUnion  ? `<div class="month-bar-union"  style="height:${hUnion}px"></div>`  : '') +
         (hCooper ? `<div class="month-bar-cooper" style="height:${hCooper}px"></div>` : '') +
@@ -1030,6 +1030,15 @@ function buildScrubber(){
     });
     cell.addEventListener('mouseleave',()=>{ if(tooltip) tooltip.classList.remove('show'); });
   });
+
+  strip.addEventListener('keydown',e=>{
+    const focused = document.activeElement;
+    if(!focused || !focused.classList.contains('month-cell')) return;
+    if(e.key==='ArrowRight'){ e.preventDefault(); const n=focused.nextElementSibling; if(n) n.focus(); }
+    else if(e.key==='ArrowLeft'){ e.preventDefault(); const p=focused.previousElementSibling; if(p) p.focus(); }
+    else if(e.key==='Enter'||e.key===' '){ e.preventDefault(); focused.click(); }
+  });
+
   updateScrubberActive();
 }
 
@@ -1049,7 +1058,13 @@ function updateScrubberActive(){
     cell.classList.toggle('active',isActive);
     if(isActive) activeCell=cell;
   });
-  if(activeCell) activeCell.scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'});
+  if(activeCell){
+    const outer=document.getElementById('monthStripOuter');
+    if(outer){
+      const target=activeCell.offsetLeft - (outer.clientWidth/2) + (activeCell.offsetWidth/2);
+      outer.scrollLeft=Math.max(0,target);
+    }
+  }
   const label=document.getElementById('scrubDateLabel');
   if(label) label.textContent=MONTH_NAMES[curMonth-1].toUpperCase()+' '+curYear;
 }
