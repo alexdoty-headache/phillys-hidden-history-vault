@@ -1,0 +1,114 @@
+[
+  {
+    "id": "first-bull-run",
+    "name": "First Bull Run",
+    "date": "1861-07-21",
+    "theater": "Eastern",
+    "note": "Union rout; wounded flooded back through Philadelphia"
+  },
+  {
+    "id": "balls-bluff",
+    "name": "Ball's Bluff",
+    "date": "1861-10-21",
+    "theater": "Eastern",
+    "note": "Philadelphia units among the dead; 49th PA and 20th MA suffered heavily"
+  },
+  {
+    "id": "fort-henry",
+    "name": "Fort Henry",
+    "date": "1862-02-06",
+    "theater": "Western",
+    "note": "First Union victory in the Western Theater opened the Tennessee River"
+  },
+  {
+    "id": "pea-ridge",
+    "name": "Pea Ridge",
+    "date": "1862-03-07",
+    "theater": "Trans-Mississippi",
+    "note": "Union victory secured Missouri — fought the same day the 93d and 103d NY passed through Philadelphia"
+  },
+  {
+    "id": "shiloh",
+    "name": "Shiloh",
+    "date": "1862-04-06",
+    "theater": "Western",
+    "note": "Two-day battle shocked the country; 23,000 casualties total"
+  },
+  {
+    "id": "mechanicsville",
+    "name": "Mechanicsville (Seven Days)",
+    "date": "1862-06-26",
+    "theater": "Eastern",
+    "note": "Opening of the Seven Days Battles; Union retreat from the Peninsula began"
+  },
+  {
+    "id": "second-bull-run",
+    "name": "Second Bull Run",
+    "date": "1862-08-28",
+    "theater": "Eastern",
+    "note": "Second Union disaster near Washington; shook Northern confidence"
+  },
+  {
+    "id": "antietam",
+    "name": "Antietam",
+    "date": "1862-09-17",
+    "theater": "Eastern",
+    "note": "Bloodiest single day of the war; Emancipation Proclamation issued five days later"
+  },
+  {
+    "id": "fredericksburg",
+    "name": "Fredericksburg",
+    "date": "1862-12-13",
+    "theater": "Eastern",
+    "note": "Catastrophic Union frontal assault; 12,600 Union casualties in one afternoon"
+  },
+  {
+    "id": "chancellorsville",
+    "name": "Chancellorsville",
+    "date": "1863-05-01",
+    "theater": "Eastern",
+    "note": "Lee's most celebrated victory; Stonewall Jackson mortally wounded by his own men"
+  },
+  {
+    "id": "gettysburg",
+    "name": "Gettysburg",
+    "date": "1863-07-01",
+    "theater": "Eastern",
+    "note": "Confederate high-water mark — 50 miles from Philadelphia; Cooper Shop sheltered thousands of wounded in the days after"
+  },
+  {
+    "id": "vicksburg",
+    "name": "Vicksburg Surrenders",
+    "date": "1863-07-04",
+    "theater": "Western",
+    "note": "Union controls the Mississippi River; the Confederacy is split"
+  },
+  {
+    "id": "chickamauga",
+    "name": "Chickamauga",
+    "date": "1863-09-18",
+    "theater": "Western",
+    "note": "Second-deadliest battle of the war; Union narrowly avoids rout"
+  },
+  {
+    "id": "wilderness",
+    "name": "The Wilderness",
+    "date": "1864-05-05",
+    "theater": "Eastern",
+    "note": "Grant's first engagement against Lee; dense forest fighting, heavy casualties on both sides"
+  },
+  {
+    "id": "cold-harbor",
+    "name": "Cold Harbor",
+    "date": "1864-06-01",
+    "theater": "Eastern",
+    "note": "Costly Union frontal assault; Grant later called it his one regret of the war"
+  },
+  {
+    "id": "atlanta-falls",
+    "name": "Atlanta Falls",
+    "date": "1864-09-02",
+    "theater": "Western",
+    "note": "Sherman captures Atlanta; Lincoln's re-election is secured"
+  }
+]

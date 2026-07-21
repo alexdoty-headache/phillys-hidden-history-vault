@@ -481,6 +481,79 @@
     color:var(--ink-soft);
     white-space:nowrap;
   }
+
+  /* ── Scrubber ─────────────────────────────────────────────── */
+  .scrubber-wrap{margin:0 0 28px;padding:14px 0 0;border-top:1px solid var(--line);}
+  .scrubber-label{
+    font-family:'Courier New',ui-monospace,monospace;
+    font-size:10px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--ink-soft);margin:0 0 8px;
+  }
+  .month-strip-outer{overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:2px;}
+  .month-strip{
+    display:flex;align-items:flex-end;gap:2px;
+    min-width:max-content;padding:8px 0 0;
+  }
+  .month-cell{
+    display:flex;flex-direction:column;align-items:center;
+    cursor:pointer;width:30px;flex-shrink:0;
+  }
+  .month-cell:hover .month-bar-stack{opacity:.72;}
+  .month-cell.active .month-bar-stack{
+    outline:2px solid var(--oxblood);outline-offset:1px;border-radius:2px;
+  }
+  .month-bar-stack{
+    width:22px;display:flex;flex-direction:column;
+    border-radius:2px 2px 0 0;overflow:hidden;
+    background:var(--line);
+  }
+  .month-bar-union {background:var(--verdigris);}
+  .month-bar-cooper{background:var(--oxblood);}
+  .month-tick{
+    font-family:'Courier New',ui-monospace,monospace;
+    font-size:8px;color:var(--ink-soft);margin-top:3px;
+    text-align:center;white-space:nowrap;height:11px;line-height:11px;
+  }
+  .month-cell.year-start .month-tick{color:var(--ink);font-weight:bold;font-size:9px;}
+  .scrub-meta{
+    display:flex;align-items:center;margin-top:8px;
+    gap:16px;flex-wrap:wrap;
+  }
+  .scrub-legend{display:flex;gap:14px;}
+  .scrub-legend-item{
+    display:flex;align-items:center;gap:5px;
+    font-family:'Courier New',ui-monospace,monospace;
+    font-size:10px;color:var(--ink-soft);
+  }
+  .scrub-legend-swatch{width:10px;height:10px;border-radius:1px;flex-shrink:0;}
+  .scrub-date-label{
+    margin-left:auto;
+    font-family:'Courier New',ui-monospace,monospace;
+    font-size:11px;font-weight:bold;color:var(--oxblood);letter-spacing:.05em;
+  }
+  .day-strip{display:flex;gap:3px;margin-top:10px;flex-wrap:wrap;}
+  .day-cell{
+    width:28px;height:28px;display:flex;align-items:center;justify-content:center;
+    font-family:'Courier New',ui-monospace,monospace;font-size:11px;
+    cursor:pointer;border-radius:3px;border:1px solid transparent;
+    position:relative;color:var(--ink-soft);flex-shrink:0;
+  }
+  .day-cell:hover{border-color:var(--ink-soft);}
+  .day-cell.active{background:var(--oxblood);color:#fff;border-color:var(--oxblood);}
+  .day-cell.has-entries{color:var(--ink);font-weight:bold;}
+  .day-cell.no-entries{opacity:.4;}
+  .day-marker{position:absolute;font-size:7px;line-height:1;}
+  .battle-marker{top:1px;right:1px;color:var(--stamp-red);}
+  .highlight-marker{bottom:1px;right:1px;color:var(--oxblood);}
+  .scrub-tooltip{
+    position:fixed;z-index:500;
+    background:var(--paper-dark);color:var(--ink);
+    border:1px solid var(--line);padding:5px 10px;border-radius:3px;
+    font-family:'Courier New',ui-monospace,monospace;font-size:11px;
+    pointer-events:none;white-space:nowrap;
+    display:none;box-shadow:0 2px 8px rgba(0,0,0,.12);
+  }
+  .scrub-tooltip.show{display:block;}
 </style>
 </head>
 <body>
@@ -507,8 +580,24 @@
   <p id="loadingMsg" style="padding:20px 0 10px; font-family:'Courier New', ui-monospace, monospace; font-size:13px; color:var(--ink-soft);">Loading records&hellip;</p>
 
   <div id="pageTimeline" class="page">
-    <p class="bucket-intro">Browse the record day by day. <em>A full drag-through timeline of 1861–65 is planned — this day-by-day view is a placeholder for it.</em></p>
+    <p class="bucket-intro">Browse the record by exact date — scroll the density chart below, click a month bar, then pick a day from the strip.</p>
     <div id="heroTimeline"></div>
+    <div id="scrubber" class="scrubber-wrap">
+      <p class="scrubber-label">&#8212; entry density 1861&#8211;1865 &#8212; click any bar to navigate &#8212;</p>
+      <div class="month-strip-outer" id="monthStripOuter">
+        <div class="month-strip" id="monthStrip"></div>
+      </div>
+      <div class="scrub-meta">
+        <div class="scrub-legend">
+          <span class="scrub-legend-item"><span class="scrub-legend-swatch" style="background:var(--oxblood)"></span>Cooper Shop</span>
+          <span class="scrub-legend-item"><span class="scrub-legend-swatch" style="background:var(--verdigris)"></span>Union Saloon</span>
+          <span class="scrub-legend-item"><span style="font-size:9px;color:var(--stamp-red)">⚔</span> battle</span>
+          <span class="scrub-legend-item"><span style="font-size:9px;color:var(--oxblood)">★</span> notable entry</span>
+        </div>
+        <span id="scrubDateLabel" class="scrub-date-label"></span>
+      </div>
+      <div class="day-strip" id="dayStrip"></div>
+    </div>
     <div class="ledger-day">
       <div class="ledger-day-header">
         <h2 id="dayHeading"></h2>
@@ -562,6 +651,7 @@
   </footer>
 </div>
 
+<div class="scrub-tooltip" id="scrubTooltip"></div>
 <div class="overlay" id="overlay">
   <div class="modal" id="modal"></div>
 </div>
@@ -750,7 +840,8 @@ const MONTH_NAMES = ['January','February','March','April','May','June','July','A
 // Days per month using 1864 (a leap year, since it falls in range) so Feb 29 is selectable.
 const DAYS_IN_MONTH = [31,29,31,30,31,30,31,31,30,31,30,31];
 
-let curMonth, curDay;
+let curMonth, curDay, curYear = 1862;
+let battles = [], highlights = [];
 (function initToday(){
   const t = new Date();
   curMonth = t.getMonth()+1;
@@ -773,12 +864,12 @@ function stepDay(delta){
   curDay += delta;
   if(curDay < 1){
     curMonth -= 1;
-    if(curMonth < 1) curMonth = 12;
+    if(curMonth < 1){ curMonth = 12; curYear -= 1; if(curYear < 1861) curYear = 1865; }
     curDay = DAYS_IN_MONTH[curMonth-1];
   } else if(curDay > DAYS_IN_MONTH[curMonth-1]){
     curDay = 1;
     curMonth += 1;
-    if(curMonth > 12) curMonth = 1;
+    if(curMonth > 12){ curMonth = 1; curYear += 1; if(curYear > 1865) curYear = 1861; }
   }
 }
 
@@ -794,21 +885,24 @@ function renderDaily(){
   if(curDay > DAYS_IN_MONTH[curMonth-1]) curDay = DAYS_IN_MONTH[curMonth-1];
   daySelect.value = curDay;
 
-  document.getElementById('dayHeading').textContent = MONTH_NAMES[curMonth-1] + ' ' + curDay;
+  document.getElementById('dayHeading').textContent = MONTH_NAMES[curMonth-1] + ' ' + curDay + ', ' + curYear;
 
   const results = dayRecords
     .map(r=>({ r, d: parseISO(r.date) }))
-    .filter(x=> x.d.month===curMonth && x.d.day===curDay)
-    .sort((a,b)=> a.d.year - b.d.year);
+    .filter(x=> x.d.year===curYear && x.d.month===curMonth && x.d.day===curDay)
+    .sort((a,b)=> a.r.saloon > b.r.saloon ? 1 : -1);
 
   const listEl = document.getElementById('dayEntries');
   if(results.length===0){
-    const uniqueDays = [...new Map(dayRecords.map(r=>{
-      const d = parseISO(r.date);
-      return [d.month+'-'+d.day, {month:d.month, day:d.day}];
-    })).values()].sort((a,b)=> a.month-b.month || a.day-b.day);
+    const yearDates = [...new Map(dayRecords
+      .filter(r=>parseISO(r.date).year===curYear)
+      .map(r=>{ const d=parseISO(r.date); return [d.month+'-'+d.day,{month:d.month,day:d.day}]; })
+    ).values()].sort((a,b)=>a.month-b.month||a.day-b.day);
+    const uniqueDays = yearDates.length > 0 ? yearDates :
+      [...new Map(dayRecords.map(r=>{ const d=parseISO(r.date); return [d.month+'-'+d.day,{month:d.month,day:d.day}]; })).values()]
+      .sort((a,b)=>a.month-b.month||a.day-b.day);
     listEl.innerHTML = `
-      <div class="empty-day">No entries recorded in the surviving ledgers for this date, in any year 1861–1865.</div>
+      <div class="empty-day">No entries in the surviving ledgers for ${MONTH_NAMES[curMonth-1]} ${curDay}, ${curYear} — jump to a recorded date:</div>
       <div class="quick-dates">
         ${uniqueDays.map(d=>`<button class="quick-date-btn" data-month="${d.month}" data-day="${d.day}">${MONTH_NAMES[d.month-1]} ${d.day}</button>`).join('')}
       </div>`;
@@ -846,6 +940,9 @@ function renderDaily(){
       renderDaily();
     });
   });
+
+  renderDayStrip();
+  updateScrubberActive();
 }
 
 document.getElementById('prevDay').addEventListener('click', ()=>{ stepDay(-1); renderDaily(); });
@@ -865,19 +962,144 @@ document.querySelectorAll('.nav-btn').forEach(btn=>{
   });
 });
 
+/* ---------- SCRUBBER ---------- */
+
+function findFirstYearWithEntries(month, day){
+  for(let y=1861;y<=1865;y++){
+    if(dayRecords.some(r=>{ const d=parseISO(r.date); return d.year===y&&d.month===month&&d.day===day; })) return y;
+  }
+  return 1862;
+}
+
+function buildMonthStats(){
+  const stats={};
+  for(const r of dayRecords){
+    const d=parseISO(r.date);
+    const key=d.year+'-'+String(d.month).padStart(2,'0');
+    if(!stats[key]) stats[key]={cooper:0,union:0,total:0};
+    if(r.saloon==='Cooper') stats[key].cooper++;
+    else if(r.saloon==='Union') stats[key].union++;
+    stats[key].total++;
+  }
+  return stats;
+}
+
+function buildScrubber(){
+  const monthStats=buildMonthStats();
+  const allTotals=Object.values(monthStats).map(s=>s.total);
+  const maxTotal=allTotals.length ? Math.max(...allTotals) : 1;
+  const BAR_MAX=64;
+  const strip=document.getElementById('monthStrip');
+  if(!strip) return;
+  const tooltip=document.getElementById('scrubTooltip');
+  let html='';
+  for(let y=1861;y<=1865;y++){
+    for(let m=1;m<=12;m++){
+      const key=y+'-'+String(m).padStart(2,'0');
+      const s=monthStats[key]||{cooper:0,union:0,total:0};
+      const hCooper=s.cooper ? Math.max(3,Math.round(Math.sqrt(s.cooper/maxTotal)*BAR_MAX)) : 0;
+      const hUnion =s.union  ? Math.max(3,Math.round(Math.sqrt(s.union /maxTotal)*BAR_MAX)) : 0;
+      const totalH=hCooper+hUnion;
+      const isYearStart=m===1;
+      const tick=isYearStart ? y : (m===4?'Ap':m===7?'Jl':m===10?'Oc':'');
+      html+=
+        `<div class="month-cell${isYearStart?' year-start':''}" data-year="${y}" data-month="${m}">` +
+        `<div class="month-bar-stack" style="height:${Math.max(totalH,2)}px">` +
+        (hUnion  ? `<div class="month-bar-union"  style="height:${hUnion}px"></div>`  : '') +
+        (hCooper ? `<div class="month-bar-cooper" style="height:${hCooper}px"></div>` : '') +
+        `</div><div class="month-tick">${tick}</div></div>`;
+    }
+  }
+  strip.innerHTML=html;
+  strip.querySelectorAll('.month-cell').forEach(cell=>{
+    cell.addEventListener('click',()=>{
+      scrubSelectMonth(Number(cell.dataset.year),Number(cell.dataset.month));
+    });
+    cell.addEventListener('mouseenter',()=>{
+      const y=Number(cell.dataset.year),m=Number(cell.dataset.month);
+      const key=y+'-'+String(m).padStart(2,'0');
+      const s=monthStats[key]||{cooper:0,union:0,total:0};
+      if(tooltip){
+        tooltip.textContent=
+          MONTH_NAMES[m-1]+' '+y+' — '+s.total+' entries (Cooper: '+s.cooper+', Union: '+s.union+')';
+        tooltip.classList.add('show');
+      }
+    });
+    cell.addEventListener('mousemove',e=>{
+      if(tooltip){ tooltip.style.left=(e.clientX+14)+'px'; tooltip.style.top=(e.clientY-38)+'px'; }
+    });
+    cell.addEventListener('mouseleave',()=>{ if(tooltip) tooltip.classList.remove('show'); });
+  });
+  updateScrubberActive();
+}
+
+function scrubSelectMonth(year,month){
+  curYear=year; curMonth=month;
+  const entries=dayRecords.filter(r=>{ const d=parseISO(r.date); return d.year===year&&d.month===month; });
+  curDay=entries.length ? Math.min(...entries.map(r=>parseISO(r.date).day)) : 1;
+  renderDaily();
+}
+
+function updateScrubberActive(){
+  const strip=document.getElementById('monthStrip');
+  if(!strip) return;
+  let activeCell=null;
+  strip.querySelectorAll('.month-cell').forEach(cell=>{
+    const isActive=Number(cell.dataset.year)===curYear&&Number(cell.dataset.month)===curMonth;
+    cell.classList.toggle('active',isActive);
+    if(isActive) activeCell=cell;
+  });
+  if(activeCell) activeCell.scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'});
+  const label=document.getElementById('scrubDateLabel');
+  if(label) label.textContent=MONTH_NAMES[curMonth-1].toUpperCase()+' '+curYear;
+}
+
+function renderDayStrip(){
+  const strip=document.getElementById('dayStrip');
+  if(!strip) return;
+  const n=DAYS_IN_MONTH[curMonth-1];
+  const entryDays=new Set();
+  dayRecords.forEach(r=>{ const d=parseISO(r.date); if(d.year===curYear&&d.month===curMonth) entryDays.add(d.day); });
+  const monthBattles=battles.filter(b=>{ const d=parseISO(b.date); return d.year===curYear&&d.month===curMonth; });
+  const hlMap=new Map();
+  highlights.forEach(h=>{
+    if(!h.date) return;
+    const d=parseISO(h.date);
+    if(d.year===curYear&&d.month===curMonth) hlMap.set(d.day,h);
+  });
+  let html='';
+  for(let day=1;day<=n;day++){
+    const hasEntries=entryDays.has(day);
+    const battle=monthBattles.find(b=>parseISO(b.date).day===day);
+    const hl=hlMap.get(day);
+    const cls=['day-cell',hasEntries?'has-entries':'no-entries',day===curDay?'active':''].filter(Boolean).join(' ');
+    const bm=battle?`<span class="day-marker battle-marker" title="${battle.name}">⚔</span>`:'';
+    const hm=hl?`<span class="day-marker highlight-marker" title="${hl.teaser}">★</span>`:'';
+    html+=`<div class="${cls}" data-day="${day}">${day}${bm}${hm}</div>`;
+  }
+  strip.innerHTML=html;
+  strip.querySelectorAll('.day-cell').forEach(cell=>{
+    cell.addEventListener('click',()=>{ curDay=Number(cell.dataset.day); renderDaily(); });
+  });
+}
+
 /* ---------- ASYNC INIT — fetches real data then renders ---------- */
 async function init(){
   const loadingEl = document.getElementById('loadingMsg');
   try {
-    const [airtableRes, curatedRes] = await Promise.all([
+    const [airtableRes, curatedRes, highlightsRes, battlesRes] = await Promise.all([
       fetch('../../data/vault-records.json'),
       fetch('../../data/curated-records.json'),
+      fetch('../../data/highlights.json'),
+      fetch('../../data/battles.json'),
     ]);
     if(!airtableRes.ok) throw new Error(`vault-records HTTP ${airtableRes.status}`);
     if(!curatedRes.ok) throw new Error(`curated-records HTTP ${curatedRes.status}`);
     const airtable = await airtableRes.json();
     const curated  = await curatedRes.json();
     records = [...airtable, ...curated];
+    if(highlightsRes.ok) highlights = await highlightsRes.json();
+    if(battlesRes.ok)    battles    = await battlesRes.json();
   } catch(err) {
     loadingEl.textContent = 'Error loading records — try refreshing. ('+err.message+')';
     return;
@@ -885,6 +1107,7 @@ async function init(){
   loadingEl.style.display = 'none';
 
   dayRecords = records.filter(r=>r.date);
+  curYear = findFirstYearWithEntries(curMonth, curDay);
 
   buckets.forEach(b=>{
     b.search.addEventListener('input', ()=> renderBucket(b.type, b.search, b.grid, b.count));
@@ -904,6 +1127,7 @@ async function init(){
   renderHero('heroImages', 'img-union-hospital-colored',
     'One of eight standout images identified so far. Browse the rest below.');
 
+  buildScrubber();
   renderDaily();
 }
 init();
