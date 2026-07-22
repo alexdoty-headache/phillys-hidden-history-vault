@@ -269,7 +269,7 @@
     padding:8px 10px;
     border-bottom:1px solid var(--line);
     cursor:pointer;
-    align-items:baseline;
+    align-items:start;
   }
   .visit-row:last-child{border-bottom:none;}
   .visit-row:hover{background:var(--paper-dark);}
@@ -280,6 +280,8 @@
   .visit-saloon.both{color:var(--navy);}
   .visit-meta{color:var(--ink);line-height:1.3;}
   .visit-status{font-family:'Courier New',monospace;font-size:10px;color:var(--ink-soft);opacity:0.6;white-space:nowrap;}
+  .visit-inferred-note{display:block;font-size:11px;font-style:italic;color:var(--ink-soft);margin-top:3px;}
+  .visit-row-inferred .visit-status{opacity:1;color:var(--oxblood);}
 
   footer{
     margin-top:50px;
@@ -882,22 +884,53 @@ function openModal(id){
   let moreCount = 0;
 
   if(r.type === 'Unit'){
-    const visits = allRelated
+    const allVisits = allRelated
       .filter(rr => rr.type === 'Ledger Entry')
       .sort((a,b) => (a.date||'') < (b.date||'') ? -1 : (a.date||'') > (b.date||'') ? 1 : 0);
     const others = allRelated.filter(rr => rr.type !== 'Ledger Entry');
 
-    if(visits.length){
-      const rows = visits.map(v => {
+    const realVisits = allVisits.filter(v => v.statusLabel !== 'Inferred/CS-derived');
+    const inferredVisits = allVisits.filter(v => v.statusLabel === 'Inferred/CS-derived');
+
+    // pair inferred entries to real entries that share the same date (FIFO queue per date)
+    const inferredByDate = {};
+    inferredVisits.forEach(v => {
+      if(!v.date) return;
+      if(!inferredByDate[v.date]) inferredByDate[v.date] = [];
+      inferredByDate[v.date].push(v);
+    });
+    const pairedIds = new Set();
+
+    // build display items: real visits (annotated where paired) + unpaired inferred, sorted by date
+    const displayItems = [];
+    realVisits.forEach(v => {
+      const queue = v.date ? inferredByDate[v.date] : null;
+      const paired = (queue && queue.length) ? queue.shift() : null;
+      if(paired) pairedIds.add(paired.id);
+      displayItems.push({v, paired: paired||null, isStandaloneInferred: false});
+    });
+    inferredVisits.filter(v => !pairedIds.has(v.id)).forEach(v => {
+      displayItems.push({v, paired: null, isStandaloneInferred: true});
+    });
+    displayItems.sort((a,b) => (a.v.date||'') < (b.v.date||'') ? -1 : (a.v.date||'') > (b.v.date||'') ? 1 : 0);
+
+    if(displayItems.length){
+      const rows = displayItems.map(({v, paired, isStandaloneInferred}) => {
         const sc = saloonClass(v.saloon);
-        return `<div class="visit-row" data-id="${v.id}">
+        let annotation = '';
+        if(paired){
+          const m = (paired.meta||'').match(/(\d[\d,]*)\s+men/);
+          const men = m ? m[1] : 'est.';
+          annotation = `<span class="visit-inferred-note">+ ${men} est. ${paired.saloon} portion (inferred)</span>`;
+        }
+        return `<div class="visit-row${isStandaloneInferred ? ' visit-row-inferred' : ''}" data-id="${v.id}">
           <span class="visit-date">${fmtVisitDate(v.date)}</span>
           <span class="visit-saloon ${sc}">${v.saloon||'—'}</span>
-          <span class="visit-meta">${v.meta||v.title}</span>
+          <span class="visit-meta">${v.meta||v.title}${annotation}</span>
           <span class="visit-status">${v.statusLabel||''}</span>
         </div>`;
       }).join('');
-      visitHTML = `<div class="related-title">Documented visits (${visits.length})</div><div class="visit-list">${rows}</div>`;
+      visitHTML = `<div class="related-title">Documented visits (${displayItems.length})</div><div class="visit-list">${rows}</div>`;
     }
 
     const othersSliced = others.slice(0, 20);
