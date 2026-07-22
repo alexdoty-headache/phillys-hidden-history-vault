@@ -54,6 +54,7 @@
     "caption": "\"EXTERIOR OF THE COOPER SHOP REFRESHMENT SALOON, FOR THE ENTERTAINMENT OF THE UNION VOLUNTEERS ON THEIR WAY TO WASHINGTON.\"",
     "note": "The earliest confirmed dated engraving of the Cooper Shop building, published the same week as a companion interior view of the Union saloon. \"WM. M. COOPER\" is legible on the facade, with a flag reading \"WILLIAM M. COOPER\" flying above stacked rifles and a crowd of soldiers.",
     "source": "Frank Leslie's Illustrated Newspaper, Sept. 27, 1862",
+    "imageFile": "public/images/img-cooper-exterior-1862.jpg",
     "links": [
       "img-union-interior-1862",
       "recNSvgEfAXXdtnpt"
@@ -71,6 +72,7 @@
     "caption": "\"INTERIOR OF THE UNION REFRESHMENT SALOON, CORNER OF WASHINGTON AND SWANSON STREETS, PHILADELPHIA.\"",
     "note": "Published the same week as the Cooper Shop exterior view, under the joint headline \"National Refreshment Saloons in Philadelphia\" — a rare look inside the dining hall itself, sketched on site by staff artist F. H. Schell.",
     "source": "Frank Leslie's Illustrated Newspaper, Sept. 27, 1862",
+    "imageFile": "public/images/img-union-interior-1862.jpg",
     "links": [
       "img-cooper-exterior-1862"
     ]
@@ -127,6 +129,7 @@
     "saloon": "Union",
     "note": "A rare hand-colored image showing the full Union saloon and hospital complex — a carved and gilded eagle on the roof peak, a cannon on display out front, and a crowd of soldiers gathered below.",
     "source": "LOC scrapbook, MMC-2446",
+    "imageFile": "public/images/img-union-hospital-colored.jpg",
     "links": []
   },
   {
@@ -155,6 +158,7 @@
     "caption": "\"VIEW OF THE UNION VOLUNTEER REFRESHMENT SALOON, PHILADELPHIA, WHERE OVER 300,000 UNION SOLDIERS HAVE BEEN FED.\"",
     "note": "Pairs an engraved bird's-eye view with the fullest known list of officers and committee members — including both Robert R. Corson and \"E. W. Cooper,\" a figure distinct from the Cooper Shop's William M. Cooper.",
     "source": "Bradley & Co., Philadelphia",
+    "imageFile": "public/images/img-union-birdseye-roster.jpg",
     "links": [
       "recuiURYKHmrKHwNW",
       "recNSvgEfAXXdtnpt"
